@@ -1,13 +1,41 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+.mini-nav-card{
+  text-align: center;
+  border-radius: 25px;
+  padding: 8px 15px;
+  background: #1B1E26;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+div.nav-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  border-radius: 25px;
+  padding: 8px 30px;
+}
+
+.nav-bar-text{
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px;
+  color: #414A5B;
+  width: max-content;
+}
+
+.vertical-hr {
+  width: 1px;
+  height: 25px;
+  background-color: #fff;
+}
+
+.nav-items-margin{
+  margin-left: 15%;
+}
+
+.footer-color{
+  background-color: #F9FBFC;
+  border-radius: 45px 45px 0 0;
 }
