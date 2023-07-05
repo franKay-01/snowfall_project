@@ -12,7 +12,6 @@
 .text-container{
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .mini-nav-card{
@@ -30,7 +29,6 @@ div.nav-card {
 }
 
 .nav-bar-text{
-  
   font-size: 16px;
   color: #414A5B;
   width: max-content;
@@ -69,7 +67,7 @@ div.nav-card {
 
 .home-banner{
   background-color: #F8F9FC;
-  height: 624px;
+  height: 750px;
 }
 
 .nav-bg-custom{
