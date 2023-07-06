@@ -98,4 +98,186 @@ div.nav-card {
   background: #FFF;
   /* Light shadow 3 */
   box-shadow: 0px 8px 40px 0px rgba(225, 230, 236, 0.40);
+=======
+.banner-card{
+  width: 400px;
+  height: 260px;
+  background-color: #F9FBFC;
+  border-radius: 15px;
+  padding: 1.5rem;
+}
+
+.banner-card-icon{
+  width: 64px;
+  height: 64px;
+}
+
+.banner-card-heading{
+  font-size: 32px;
+  font-weight: 400;
+  width: 222px;
+  line-height: 40px;
+}
+
+.banner-card-heading-sub{
+  margin-top: 1rem;
+  font-size: 16px;
+  font-weight: 100;
+  width: 242px;
+  line-height: 20px;
+}
+
+.gradient-text{
+  font-size: 80px;
+  line-height: 1;
+}
+
+.d-bg{
+  background-image: url('./assets/most_popular_network.png');
+  background-size: contain;
+  background-size: contain;
+  height: 480px;
+  padding: 4rem;
+  margin-top: 5rem ;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+.popular-network-text-header{
+  font-weight: 400;
+  font-size: 64px;
+  width: 555px;
+  line-height: 1
+}
+
+.popular-network-text-sub{
+  font-weight: 200;
+  font-size: 18px;
+  width: 455px;
+  line-height: 1.5;
+}
+
+.corner-image {
+  position: absolute;
+  bottom: -5rem;
+  right: 0;
+}
+
+.most-popular-card-image{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-radius: 3rem;
+  max-height: 100%;
+}
+
+.most-popular-card{
+  width: 580px;
+  height: 410px;
+  background-color: #F5F8FA;
+  border-radius: 2.5rem;
+}
+
+.popular-card-text{
+  width: 25.25rem;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.625rem;
+}
+
+.popular-card-text-sub{
+  font-size: 1rem;
+  color: #838B9D;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.375rem;
+}
+
+.share-section{
+  display: grid;
+  justify-content: center;
+  width: 90%;
+  height: 36.25rem;
+  flex-shrink: 0;
+  /* background-color: #1B1E26; */
+  background-image: radial-gradient(circle closest-side at 65% center, #079a6b, #1B1E26);
+
+  border-radius: 2rem;
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  height: 100vh;
+}
+
+.share-button{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+  background-color: #414A5B;
+  border-radius: 2.5rem;
+  width: 13rem;
+}
+
+.share-button-text{
+  color: #FFF;
+  /* font-family: Satoshi; */
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.75rem;
+  text-transform: uppercase;
+}
+
+.sh-p-12{
+  padding: 0 8rem;
+}
+
+.share-section-header{
+  color: #D9F9F8;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 4.5rem;
+}
+
+.share-section-sub{
+  color: #FFF;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 2rem;
+  width: 34.6875rem;
+}
+
+.share-section-button-alt-tr{
+  background: transparent !important;
+  border: 1px solid #414A5B !important;
+}
+
+.share-section-button-alt{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  width: 13.75rem;
+  height: 3.5rem;
+  background: linear-gradient(49deg, #2DDCBD 0%, #00B9C2 100%);
+}
+
+.share-button-text-alt{
+  text-align: center;
+  color: #FFF;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.375rem;
+  text-transform: uppercase;
 }
