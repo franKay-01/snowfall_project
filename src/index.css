@@ -169,6 +169,11 @@ div.nav-card {
   line-height: 1.375rem;
 }
 
+.download-section{
+  background-image: none !important;
+  background: #31353c;
+}
+
 .share-section{
   display: grid;
   justify-content: center;
@@ -181,10 +186,14 @@ div.nav-card {
   border-radius: 2rem;
 }
 
+.center-container-alt{
+  display: flex;
+  justify-content: center;
+}
+
 .center-container {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
   height: 100vh;
 }
 
@@ -255,4 +264,370 @@ div.nav-card {
   font-weight: 700;
   line-height: 1.375rem;
   text-transform: uppercase;
+}
+
+.buy-defi-heading{
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 4.5rem;
+  width: 385px;
+}
+
+.snowball-heading{
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 4.5rem;
+  width: 385px;
+  display: contents;
+}
+
+.snowball-button{
+  float: right;
+  display: flex;
+  width: 13.75rem;
+  height: 3.5rem;
+  padding: 1.0625rem 0rem;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 1rem;
+  border: 1px solid #E6EBF4;
+  background: #FFF;
+}
+
+.snowball-button-text{
+  color:#414A5B;
+  text-align: center;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.375rem;
+  text-transform: uppercase;
+}
+
+.snowball-media-lg{
+  width: 30rem;
+  height: 36.25rem;
+  border-radius: 1.5rem;
+}
+
+.snowball-media-n-lg{
+  width: 33rem;
+  height: 17.125rem;
+  border-radius: 1.5rem;
+}
+
+.snowball-media-1{
+  background: url('./assets/podcast.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.snowball-media-2{
+  background: url('./assets/man.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.snowball-media-3{
+  background: url('./assets/investor.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.snowball-media-sm{
+  width: 21.5625rem;
+  height: 21.5625rem;
+  border-radius: 1.5rem;
+}
+
+.snowball-media-top-button{
+  justify-content: center;
+  display: inline-flex;
+  width: 6.8rem;
+  height: 3rem;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 6.25rem;
+  background:#414A5B;
+}
+
+.snowball-media-top-button-text{
+  color:#FFF;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.75rem;
+  text-transform: uppercase;
+}
+
+.snowball-media-bottom-text{
+  color:#FFF;
+  width: 31rem;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 3rem;
+}
+
+.snowball-media-bottom-text-n{
+  color:#FFF;
+  width: 24rem;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.25rem;
+}
+
+
+.snowball-media-bottom-date{
+  color:#FFF;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+.buy-defi-sub{
+  display: flex;
+  width: 35rem;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 2rem;
+}
+
+.buy-defi-image{
+  height: 40rem;
+  width: 28rem;
+}
+
+.buy-defi-button{
+  display: inline-flex;
+  padding: 0.75rem 6.8125rem 0.75rem 1.5rem;
+  align-items: center;
+  width: min-content;
+  gap: 1rem;
+  border-radius: 5.0035rem;
+  border: 1px solid #E6EBF4;
+  background:#F5F8FA;
+}
+
+.buy-defi-button-text{
+  color:#414A5B;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.80125rem;
+  letter-spacing: 0.004rem;
+}
+
+.bg-c-black{
+  background: #1B1E26;
+}
+
+.concave-border {
+  position: relative;
+  border-radius: 0 0 60px 60px;
+  padding: 20px;
+}
+
+.concave-border-2 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-radius: 60px 60px 0 0;
+  padding: 20px;
+  
+}
+
+.snowball-money-section{
+  width: 23.75rem;
+  height: 3.5rem;
+  border-radius: 6.25rem;
+  background: #282D39;
+  justify-content: end;
+  align-items: center;
+  padding: 0.2rem;
+}
+
+.snowball-money-section-sub{
+  width: 11.5625rem;
+  height: 3rem;
+  border-radius: 6.25rem;
+  background: rgba(20, 22, 28, 0.60);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow:  0px 0px 0px 0px black, -2px 1px 15px 0px black;
+}
+
+.snowball-money-button-text{
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1rem;
+  letter-spacing: -0.0125rem;
+}
+
+.snowball-money-button-text-alt{
+  color: #00B9C2 !important;
+}
+
+.snowball-money-header{
+  width: 28.1875rem;
+  color:#D9F9F8;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 4rem;
+}
+
+.snowball-money-sub{
+  font-size: 1rem;
+  color: white;
+  width: 25.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+.snowball-money-hash{
+  color: #838B9D;
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 3.75rem;
+}
+
+.snowball-frame-1{
+  height: 36.25rem;
+  width: 100%;
+  background: url('./assets/frame_1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.snowball-frame-2{
+  height: 36.25rem;
+  background: url('./assets/frame_2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.snowball-frame-h{
+  height: 56rem;
+}
+
+.brand-header{
+  display: flex;
+  color: #282D39;
+  width: 30rem;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 4.5rem;
+}
+
+.brand-header-sub{
+  width: 25rem;
+  color: #282D39;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25rem;
+}
+
+.brand-input-box{
+  width: 34.125rem;
+  height: 3rem;
+  padding: 0rem 1rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 0.625rem;
+  background: #F5F8FA;
+}
+
+.brand-input-box-alt{
+  width: auto !important;
+}
+
+.main-input-box{
+  background: transparent;
+  width: 100%;
+}
+
+.main-input-box:focus{
+  outline: none !important;
+}
+
+.main-input-box:hover{
+  outline: none !important;
+}
+
+.brand-button{
+  display: flex;
+  width: 34.125rem;
+  height: 3.5rem;
+  padding: 1.00963rem 4.47706rem;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 1rem;
+  background: linear-gradient(49deg, #2DDCBD 0%, #00B9C2 100%);
+}
+
+.brand-button-text{
+  color:  #FFF;
+  text-align: center;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.375rem;
+  text-transform: uppercase;
+}
+
+.brand-card{
+  background-image: url('./assets/brand_card.png');
+  display: grid;
+  justify-content: center;
+  width: 36.25rem;
+  position: relative;
+  height: 38.625rem;
+}
+
+.brand-card-button{
+  position: absolute;
+  right: 3rem;
+  bottom: 5rem;
+  width: 30.25rem;
+  height: 3.5rem;
+  border-radius: 1rem;
+  border: 1px solid #E6EBF4;
+  background: #FFF;
+}
+
+.brand-card-button-text{
+  color:  #414A5B;
+  text-align: center;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.375rem;
+  text-transform: uppercase;
+}
+
+.download-img-position{
+  position: absolute;
+  right: 8rem;
+  bottom: 0rem;
 }
