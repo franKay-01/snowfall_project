@@ -45,6 +45,82 @@ export default function ReferralRule() {
         </div>
 
       </div>
+      <div className="grid grid-cols-2 gap-4 mt-8">
+        <div className="grid grid-cols-2 gap-4">
+          <div style={{
+            width: "100%",
+            height: "22.5rem",
+            flexShrink: 0,
+            borderRadius: "24px",
+            background:"#F5F8FA"
+          }}>
+            <div>
+              <p style={{
+                color: "#414A5B",
+                fontSize: "1.5rem",
+                fontFamily: "Satoshi",
+                fontWeight: 700,
+                lineHeight:"1.75rem"
+              }}>Users must have an <span className="text-emerald-400">active account</span> with the platform</p>
+            </div>
+          </div>
+          <div style={{
+            width: "100%",
+            height:" 22.5rem",
+            flexShrink: 0,
+            borderRadius: "24px",
+            background: "#F5F8FA"
+          }}>02</div>
+        </div>
+        <div>
+          <div style={{
+            width: "100%",
+            height: "22.5rem",
+            flexShrink: 0,
+            borderRadius: "24px",
+            background: "#F5F8FA"
+          }}>03</div>
+        </div>
+
+      </div>
+      <div className="grid grid-cols-2 gap-4 mt-8">
+        <div className="grid grid-cols-2 gap-4">
+          <div style={{
+            width: "100%",
+            height: "22.5rem",
+            flexShrink: 0,
+            borderRadius: "24px",
+            background:"#F5F8FA"
+          }}>
+            <div>
+              <p style={{
+                color: "#414A5B",
+                fontSize: "1.5rem",
+                fontFamily: "Satoshi",
+                fontWeight: 700,
+                lineHeight:"1.75rem"
+              }}>Users must have an <span className="text-emerald-400">active account</span> with the platform</p>
+            </div>
+          </div>
+          <div style={{
+            width: "100%",
+            height:" 22.5rem",
+            flexShrink: 0,
+            borderRadius: "24px",
+            background: "#F5F8FA"
+          }}>02</div>
+        </div>
+        <div>
+          <div style={{
+            width: "100%",
+            height: "22.5rem",
+            flexShrink: 0,
+            borderRadius: "24px",
+            background: "#F5F8FA"
+          }}>03</div>
+        </div>
+
+      </div>
     </div>
   )
 }

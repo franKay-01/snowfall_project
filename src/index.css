@@ -75,10 +75,13 @@ div.nav-card {
 }
 
 .share-earn-banner {
-  background-image: url("assets/referral-share-earn.png");
-  border-radius: 1.5rem;
+  /* background-image: url("assets/referral-share-earn.png"); */
+  /* border-radius: 1.5rem; */
   height: auto;
   width: auto;
+  border-radius: 32px;
+  background: linear-gradient(179deg, rgba(19, 91, 92, 0.64) 0%, rgba(74, 145, 152, 0.00) 100%), url("assets/referral-share-earn.png"), lightgray -8px -132px / 100.87% 217.5% no-repeat;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .faq {
