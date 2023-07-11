@@ -28,7 +28,14 @@ export default function FAQ() {
       title: 'Can I refer multiple users?',
       content: 'Content for Item 2',
     },
-    // Add more items as needed
+    {
+      title: 'Can I refer multiple users?',
+      content: 'Content for Item 2',
+    },
+    {
+      title: 'Can I refer multiple users?',
+      content: 'Content for Item 2',
+    },
   ];
 
   return (

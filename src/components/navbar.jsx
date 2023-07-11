@@ -48,9 +48,9 @@ export default function Navbar() {
                 <div className="hidden sm:block">
                   <div className="flex space-x-4 nav-card">
                     <NavLink activeStyle={{ color:'#5754a8' }} className='block px-3 py-2 nav-bar-text' exact to="/">Home</NavLink>
-                    <NavLink activeStyle={{ color:'#5754a8' }} className='block px-3 py-2 nav-bar-text' exact to="/">Airdrop</NavLink>
-                    <NavLink activeStyle={{ color:'#5754a8' }} className='block px-3 py-2 nav-bar-text' exact to="/">Referral</NavLink>
-                    <NavLink activeStyle={{ color:'#5754a8' }} className='block px-3 py-2 nav-bar-text' exact to="/">Team</NavLink>
+                    <NavLink activeStyle={{ color:'#5754a8' }} className='block px-3 py-2 nav-bar-text' exact to="/airdrop">Airdrop</NavLink>
+                    <NavLink activeStyle={{ color:'#5754a8' }} className='block px-3 py-2 nav-bar-text' exact to="/referral">Referral</NavLink>
+                    <NavLink activeStyle={{ color:'#5754a8' }} className='block px-3 py-2 nav-bar-text' exact to="/career">Team</NavLink>
                     <NavLink activeStyle={{ color:'#5754a8' }} className='block px-3 py-2 nav-bar-text' exact to="/">Blog</NavLink>
                     <div className='mini-nav-card flex flex-row space-x-2'>
                       <img src={AppleLogo} alt=""/>

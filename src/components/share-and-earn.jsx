@@ -4,7 +4,7 @@ import GooglePlayImg from "../assets/google_play_img.png"
 
 export default function ReferralShareEarn() {
   return (
-    <div className="share-earn-banner overflow-hidden mt-4  grid justify-center">
+    <div className="share-earn-banner overflow-hidden mt-8  grid justify-center">
       {/* <img
         className="w-full h-auto"
         src={ReferralBackgroundImg}
@@ -15,7 +15,17 @@ export default function ReferralShareEarn() {
       <div className="max-w-4xl flex flex-col mx-auto my-auto p-24 justify-center items-center">
         <div className="text-white text-center px-4">
         <div className="flex flex-col h-full">
-          <h4 className="text-md md:text-2xl lg:text-4xl items-center justify-center">
+          <h4 
+            className="items-center justify-center"
+            style={{
+                color: "#FFF",
+                textAlign: "center",
+                fontSize: "4rem",
+                fontFamily: "Satoshi",
+                fontWeight: 500,
+                lineHeight: "4rem"
+            }}
+            >
             Share and Earn
           </h4>
           <p className="text-md md:text-xl lg:text-2xl mt-2 whitespace-pre-line">
