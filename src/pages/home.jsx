@@ -23,8 +23,8 @@ export default function Home(){
     <>
       <Navbar/>
       <div className="home-banner grid justify-center">
-        <div className="container flex flex-row">
-          <div className="text-container flex flex-col">
+        <div className="container flex flex-col lg:flex-row md:flex-row">
+          <div className="text-container flex flex-col sm:order-2">
             <h1 className="banner-text">
               Buy Crypto, <i>invest</i> in DeFi
             </h1>
@@ -36,7 +36,7 @@ export default function Home(){
               <img src={GooglePlayImg} alt=""/>
             </div>
           </div>
-          <div>
+          <div className="sm:order-1">
             <img src={BannerPhoneImg} alt=""/>
           </div>
           

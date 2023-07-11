@@ -981,3 +981,53 @@ div.nav-card {
   font-weight: 200;
   line-height: 1.375rem;
 }
+
+.referral-program-sub-text-color{
+  color: #00B9C2 !important;
+}
+
+@media screen and (max-width: 768px) {
+  .banner-text{
+    font-size: 2.5rem;
+    font-weight: 600;
+    width: 15rem;
+    line-height: 5rem; 
+    color: #282D39;
+  }
+
+  .banner-sub-text{
+    margin-top: 1rem;
+    font-size: 0.9375rem;
+    width: 18rem;
+    font-weight: 100;
+    color: #282D39;
+  }
+}
+
+@media screen and (min-device-width: 1024px) and (max-device-width: 2024px) {
+
+}
+
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+
+}
+
+@media screen and (max-device-width: 640px) and (orientation: landscape) {
+
+}
+
+@media screen and (max-device-width: 640px) {
+
+}
+
+@media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+@media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3) {
+
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+}

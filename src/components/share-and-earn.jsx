@@ -4,7 +4,7 @@ import GooglePlayImg from "../assets/google_play_img.png"
 
 export default function ReferralShareEarn() {
   return (
-    <div className="share-earn-banner overflow-hidden mt-8  grid justify-center">
+    <div className="share-earn-banner overflow-hidden mt-24 grid justify-center">
       {/* <img
         className="w-full h-auto"
         src={ReferralBackgroundImg}
