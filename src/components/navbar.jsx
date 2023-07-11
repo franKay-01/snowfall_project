@@ -21,10 +21,6 @@ const navigation = [
   { name: 'WHOLESALE', href: '/calculator', current: false },
 ]
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
-}
-
 export default function Navbar() {
   return (
     
@@ -46,7 +42,7 @@ export default function Navbar() {
               </div>
 
               <Link className='z-50' to={"/"}>
-                <img className="p-4" src={Logo} />
+                <img className="p-4" src={Logo} alt=""/>
               </Link>
               <div className="flex-1 flex items-center sm:items-stretch z-1 nav-items-margin">
                 <div className="hidden sm:block">
@@ -57,36 +53,36 @@ export default function Navbar() {
                     <NavLink activeStyle={{ color:'#5754a8' }} className='block px-3 py-2 nav-bar-text' exact to="/">Team</NavLink>
                     <NavLink activeStyle={{ color:'#5754a8' }} className='block px-3 py-2 nav-bar-text' exact to="/">Blog</NavLink>
                     <div className='mini-nav-card flex flex-row space-x-2'>
-                      <img src={AppleLogo}/>
+                      <img src={AppleLogo} alt=""/>
                       <div className='vertical-hr'></div>
-                      <img src={GooglePlayLogo}/>
+                      <img src={GooglePlayLogo} alt=""/>
                     </div>
                   </div>                  
                 </div>
               </div>
               <div className="hidden lg:block lg:w-auto mr-4">
                 <a href='/get-started' className="brown-button button-margin-left">
-                  <img src={TwitterLogo}/>
+                  <img src={TwitterLogo} alt=""/>
                 </a>
               </div>
               <div className="hidden lg:block lg:w-auto mr-4">
                 <a href='/get-started' className="brown-button button-margin-left">
-                  <img src={TelegramLogo}/>
+                  <img src={TelegramLogo} alt=""/>
                 </a>
               </div>
               <div className="hidden lg:block lg:w-auto mr-4">
                 <a href='/get-started' className="brown-button button-margin-left">
-                  <img src={InstagramLogo}/>
+                  <img src={InstagramLogo} alt=""/>
                 </a>
               </div>
               <div className="hidden lg:block lg:w-auto mr-4">
                 <a href='/get-started' className="brown-button button-margin-left">
-                  <img src={LinkedInLogo}/>
+                  <img src={LinkedInLogo} alt=""/>
                 </a>
               </div>
               <div className="hidden lg:block lg:w-auto">
                 <a href='/get-started' className="brown-button button-margin-left">
-                  <img src={FacebookLogo}/>
+                  <img src={FacebookLogo} alt=""/>
                 </a>
               </div>
             </div>
@@ -99,7 +95,7 @@ export default function Navbar() {
                   {open ? (
                     <XIcon className="block h-12 w-12 text-white" aria-hidden="true" />
                   ) : (
-                    <img className='w-10' src={MenuIcon}/>
+                    <img className='w-10' src={MenuIcon} alt=""/>
                   )}
               </Disclosure.Button>
 
