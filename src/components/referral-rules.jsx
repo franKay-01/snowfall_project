@@ -35,10 +35,9 @@ export default function ReferralRule() {
                 <p style={{
                   color: "#414A5B",
                   fontSize: "1.4rem",
-                  fontFamily: "Satoshi",
                   fontWeight: 700,
                   lineHeight: "1.75rem"
-                }}>Users must have an <span className="text-emerald-400">active account</span> with the platform</p>
+                }}>Users must have an <span className="referral-program-sub-text-color">active account</span> with the platform</p>
               </div>
 
               <div className="relative mt-4 flex-grow-0">
@@ -60,16 +59,14 @@ export default function ReferralRule() {
                 <p style={{
                   color: "#414A5B",
                   fontSize: "1.4rem",
-                  fontFamily: "Satoshi",
                   fontWeight: 700,
                   lineHeight: "1.75rem"
-                }}>Each user will be given a <span className="text-emerald-400">unique referral code</span></p>
+                }}>Each user will be given a <span className="referral-program-sub-text-color">unique referral code</span></p>
               </div>
               <div className="relative mx-auto mt-auto flex-grow">
                 <p style={{
                   color: "#414A5B",
                   fontSize: "0.8rem",
-                  fontFamily: "Satoshi",
                   fontWeight: 100,
                   lineHeight: "1rem"
                 }}>that they can share with their friends, family, and colleagues.</p>
@@ -87,20 +84,19 @@ export default function ReferralRule() {
               <div className="relative mb-8 pb-8 pt-8 mt-8">
                 <img className="mx-auto mt-auto" src={RefferalGroup} alt="Referral Done" />
               </div>
-              <div className="relative mb-2 pl-6">
+              <div className="relative pl-6">
                 <p style={{
                   color: "#414A5B",
                   fontSize: "1.4rem",
-                  fontFamily: "Satoshi",
                   fontWeight: 700,
-                  lineHeight: "1.75rem"
-                }}>The reward will be based on the <span className="text-emerald-400">activities</span></p>
+                  lineHeight: "1.75rem",
+                  width: "15.375rem"
+                }}>The reward will be based on the <span className="referral-program-sub-text-color">activities</span></p>
               </div>
               <div className="relative pl-6 mb-4">
                 <p style={{
                   color: "#414A5B",
                   fontSize: "0.8rem",
-                  fontFamily: "Satoshi",
                   fontWeight: 100,
                   lineHeight: "1rem"
                 }}>of the new user and may change over time.</p>
@@ -114,15 +110,16 @@ export default function ReferralRule() {
           <div class="flex-auto w-64" style={{
             borderRadius: "24px",
             border: "1px solid #E6EBF4",
-            background: "#1B1E26"
+            background: "#1B1E26",
+            height: "20rem"
           }}>
             <div className="relative">
-              <div className="flex flex-row">
+              <div className="flex flex-row relative">
                 <div className="ml-6 mt-4 pt-4 mr-6 pr-6 gap-4 pb-4">
-                  <p className="text-base font-semibold text-white leading-6">New users must sign up using the referral code in order to be <span className="text-emerald-400">counted as a referral</span></p>
-                  <p className="text-sm font-light text-white leading-5">The referrer will only receive a reward if the new user completes one of the following actions:</p>
+                  <p className="text-base w-72 font-semibold text-white leading-6">New users must sign up using the referral code in order to be <span className="referral-program-sub-text-color">counted as a referral</span></p>
+                  <p className="text-sm w-80 font-light text-white leading-5">The referrer will only receive a reward if the new user completes one of the following actions:</p>
                 </div>
-                <div>
+                <div className="absolute right-0">
                   <img src={RefferalGroupHand} alt="Referral Group Hand" />
                 </div>
 
@@ -161,7 +158,7 @@ export default function ReferralRule() {
                 fontFamily: "Satoshi",
                 fontWeight: 700,
                 lineHeight: "1.75rem"
-              }}>The reward will be based on the <span className="text-emerald-400">activities</span></p>
+              }}>The reward will be based on the <span className="referral-program-sub-text-color">activities</span></p>
             </div>
             <div className="relative pl-6 mb-4 pb-4 pr-12">
               <p style={{
@@ -173,19 +170,19 @@ export default function ReferralRule() {
               }}>of the new user and may change over time.</p>
             </div> */}
           </div>
-          <div className="flex-auto w-32 ">
+          <div className="flex-auto w-32 h-72">
             <div className="flex flex-col" style={{
               width: "100%",
               flexShrink: 0,
               borderRadius: "24px",
               background: "#F5F8FA"
             }}>
-              <div className="flex gap-2 flex-row">
+              <div className="grid grid-cols-2">
                 <div className="ml-4 mt-4 pt-4 pl-4">
                   <img className="mt-auto mr-2" src={ReferralIcon4} alt="Referral Icon 4" />
                 </div>
                 <div>
-                  <img className="mt-auto" src={ReferralMorflax} alt="Referral Icon 4" />
+                  <img className="mt-auto h-40" src={ReferralMorflax} alt="Referral Icon 4" />
                 </div>
               </div>
 
@@ -197,7 +194,7 @@ export default function ReferralRule() {
                     // fontFamily: "Satoshi",
                     fontWeight: 700,
                     lineHeight: "1.75rem"
-                  }}>The platform reserves the right to modify these rules at any time <span className="text-emerald-400">without prior notice</span></p>
+                  }}>The platform reserves the right to modify these rules at any time <span className="referral-program-sub-text-color">without prior notice</span></p>
                 </div>
                 <div className="relative pl-6 mb-4">
                   <p style={{
@@ -284,8 +281,8 @@ export default function ReferralRule() {
             </div>
           </div>
           <div class="flex-auto w-64" style={{
-            borderRadius: "24px",
-            border: "1px solid #E6EBF4",
+            borderRadius: "1.5rem",
+            boxShadow: "0px 8px 40px 0px rgba(225, 230, 236, 0.40)",
             background: "#FFF"
           }}>
             <div className="relative">
@@ -293,7 +290,7 @@ export default function ReferralRule() {
                
                 <div className="ml-6 mt-4 pt-4 mr-6 pr-6 gap-4 pb-4">
                 <h3>Explanation of reward system</h3>
-                  {/* <p className="text-base font-semibold text-white leading-6">New users must sign up using the referral code in order to be <span className="text-emerald-400">counted as a referral</span></p> */}
+                  {/* <p className="text-base font-semibold text-white leading-6">New users must sign up using the referral code in order to be <span className="referral-program-sub-text-color">counted as a referral</span></p> */}
                   <p className="text-sm font-light leading-5">
                   The rewards for this referral program are based on a percentage of the fees generated
 by the new user. The referrer will receive 90% of the fees generated by their referral.

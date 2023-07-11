@@ -8,7 +8,7 @@ const AirDropPage = React.lazy(()=> import('./pages/airdrop'));
 
 const App = () => {
   return (
-    <React.Suspense fallback={"..... loading"}>
+    <React.Suspense>
       <Routes>
         <Route path='/' element={<HomePage/>}></Route>
         <Route path='/career' element={<CareerPage/>}></Route>
