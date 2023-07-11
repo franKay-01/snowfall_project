@@ -1,3 +1,4 @@
+import DownloadSection from "../components/download_section";
 import FAQ from "../components/faqs";
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
@@ -18,6 +19,7 @@ export default function Referral(){
            <ReferralShareEarn />
            <ReferralRule />
            <FAQ />
+           <DownloadSection />
         </div>
 
 

@@ -661,3 +661,9 @@ div.nav-card {
   bottom: 0rem;
 }
 
+.iphone-screen-rules {
+  background: url("assets/iPhone_14_Pro_Device.png"), lightgray 50% / cover no-repeat;
+  display: flex;
+  flex-shrink: 0;
+}
+
