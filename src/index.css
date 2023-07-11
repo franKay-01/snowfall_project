@@ -5,6 +5,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Satoshi:ital,wght@0,400;0,500;0,700;1,700&display=swap");
 
+html{
+  background: #fff;
+}
+
 .container {
   @apply m-auto max-w-screen-xl p-4
 }
@@ -12,6 +16,12 @@
 .text-container{
   display: flex;
   justify-content: center;
+}
+
+.career-text-container{
+  margin: 5rem auto;
+  padding: 0 18rem;
+  position: relative;
 }
 
 .mini-nav-card{
@@ -71,7 +81,7 @@ div.nav-card {
 }
 
 .nav-bg-custom{
-  background-color: #F8F9FC;
+  background-color: #fff;
 }
 
 .share-earn-banner {
@@ -134,6 +144,14 @@ div.nav-card {
 .gradient-text{
   font-size: 80px;
   line-height: 1;
+}
+
+.airdrop-text-gradient{
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.25rem;
+  width: 14.25rem;
 }
 
 .d-bg{
@@ -203,11 +221,15 @@ div.nav-card {
   background: #31353c;
 }
 
+.share-section-alt{
+  height: 40rem !important;
+}
+
 .share-section{
   display: grid;
   justify-content: center;
   width: 90%;
-  height: 36.25rem;
+  height: 30rem;
   flex-shrink: 0;
   /* background-color: #1B1E26; */
   background-image: radial-gradient(circle closest-side at 65% center, #079a6b, #1B1E26);
@@ -253,12 +275,47 @@ div.nav-card {
   padding: 0 8rem;
 }
 
+.sh-p-12-alt{
+  padding: 3rem 8rem;
+}
+
 .share-section-header{
   color: #D9F9F8;
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-style: normal;
+  width: 30rem;
   font-weight: 400;
   line-height: 4.5rem;
+}
+
+.share-section-image{
+  height: 35rem;
+}
+
+.share-section-image-alt{
+  height: 45rem;
+  width: 50rem;
+}
+
+.header-alt-1{
+  width: auto !important;
+}
+
+.header-alt{
+  color: #282D39;
+  font-size: 3rem;
+  width: 28rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 3.5rem;
+}
+
+.header-alt-sub{
+  color: #282D39;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 1.5rem;
 }
 
 .share-section-sub{
@@ -471,7 +528,7 @@ div.nav-card {
   width: 100%;
   border-radius: 60px 60px 0 0;
   padding: 20px;
-  
+  background: #fff;
 }
 
 .snowball-money-section{
@@ -590,9 +647,14 @@ div.nav-card {
   width: auto !important;
 }
 
+.brand-input-box-alt-1{
+  height: auto !important;
+}
+
 .main-input-box{
   background: transparent;
   width: 100%;
+  height: inherit;
 }
 
 .main-input-box:focus{
@@ -601,6 +663,10 @@ div.nav-card {
 
 .main-input-box:hover{
   outline: none !important;
+}
+
+.brand-button-alt{
+  width: auto !important;
 }
 
 .brand-button{
@@ -655,9 +721,263 @@ div.nav-card {
   text-transform: uppercase;
 }
 
+.download-img-position-alt{
+  right: -1rem !important
+}
+
 .download-img-position{
   position: absolute;
   right: 8rem;
   bottom: 0rem;
 }
 
+.career-section{
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 30rem;
+  flex-shrink: 0;
+  background-image: url('./assets/career-page-img.png');
+  border-radius: 2rem;
+}
+
+.airdrop-frame{
+  height: 55rem;
+  background-image: url('./assets/frame_4.png') !important;
+}
+
+.airdrop-section{
+  background-image: url('./assets/career-page-img.png') !important;
+}
+
+.airdrop-icon-img{
+  width: 4rem;
+  height: 4rem;
+}
+
+.airdrop-banner-header{
+  color: white !important;
+}
+
+.airdrop-img{
+  width: 30rem;
+}
+
+.airdrop-card-alt{
+  /* height: 53.9375rem; */
+  border-radius: 2rem;
+  background: #FFF;
+  box-shadow: 0px 8px 40px 0px rgba(225, 230, 236, 0.40);
+}
+
+.airdrop-campaign-header{
+  color: #282D39;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.5rem;
+}
+
+.airdrop-card{
+  width: 17rem;
+  height: 17rem;
+  border-radius: 2rem;
+  background: #FFF;
+  box-shadow: 0px 8px 40px 0px rgba(225, 230, 236, 0.40);
+}
+
+.airdrop-header{
+  width: 29.25rem;
+}
+
+.airdrop-header-sub{
+  width: 29.25rem;
+  color: #282D39;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 2rem;
+}
+
+.career-banner-header{
+  color: #282D39;
+  text-align: center;
+  width: 40.875rem;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 4rem;
+}
+
+.career-banner-sub{
+  margin-top:2rem;
+  color:#282D39;
+  text-align: center;
+  width: 39.125rem;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+
+.career-world-img{
+  position: absolute;
+  right: 0;
+  top: 16rem;
+}
+
+.career-heading{
+  color: #282D39;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 4.5rem;
+}
+
+.career-heading-sub{
+  color: #414A5B;
+  width: 32rem;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 1.375rem;
+}
+
+.z-down{
+  z-index: 1;
+}
+
+.z-up{
+  z-index: 99;
+  position: sticky;
+}
+
+.career-button{
+  display: flex;
+  width: 13rem;
+  height: 3.5rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  background: linear-gradient(49deg, #2DDCBD 0%, #00B9C2 100%);
+}
+
+.career-button-text{
+  color: #FFF;
+  text-align: center;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.375rem;
+  text-transform: uppercase;
+}
+
+.perk-card{
+  width: 23.5rem;
+  height: 18rem;
+  border-radius: 1.5rem;
+  background: #F9FBFC;
+}
+
+.perk-card-header{
+  color: #282D39;
+  font-size: 2rem;
+  width: 14rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.25rem;
+}
+
+.perk-card-sub{
+  color: #838B9D;
+  width: 18rem;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.375rem;
+}
+
+.role-card{
+  width: 36rem;
+  height: 12rem;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  background: #FFF;
+  box-shadow: 0px 8px 40px 0px rgba(225, 230, 236, 0.40);
+}
+
+.role-card-info-text{
+  color: #414A5B;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.75rem;
+  text-transform: uppercase;
+}
+
+.role-card-info{
+  border-radius: 2.5rem;
+  background: #D9F9F8;
+  height: 1.5rem;
+  width: fit-content;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.role-card-info-date{
+  color:#838B9D;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.375rem;
+}
+
+.role-card-info-name{
+  width: 23rem;
+  color: #282D39;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.25rem;
+}
+
+.role-card-info-extra{
+  color:#838B9D;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.375rem;
+  position: absolute;
+  bottom: 0.5rem;
+}
+
+.dialog-box{
+  border-radius: 2rem;
+  width: 61.75rem;
+  padding: 2.5rem;
+}
+
+.submit-application-button{
+  background: linear-gradient(49deg, #2DDCBD 0%, #00B9C2 100%);
+}
+
+.thank-you-note{
+  width: 25.6875rem;
+  color: #282D39;
+  text-align: center;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 3.5rem;
+}
+
+.thank-you-note-sub{
+  color: #414A5B;
+  text-align: center;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 1.375rem;
+}

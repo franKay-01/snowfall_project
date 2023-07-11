@@ -1,5 +1,3 @@
-import { decode } from 'html-entities';
-
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
 import BannerPhoneImg from "../assets/banner_phone.png"
@@ -250,7 +248,7 @@ export default function Home(){
             Be a part of Snowball. Join our ambassadorship program
             </h1>
             <div className="brand-input-box flex flex-row">
-              <input className='main-input-box'  placeholder={decode("Full Name*")}/>
+              <input className='main-input-box'  placeholder="Full Name*"/>
             </div>
             <div className="brand-input-box flex flex-row">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">

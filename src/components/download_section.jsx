@@ -18,7 +18,7 @@ export default function DownloadSection() {
           </div>
         </div>
         <div className="grid justify-center items-center download-img-position">
-          <img src={DownloadPhoneImg} alt=""/>
+          <img className="share-section-image" src={DownloadPhoneImg} alt=""/>
         </div>          
       </div>
     </div>
