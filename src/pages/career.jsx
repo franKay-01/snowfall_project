@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react';
+import { useState } from 'react';
 
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
@@ -30,10 +30,6 @@ export default function Career(){
     setIsRoleOpen(true)
   }
 
-  const setBackFunction = () => {
-    setIsRoleOpen(true)
-    setIsApplyOpen(false)
-  }
   return (
     <>
       <Navbar/>
@@ -158,7 +154,7 @@ export default function Career(){
           </div>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-4">
-          <div className="role-card flex flex-col space-y-2" onClick={openRole}>
+          <div className="role-card flex flex-col space-y-2 relative" onClick={openRole}>
             <div className="flex flex-row justify-between">
               <div className="role-card-info">
                 <h1 className="role-card-info-text">ENGINEERING</h1>

@@ -143,6 +143,14 @@ div.nav-card {
   line-height: 1;
 }
 
+.airdrop-text-gradient{
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.25rem;
+  width: 14.25rem;
+}
+
 .d-bg{
   background-image: url('./assets/most_popular_network.png');
   background-size: contain;
@@ -210,6 +218,10 @@ div.nav-card {
   background: #31353c;
 }
 
+.share-section-alt{
+  height: 40rem !important;
+}
+
 .share-section{
   display: grid;
   justify-content: center;
@@ -260,6 +272,10 @@ div.nav-card {
   padding: 0 8rem;
 }
 
+.sh-p-12-alt{
+  padding: 3rem 8rem;
+}
+
 .share-section-header{
   color: #D9F9F8;
   font-size: 3.5rem;
@@ -271,6 +287,11 @@ div.nav-card {
 
 .share-section-image{
   height: 35rem;
+}
+
+.share-section-image-alt{
+  height: 45rem;
+  width: 50rem;
 }
 
 .header-alt-1{
@@ -641,6 +662,10 @@ div.nav-card {
   outline: none !important;
 }
 
+.brand-button-alt{
+  width: auto !important;
+}
+
 .brand-button{
   display: flex;
   width: 34.125rem;
@@ -693,6 +718,10 @@ div.nav-card {
   text-transform: uppercase;
 }
 
+.download-img-position-alt{
+  right: -1rem !important
+}
+
 .download-img-position{
   position: absolute;
   right: 8rem;
@@ -700,7 +729,6 @@ div.nav-card {
 }
 
 .career-section{
-  /* display: inline-flex; */
   justify-content: center;
   align-items: center;
   width: 90%;
@@ -708,6 +736,64 @@ div.nav-card {
   flex-shrink: 0;
   background-image: url('./assets/career-page-img.png');
   border-radius: 2rem;
+}
+
+.airdrop-frame{
+  height: 55rem;
+  background-image: url('./assets/frame_4.png') !important;
+}
+
+.airdrop-section{
+  background-image: url('./assets/career-page-img.png') !important;
+}
+
+.airdrop-icon-img{
+  width: 4rem;
+  height: 4rem;
+}
+
+.airdrop-banner-header{
+  color: white !important;
+}
+
+.airdrop-img{
+  width: 30rem;
+}
+
+.airdrop-card-alt{
+  /* height: 53.9375rem; */
+  border-radius: 2rem;
+  background: #FFF;
+  box-shadow: 0px 8px 40px 0px rgba(225, 230, 236, 0.40);
+}
+
+.airdrop-campaign-header{
+  color: #282D39;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.5rem;
+}
+
+.airdrop-card{
+  width: 17rem;
+  height: 17rem;
+  border-radius: 2rem;
+  background: #FFF;
+  box-shadow: 0px 8px 40px 0px rgba(225, 230, 236, 0.40);
+}
+
+.airdrop-header{
+  width: 29.25rem;
+}
+
+.airdrop-header-sub{
+  width: 29.25rem;
+  color: #282D39;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 2rem;
 }
 
 .career-banner-header{
