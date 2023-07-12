@@ -39,7 +39,6 @@ export default function Home(){
           <div>
             <img src={BannerPhoneImg} alt=""/>
           </div>
-          
         </div>
         <div className="grid justify-center h-12">
           <div className="flex flex-row">
