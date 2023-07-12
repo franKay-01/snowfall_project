@@ -79,45 +79,45 @@ export default function Career(){
           </div>
           <div className="perk-card flex flex-col space-y-4 p-8">
             <img className="h-14 w-14" src={PerksImg} alt=""/>
-            <h1 className="perk-card-header">Flexible Work Culture</h1>
+            <h1 className="perk-card-header">Paid Birthday & Holidays Off</h1>
             <h1 className="perk-card-sub">
-            We practice flexible work hours, with set collaboration time from 11am to 2pm ET each day.
+            We observe all US federal holidays plus Friday after Thanksgiving and your birthday.
             </h1>
           </div>
           <div className="perk-card flex flex-col space-y-4 p-8">
             <img className="h-14 w-14" src={PerksImg} alt=""/>
-            <h1 className="perk-card-header">Flexible Work Culture</h1>
+            <h1 className="perk-card-header">Flexible Time Off</h1>
             <h1 className="perk-card-sub">
-            We practice flexible work hours, with set collaboration time from 11am to 2pm ET each day.
+            In addition to paid holidays and a week off at the new year, team members receive unlimited PTO.
             </h1>
           </div>
         </div>
         <div className="flex flex-row space-x-4 items-center justify-center">
           <div className="perk-card flex flex-col space-y-4 p-8">
             <img className="h-14 w-14" src={PerksImg} alt=""/>
-            <h1 className="perk-card-header">Flexible Work Culture</h1>
+            <h1 className="perk-card-header">2 Weeks Paid Vacation</h1>
             <h1 className="perk-card-sub">
-            We practice flexible work hours, with set collaboration time from 11am to 2pm ET each day.
+            We encourage you to take time off work because we know it will improve your health, focus, happiness, and productivity.
             </h1>
           </div>
           <div className="perk-card flex flex-col space-y-4 p-8">
             <img className="h-14 w-14" src={PerksImg} alt=""/>
-            <h1 className="perk-card-header">Flexible Work Culture</h1>
+            <h1 className="perk-card-header">Paid Parental & Family Leave</h1>
             <h1 className="perk-card-sub">
-            We practice flexible work hours, with set collaboration time from 11am to 2pm ET each day.
+            We offer generous paid parental and family leave benefits to support full-time team members and their families.
             </h1>
           </div>
           <div className="perk-card flex flex-col space-y-4 p-8">
             <img className="h-14 w-14" src={PerksImg} alt=""/>
-            <h1 className="perk-card-header">Flexible Work Culture</h1>
+            <h1 className="perk-card-header">Professional Development</h1>
             <h1 className="perk-card-sub">
-            We practice flexible work hours, with set collaboration time from 11am to 2pm ET each day.
+            Team members receive a professional development stipend, as well as access to training & learning opportunities.
             </h1>
           </div>
         </div>
       </div>
       <div className="bg-c-black relative">
-        <div className="concave-border bg-slate-100"></div>
+        <div className="concave-border bg-white"></div>
         <div className="bg-c-black flex flex-col pl-4 lg:pl-64 md:pl-60 md:flex-row lg:flex-row lg:space-x-14 md:space-x-24">
           <div className="flex flex-col justify-center space-y-12">
             <div>
@@ -129,9 +129,6 @@ export default function Career(){
               </h1>
             </div>
             
-            <h1 className="snowball-money-hash">
-            #snowballmoney
-            </h1>
           </div>
           <div className="flex flex-row space-x-4">
             <img className="snowball-frame-h" src={Frame3} alt=""/>
@@ -154,7 +151,7 @@ export default function Career(){
           </div>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-4">
-          <div className="role-card flex flex-col space-y-2 relative" onClick={openRole}>
+          <div className="role-card flex flex-col space-y-4 relative" onClick={openRole}>
             <div className="flex flex-row justify-between">
               <div className="role-card-info">
                 <h1 className="role-card-info-text">ENGINEERING</h1>
@@ -171,7 +168,7 @@ export default function Career(){
               Remote . Full-time
             </div>
           </div>
-          <div className="role-card flex flex-col space-y-2 relative">
+          <div className="role-card flex flex-col space-y-4 relative" onClick={openRole}>
             <div className="flex flex-row justify-between">
               <div className="role-card-info">
                 <h1 className="role-card-info-text">ENGINEERING</h1>
@@ -183,6 +180,41 @@ export default function Career(){
             
             <div className="role-card-info-name">
               Senior Backend Engineer
+            </div>
+            <div className="role-card-info-extra">
+              Remote . Full-time
+            </div>
+          </div>
+
+          <div className="role-card flex flex-col space-y-4 relative" onClick={openRole}>
+            <div className="flex flex-row justify-between">
+              <div className="role-card-info">
+                <h1 className="role-card-info-text">ENGINEERING</h1>
+              </div>
+              <div className="role-card-info-date">
+                Mar 22, 2023
+              </div>
+            </div>
+            
+            <div className="role-card-info-name">
+            Senior Backend Engineer
+            </div>
+            <div className="role-card-info-extra">
+              Remote . Full-time
+            </div>
+          </div>
+          <div className="role-card flex flex-col space-y-4 relative" onClick={openRole}>
+            <div className="flex flex-row justify-between">
+              <div className="role-card-info">
+                <h1 className="role-card-info-text">ENGINEERING</h1>
+              </div>
+              <div className="role-card-info-date">
+                Mar 22, 2023
+              </div>
+            </div>
+            
+            <div className="role-card-info-name">
+              Senior Machine Learning Engineer
             </div>
             <div className="role-card-info-extra">
               Remote . Full-time
@@ -216,12 +248,9 @@ export default function Career(){
                   * Coach and influence managers on how to build an amazing team.
                   </div>
                     
-                  <div className='flex flex-col space-y-4 items-center justify-center mb-8'>
+                  <div className='flex flex-col space-y-4 items-center justify-center mt-4'>
                     <button onClick={()=> setApply()} className="brand-button cursor-pointer">
                       <h1 className='brand-button-text'>Apply</h1>
-                    </button>
-                    <button onClick={()=> setIsRoleOpen(false)} className="cursor-pointer">
-                      <span className="get-started-button-text">Close </span>                      
                     </button>
                   </div>
                 </>
@@ -237,7 +266,7 @@ export default function Career(){
           <div className="fixed inset-0 bg-black/30" aria-hidden="true" />
 
           <div className="fixed inset-0 flex justify-center p-8">
-            <Dialog.Panel className="mx-auto rounded bg-white dialog-box-shadow dialog-box-shadow-alt dialog-box">
+            <Dialog.Panel className="mx-auto rounded bg-white dialog-box-shadow dialog-box-shadow-alt dialog-box-alt-2">
               <Dialog.Panel>
                 <Dialog.Title className='flex header-alt header-alt-1 mt-8 text-center justify-center items-center mb-4'>Apply for this Job</Dialog.Title>
                 <hr className="mb-4"></hr>
@@ -300,7 +329,7 @@ export default function Career(){
           <div className="fixed inset-0 bg-black/30" aria-hidden="true" />
 
           <div className="fixed inset-0 flex justify-center p-8">
-            <Dialog.Panel className="mx-auto rounded bg-white dialog-box-shadow dialog-box-shadow-alt dialog-box">
+            <Dialog.Panel className="mx-auto rounded bg-white dialog-box-shadow dialog-box-shadow-alt dialog-box-alt">
               <Dialog.Panel>
                 <>
                   <div className="flex flex-col items-center justify-center space-y-4">

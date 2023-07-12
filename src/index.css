@@ -953,6 +953,20 @@ div.nav-card {
   bottom: 0.5rem;
 }
 
+.dialog-box-alt-2{
+  border-radius: 2rem;
+  width: 45.75rem;
+  height: 45rem;
+  padding: 2.5rem;
+}
+
+.dialog-box-alt{
+  border-radius: 2rem;
+  width: 40.75rem;
+  padding: 2.5rem;
+  height: 35rem;
+}
+
 .dialog-box{
   border-radius: 2rem;
   width: 61.75rem;
