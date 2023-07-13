@@ -15,8 +15,9 @@ export default function Footer() {
         <div className="flex flex-col space-y-4 md:ml-24">
           <div className="flex flex-col space-y-5 text-sm dark:text-gray-400">
             <a rel="noopener noreferrer" className='nav-bar-text' href="/">Home</a>
-            <a rel="noopener noreferrer" className='nav-bar-text' href="/">Referral</a>
-            <a rel="noopener noreferrer" className='nav-bar-text' href="/">Team</a>
+            <a rel="noopener noreferrer" className='nav-bar-text' href="/airdrop">Airdrop</a>
+            <a rel="noopener noreferrer" className='nav-bar-text' href="/referral">Referral</a>
+            <a rel="noopener noreferrer" className='nav-bar-text' href="/career">Team</a>
             <a rel="noopener noreferrer" className='nav-bar-text' href="/">Blog</a>
           </div>
         </div>

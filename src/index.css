@@ -60,6 +60,14 @@ div.nav-card {
   color: #282D39;
 }
 
+.custom-banner-video {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  background-color: transparent;
+}
+
+
 .vertical-hr {
   width: 1px;
   height: 25px;
@@ -370,7 +378,7 @@ div.nav-card {
 }
 
 .snowball-heading{
-  font-size: 4rem;
+  font-size: 3rem;
   font-style: normal;
   font-weight: 500;
   line-height: 4.5rem;
@@ -415,19 +423,19 @@ div.nav-card {
 }
 
 .snowball-media-1{
-  background: url('./assets/podcast.png');
+  background: url('./assets/Assets/Home/News/SnowballPodcast.png');
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .snowball-media-2{
-  background: url('./assets/man.png');
+  background: url('./assets/Assets/Home/News/Snowball_Automating_Cryptocurrency_Investing.png');
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .snowball-media-3{
-  background: url('./assets/investor.png');
+  background: url('./assets/Assets/Home/News/Republic_Invest_in_Snowball_Money.png');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -746,7 +754,7 @@ div.nav-card {
   width: 90%;
   height: 30rem;
   flex-shrink: 0;
-  background-image: url('./assets/career-page-img.png');
+  background-image: url('./assets/Assets/Career/Career.png');
   border-radius: 2rem;
 }
 
@@ -756,7 +764,8 @@ div.nav-card {
 }
 
 .airdrop-section{
-  background-image: url('./assets/career-page-img.png') !important;
+  background-image: url('./assets/Assets/Airdrop/Airdrop_Hero_Image.png') !important;
+  background-size: cover;
 }
 
 .airdrop-icon-img{
@@ -769,7 +778,9 @@ div.nav-card {
 }
 
 .airdrop-img{
-  width: 30rem;
+  width: 35rem;
+  /* background-color: transparent !important; */
+  border-radius: 1.3rem;
 }
 
 .airdrop-card-alt{

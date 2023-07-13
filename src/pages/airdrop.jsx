@@ -1,6 +1,7 @@
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
 import AirDropImg from "../assets/airdrop_screen.png"
+import BootstrapCommunity from "../assets/Assets/Airdrop/Bootstrap_Community.png"
 import AirDrop1Img from "../assets/airdrop_screen_1.png"
 import AirDropIcon1Img from "../assets/airdrop_icon_1.png"
 import AirDropIcon2Img from "../assets/airdrop_icon_2.png"
@@ -23,7 +24,7 @@ export default function AirDrop(){
         </div>
       </div>
       <div className="flex flex-col lg:flex-row md:flex-row items-center justify-center lg:space-x-14 md:space-x-12 mt-24 mb-24">
-        <img className="airdrop-img" src={AirDropImg} alt=""/>
+        <img className="airdrop-img" src={BootstrapCommunity} alt="Bootstrap Community"/>
         <div className="flex flex-col space-y-4">
           <h1 className="career-heading airdrop-header">Bootstrap Community</h1>
           <h1 className="airdrop-header-sub">Gain access to Snowball’s user base as well as an email list of over 200k!</h1>

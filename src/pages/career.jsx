@@ -145,7 +145,7 @@ export default function Career(){
           <div className="grid justify-center items-center	">
             <button className="snowball-button">
               <h1 className="snowball-button-text">
-              Make your offer
+              Submit your resume
               </h1>
             </button>
           </div>
