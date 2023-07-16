@@ -1,6 +1,7 @@
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
 import BannerPhoneImg from "../assets/banner_phone.png"
+// import BannerPhoneVideo from "../assets/Assets/Home/SnowballHero.mp4"
 import ApplePlayImg from "../assets/apple_store_img.png"
 import GooglePlayImg from "../assets/google_play_img.png"
 import SwirlLogoImg from "../assets/swirl_logo.png"
@@ -38,6 +39,7 @@ export default function Home(){
           </div>
           <div>
             <img src={BannerPhoneImg} alt=""/>
+            {/* <video className="custom-banner-video" src={BannerPhoneVideo} autoPlay loop muted /> */}
           </div>
         </div>
         <div className="grid justify-center h-12">
@@ -184,24 +186,24 @@ export default function Home(){
           <div className="flex flex-col space-y-8">
             <div className="grid content-between snowball-media-n-lg snowball-media-2 p-8">
               <div className="snowball-media-top-button">
-                <h1 className="snowball-media-top-button-text">podcast</h1>
+                <h1 className="snowball-media-top-button-text">news</h1>
               </div>
               <div className="flex flex-col space-y-4">
                 <h1 className="snowball-media-bottom-text-n">
-                  Snowball Podcast #2 Available now!
+                Snowball: Automating Cryptocurrency Investing
                 </h1>
-                <h1 className="snowball-media-bottom-date">March 9, 2023</h1>
+                <h1 className="snowball-media-bottom-date">March 8, 2023</h1>
               </div>
             </div>
             <div className="grid content-between snowball-media-n-lg snowball-media-3 p-8">
               <div className="snowball-media-top-button">
-                <h1 className="snowball-media-top-button-text">podcast</h1>
+                <h1 className="snowball-media-top-button-text">news</h1>
               </div>
               <div className="flex flex-col space-y-4">
                 <h1 className="snowball-media-bottom-text-n">
-                  Snowball Podcast #2 Available now!
+                Republic: Invest in Snowball Money
                 </h1>
-                <h1 className="snowball-media-bottom-date">March 9, 2023</h1>
+                <h1 className="snowball-media-bottom-date">March 7, 2023</h1>
               </div>
             </div>
           </div>

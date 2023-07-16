@@ -67,6 +67,13 @@ export default function FAQ() {
           )}
         </div>
       ))}
+
+
+      <div className="flex faqs-other-questions">
+        <p className="faqs-other-questtions-txt">Have other questions?</p>
+        {/* <button className="">Ask a Question</button> */}
+      </div>
+
       </div>
     </div>
   );
