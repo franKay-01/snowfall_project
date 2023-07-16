@@ -11,6 +11,7 @@ import TwitterLogo from '../assets/twitter.png'
 import LinkedInLogo from '../assets/linkedIn.png'
 
 import {Link, NavLink} from 'react-router-dom'
+import { useEffect, useState } from 'react'
 
 const navigation = [
   { name: 'HOME', href: '/pension', current: false },
@@ -22,9 +23,17 @@ const navigation = [
 ]
 
 export default function Navbar() {
+  const [homeUrl, setHomeUrl] = useState(false)
+  useEffect(()=>{
+    const currentUrl = window.location.href;
+    let pathway = currentUrl.split('/')[3]
+    if (pathway === ""){
+      setHomeUrl(true)
+    }
+  })
   return (
     
-    <Disclosure as="nav" className="nav-bg-custom mobile-nav box-shad w-full left-0 top-0 nav-index">
+    <Disclosure as="nav" className={`${homeUrl ? 'nav-bg-custom-alt':'nav-bg-custom'} sticky mobile-nav box-shad w-full left-0 top-0 nav-index`}>
       {({ open }) => (
         <>
           <div className="mt-3 mx-auto px-2 sm:px-6 lg:px-8 h-18">

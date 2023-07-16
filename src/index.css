@@ -9,6 +9,10 @@ html{
   background: #fff;
 }
 
+body{
+  margin: -1rem 0px !important;
+}
+
 .container {
   @apply m-auto max-w-screen-xl p-4
 }
@@ -80,8 +84,14 @@ div.nav-card {
   height: 750px;
 }
 
+.nav-bg-custom-alt{
+  background-color: #F8F9FC;
+  z-index: 99;
+}
+
 .nav-bg-custom{
   background-color: #fff;
+  z-index: 99;
 }
 
 .share-earn-banner {
