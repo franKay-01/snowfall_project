@@ -12,7 +12,7 @@ export default function DownloadSection() {
           </svg>
           <h1 className="share-section-header">Time to Download your trusted Crypto Investment App</h1>
           <h1 className="hidden lg:block md:block share-section-sub">Gain access to high-yield stablecoin vaults and generate interest in real-time via DeFi</h1>
-          <div className="flex flex-col space-x-0 space-y-4 md:flex-col md:space-y-4 lg:flex-row lg:space-x-4 md:space-x-0 mt-4">
+          <div className="flex flex-col space-x-0 space-y-4 md:flex-col md:space-y-4 lg:space-y-0 lg:flex-row lg:space-x-4 md:space-x-0 mt-4">
             <img className="home-store-button" src={ApplePlayImg} alt=""/>
             <img className="home-store-button" src={GooglePlayImg} alt=""/>
           </div>
