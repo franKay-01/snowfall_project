@@ -42,6 +42,11 @@ div.nav-card {
   padding: 8px 30px;
 }
 
+.nav-bar-text-alt{
+  color: #00B9C2 !important;
+  font-weight: 500 !important;
+}
+
 .nav-bar-text{
   font-size: 16px;
   color: #414A5B;
@@ -88,14 +93,13 @@ div.nav-card {
 }
 
 .home-banner{
-  /* background-color: #F8F9FC; */
-  background-color: #FFF;
+  background-color: #F8F9FC;
   height: 750px;
 }
 
 .nav-bg-custom-alt{
   background-color: #F8F9FC;
-  z-index: 99;
+  z-index: 999;
 }
 
 .nav-bg-custom{
@@ -103,22 +107,42 @@ div.nav-card {
   z-index: 99;
 }
 
+.vid-bg{
+  background-image: url("assets/Assets/Home/SnowballHero.mp4");
+}
+
+.video-container {
+  position: absolute;
+  top: 9rem;
+  left: 35rem;
+  width: 59rem;
+}
+
+.z-id{
+  z-index: 99;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .share-earn-banner {
-  /* background-image: url("assets/referral-share-earn.png"); */
-  /* border-radius: 1.5rem; */
   justify-content: center;
   align-items: center;
-  /* width: 90%; */
   height: 30rem;
   flex-shrink: 0;
-  /* background-image: url('./assets/career-page-img.png'); */
   border-radius: 2rem;
-  /* height: auto; */
   width: auto;
   border-radius: 32px;
   background: linear-gradient(179deg, rgba(19, 91, 92, 0.64) 0%, rgba(74, 145, 152, 0.00) 100%), url("assets/referral-share-earn.png"), lightgray -8px -132px / 100.87% 217.5% no-repeat;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-
+  background-size: contain;
+  background-repeat: round;
 }
 
 .faq {
@@ -256,7 +280,7 @@ div.nav-card {
   display: grid;
   justify-content: center;
   width: 90%;
-  height: 30rem;
+  height: fit-content;
   flex-shrink: 0;
   /* background-color: #1B1E26; */
   background-image: radial-gradient(circle closest-side at 65% center, #079a6b, #1B1E26);
@@ -299,7 +323,7 @@ div.nav-card {
 }
 
 .sh-p-12{
-  padding: 0 8rem;
+  padding: 1rem 8rem;
 }
 
 .sh-p-12-alt{
@@ -421,7 +445,7 @@ div.nav-card {
 }
 
 .snowball-media-lg{
-  width: 30rem;
+  width: 33rem;
   height: 36.25rem;
   border-radius: 1.5rem;
 }
@@ -516,7 +540,18 @@ div.nav-card {
 
 .buy-defi-image{
   height: 40rem;
-  width: 28rem;
+  width: 38rem;
+  border-radius: 3rem;
+}
+
+.overlay{
+  border-radius: 1.5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
 }
 
 .buy-defi-button{
@@ -758,6 +793,22 @@ div.nav-card {
   bottom: 0rem;
 }
 
+.home-order-2-alt{
+  order: 2
+}
+
+.home-order-1-alt{
+  order: 1
+}
+
+.home-order-1{
+  order: 2;
+}
+
+.home-order-learn{
+  order: 3;
+}
+
 .career-section{
   justify-content: center;
   align-items: center;
@@ -766,6 +817,8 @@ div.nav-card {
   flex-shrink: 0;
   background-image: url('./assets/Assets/Career/Career.png');
   border-radius: 2rem;
+  background-size: contain;
+  background-repeat: round;
 }
 
 .airdrop-frame{
@@ -775,7 +828,8 @@ div.nav-card {
 
 .airdrop-section{
   background-image: url('./assets/Assets/Airdrop/Airdrop_Hero_Image.png') !important;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: round;
 }
 
 .airdrop-icon-img{
@@ -1054,29 +1108,353 @@ div.nav-card {
   font-weight: 700;
   line-height: 1.375rem;
   text-transform: uppercase;
+}
 
+.home-card-scroll{
+  height: auto; /* Adjust the height as needed */
+  overflow: auto;
+  overflow-x: hidden; 
 }
 
 @media screen and (max-width: 768px) {
-  .banner-text{
+  .home-banner{
+    height: auto;
+  }
+
+  .snowball-media-bottom-text-n{
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.75rem;
+    letter-spacing: 0.0075rem;
+    width: 17.5rem;
+  }
+
+  .snowball-money-section{
+    width: 21.75rem
+  }
+
+  .brand-input-box{
+    width: 21.5625rem;
+  }
+
+  .brand-button{
+    width: auto
+  }
+
+  .brand-input-box-alt{
+    width: 21.5625rem !important;
+  }
+
+  .brand-header-sub{
+    width: 17.5625rem;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25rem;
+  }
+
+  .brand-header{
+    width: 21.5625rem;
     font-size: 2.5rem;
-    font-weight: 600;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.75rem;
+    letter-spacing: 0.005rem;
+  }
+
+  .snowball-money-sub{
+    width: 18.75rem;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25rem;
+  }
+
+  .snowball-money-hash{
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 3.75rem;
+  }
+
+  .snowball-money-header{
+    width: auto;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.75rem;
+    letter-spacing: 0.005rem;
+  }
+
+  .snowball-frame-h{
+    height: auto
+  }
+
+  .snowball-media-bottom-text{
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.75rem;
+    letter-spacing: 0.0075rem;
+    width: 14.5rem;
+  }  
+
+  .d-bg{
+    background-image: url('./assets/airdrop_alt.png');
+    background-size: contain;
+    background-size: contain;
+    height: 21rem;
+    margin-top: 2rem ;
+    width: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .most-popular-card{
+    width: 21rem;
+    height: 21rem;
+    background-color: #F5F8FA;
+    border-radius: 2.5rem;
+  }
+
+  .popular-card-text-sub-alt{
+    padding: 0 2rem;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25rem;
+    width: 15.875rem;
+    color: #838B9D;
+  }
+
+  .most-popular-card-image{
+    top: 0;
+    right: 0;
+    width: 13rem;
+  }
+
+  .popular-card-text-sub{
+    padding: 0 2rem;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25rem;
+    width: 13.9375rem;
+    color: #838B9D;
+  }
+  
+  .popular-card-text{
+    padding: 0 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     width: 15rem;
-    line-height: 5rem; 
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    letter-spacing: 0.0075rem;
+  }
+
+  .banner-card-heading{
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+  }
+
+  .gradient-text{
+    font-size: 2.5rem;
+    font-style: normal;
+    line-height: 1.75rem;
+    letter-spacing: -0.03125rem;
+  }
+
+  .banner-card-heading-sub{
+    font-size: 0.9375rem;
+    line-height: 1.25rem;
+  }
+
+  .video-container{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: auto;
+  }
+
+  .banner-card{
+    width: 18rem;
+    height: 13rem;
+    margin-right: 2rem;
+    background-color: #F9FBFC;
+    border-radius: 15px;
+    padding: 1.5rem;
+  }
+
+  .banner-text{
+    margin-left: 2rem;
+    width: 15rem;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.75rem;
     color: #282D39;
   }
 
   .banner-sub-text{
+    margin-left: 2rem;
     margin-top: 1rem;
     font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 1.25rem;
     width: 18rem;
-    font-weight: 100;
-    color: #282D39;
+  }
+
+  .home-store-button{
+    width: 10rem;
+    height: 3rem;
+  }
+
+  .share-section-header{
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.75rem;
+    letter-spacing: 0.0075rem;
+  }
+
+  .share-section-sub{
+    color: #FFF;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25rem;
+    width: 18rem
+  }
+
+  .buy-defi-heading{
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.75rem;
+    letter-spacing: 0.005rem;
+    width: 16.5rem
+  }
+
+  .buy-defi-sub{
+    width: 21rem;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25rem;
+  }
+
+  .buy-defi-button{
+    width: 10rem
+  }
+
+  .buy-defi-image{
+    height: auto;
+    width: auto;
+  }
+
+  .snowball-media-lg{
+    width: 21rem;
+    height: 21rem
+  }
+
+  .buy-defi-button-text{
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.875rem;
+    letter-spacing: 0.0075rem;
+  }
+
+  .snowball-heading{
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 2.75rem;
+    letter-spacing: 0.005rem;
+    width: 14rem;
+    display: flex;
+    margin-bottom: 1rem
+  }
+
+  .snowball-media-n-lg{
+    width: 21rem;
+    height: 21rem
+  }
+
+  .share-img-sm{
+    width: 19rem
+  }
+
+  .share-img-p-l{
+    padding-left: 1rem
+  }
+
+  .brand-card{
+    background-image: url('./assets/brand_card_alt.png');
+    display: grid;
+    justify-content: center;
+    width: 21.5625rem;
+    height: 32.4375rem;
+    position: relative;
+  }
+  
+  .brand-card-button{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 0;
+    width: max-content;
+    padding: 1rem;
+    height: 3.5rem;
+    border-radius: 1rem;
+    border: 1px solid #E6EBF4;
+    background: #FFF;
+  }
+
+  .download-img-position{
+    right: 0;
+  }
+
+  .sh-p-12{
+    padding: 1rem 1rem
+  }
+
+  .golden-image{
+    width: 7.19513rem;
+  }
+
+  .share-section-header{
+    color: #D9F9F8;
+    font-size: 1.5rem;
+    font-style: normal;
+    width: 10rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+  }
+  
+  .home-store-button{
+    width: 10rem;
+    height: 3rem;
+  }
+
+  .share-section-image{
+    height: 24rem;
+    width: 10rem;
+    border-radius: 2rem;
+  }
+
+  .footer-logo-d{
+    width: 9.5625rem;
+    height: 3.25rem;
   }
 }
 
 @media screen and (min-device-width: 1024px) and (max-device-width: 2024px) {
-
+  /* .nav-items-margin{
+    margin-left: 5%;
+  } */
 }
 
 @media screen and (max-device-width: 480px) and (orientation: portrait) {
@@ -1100,5 +1478,146 @@ div.nav-card {
 }
 
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .nav-items-margin{
+    margin-left: 5%;
+  }
 
+  .popular-card-text-sub{
+    padding: 0 3rem;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25rem;
+    width: 20.9375rem;
+    color: #838B9D;
+  }
+/*   
+  .popular-card-text{
+    padding: 0 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 15rem;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    letter-spacing: 0.0075rem;
+  } */
+
+  .gradient-text{
+    font-size: 2.5rem;
+    font-style: normal;
+    line-height: 1.75rem;
+    letter-spacing: -0.03125rem;
+  }
+
+  .sh-p-12{
+    padding: 1rem 3rem
+  }
+
+  .home-order-1{
+    order: 2
+  }
+
+  .banner-text{
+    margin-left: 2rem;
+    width: 15rem;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.75rem;
+    color: #282D39;
+  }
+
+  .banner-sub-text{
+    margin-left: 2rem;
+    margin-top: 1rem;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 1.25rem;
+    width: 18rem;
+  }
+
+  .video-container{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: auto;
+  }
+
+  .download-img-position{
+    right: 0;
+  }
+
+  .share-section-image{
+    border-radius: 2rem
+  }
+
+  .footer-logo-d{
+    width: 13.5625rem;
+    height: 7.25rem;
+  }
+
+  .share-section-header{
+    color: #D9F9F8;
+    font-size: 1.5rem;
+    font-style: normal;
+    width: 10rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+  }
+
+  .share-section-sub{
+    color: #FFF;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 2rem;
+    width: 16.6875rem;
+  }
+
+  .home-store-button{
+    width: 10rem;
+    height: 3rem;
+  }
+}
+
+
+@keyframes fade{
+  from{
+    opacity:0.4;
+  }
+  to{
+    opacity:1;
+  }
+}
+
+#slider{
+  overflow:hidden;
+  display: block;
+}
+
+.slides{
+  overflow:hidden;
+  animation-name:fade;
+  animation-duration:1s;
+  display:none;
+}
+
+#dot{
+  margin:0 auto;
+  text-align:center;
+}
+.dot{
+  display:inline-block;
+  border-radius:50%;
+  background:#d3d3d3;
+  padding:8px;
+  margin:10px 5px;
+}
+
+@media (max-width:567px){
+  #slider{
+    width:100%;
+
+  }
 }
