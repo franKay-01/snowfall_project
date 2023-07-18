@@ -7,12 +7,12 @@ import LinkedInLogo from '../assets/linkedIn.png'
 
 export default function Footer() {
   return (
-    <footer className="p-6 w-full left-0 bottom-0 footer-color md:pt-16 md:pb-16 md:pl-60 md:pr-60">
-      <div className="container grid grid-cols-1 mx-auto gap-y-8 sm:grid-cols-3 md:grid-cols-4">
+    <footer className="p-6 w-full left-0 bottom-0 footer-color md:pt-16 md:pb-16 md:pr-60">
+      <div className="container grid grid-cols-1 mx-auto gap-y-8 sm:grid-cols-3 md:grid-cols-1">
         <div className="flex flex-col space-y-4">
-          <img src={Logo} alt="" />
+          <img className="footer-logo-d" src={Logo} alt="" />
         </div>
-        <div className="flex flex-col space-y-4 md:ml-24">
+        <div className="flex flex-col space-y-4">
           <div className="flex flex-col space-y-5 text-sm dark:text-gray-400">
             <a rel="noopener noreferrer" className='nav-bar-text' href="/">Home</a>
             <a rel="noopener noreferrer" className='nav-bar-text' href="/airdrop">Airdrop</a>
