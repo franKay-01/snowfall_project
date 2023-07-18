@@ -19,6 +19,8 @@ import Frame1 from "../assets/frame_1.png"
 import Frame2 from "../assets/frame_2.png"
 import Frame1Alt from "../assets/frame_1_alt.png"
 import DownloadSection from '../components/download_section';
+import ReferralSection from '../components/referral_section';
+
 import Slide1 from '../assets/Assets/Home/BuyCrypto/Slideshow/Slideshow1.png';
 import Slide2 from '../assets/Assets/Home/BuyCrypto/Slideshow/Slideshow2.png';
 import Slide3 from '../assets/Assets/Home/BuyCrypto/Slideshow/Slideshow3.png';
@@ -70,14 +72,14 @@ export default function Home(){
       <Navbar/>
       <div className="home-banner flex flex-col">
         <div className="container z-id home-order-1 lg:justify-start md:justify-center relative flex flex-col lg:flex-row md:flex-row">
-          <div className="text-container lg:ml-48 lg:justify-start md:justify-center md:items-center flex flex-col">
+          <div className="text-container lg:ml-32 lg:justify-start md:justify-center lg:items-start md:items-center flex flex-col">
             <h1 className="banner-text">
               Buy Crypto, <i>invest</i> in DeFi
             </h1>
             <h1 className="banner-sub-text">
               Gain access to high-yield stablecoin vaults and generate interest in real-time via DeFi
             </h1>
-            <div className="mt-4 flex flex-row space-x-4 ml-8 lg:ml-2 md:ml-2">
+            <div className="mt-4 flex flex-row space-x-4 ml-8 lg:ml-0 md:ml-2">
               <img className="home-store-button" src={ApplePlayImg} alt=""/>
               <img className="home-store-button" src={GooglePlayImg} alt=""/>
             </div>
@@ -126,11 +128,11 @@ export default function Home(){
         <span className="block lg:hidden md:hidden gradient-text p-2 text-left font-normal inline-block from-black via-sky-700 to-teal-400 bg-gradient-to-r bg-clip-text text-transparent">of Decentralized</span>
         <span className="block lg:hidden md:hidden gradient-text p-2 text-left font-normal inline-block from-black via-sky-700 to-teal-400 bg-gradient-to-r bg-clip-text text-transparent">Finance</span>
       </div>
-      <div className="container grid lg:grid lg:justify-normal lg:grid-row-2 md:justify-center md:items-center space-y-12 lg:space-y-4 md:space-y-4">
+      <div className="container grid lg:grid lg:justify-center lg:grid-row-2 md:justify-center md:items-center space-y-12 lg:space-y-4 md:space-y-4">
         <div className="grid grid-cols-1 space-y-12 lg:grid-cols-1 md:flex md:justify-center md:items-center">
           <div className="d-bg"></div>
         </div>
-        <div className="grid grid-cols-1 lg:grid lg:grid-cols-2 md:flex md:flex-col md:grid-cols-1 md:justify-center md:items-center">
+        <div className="grid grid-cols-1 lg:grid lg:grid-cols-2 lg:gap-8 md:flex md:flex-col md:grid-cols-1 md:justify-center md:items-center">
           <div className="most-popular-card mb-8">
             <div className="flex flex-col items-center">
               <img className="w-64" src={AirdropImg} alt=""/>
@@ -160,8 +162,11 @@ export default function Home(){
 
         </div>
       </div>
+      {/* <ReferralSection/> */}
       <div className="center-container-alt">
-        <div className="share-section grid lg:grid-cols-2 mt-24 sh-p-12">
+        {/* <div className="share-section grid lg:grid-cols-2 mt-24 sh-p-12"> */}
+        <div className="share-section bg-c-black grid grid-cols-1 lg:grid-cols-2 lg:grid-cols-1 mt-24 sh-p-12 relative mb-8 lg:gap-8 md:gap-8">
+
           <div className="flex flex-col home-order-1 justify-center space-y-4 share-img-p-l md:pl-12 lg:pl-0">
             <div className="share-button">
               <h1 className="share-button-text">referral program</h1>
@@ -177,12 +182,12 @@ export default function Home(){
               </div>
             </div>
           </div>
-          <div className="grid justify-center items-center">
+          <div className="grid justify-end home-order-2 items-center">
             <img className="share-img-sm" src={ShareEarnImg} alt=""/>
           </div>          
         </div>
-      </div>
-      <div className="flex flex-col pl-4 lg:pl-44 space-y-4 lg:flex-row md:flex-col md:justify-center md:items-center lg:flex-row lg:space-x-14 md:space-y-14 mt-24">
+      </div> 
+      <div className="flex flex-col pl-4 space-y-4 lg:flex-row md:flex-col md:justify-center md:items-center lg:flex-row lg:space-x-14 md:space-y-14 mt-24">
         <div id="slider">  
           <div className="slides buy-defi-image">  
             <img src={Slide1} width="100%" />
@@ -245,7 +250,7 @@ export default function Home(){
           </div>
         </div>
       </div>
-      <div className="bg-slate-100 flex flex-col pl-4 lg:pl-56 lg:pt-32 md:pt-8 lg:pb-32 md:pb-12 md:flex-col lg:flex-col lg:space-y-14 md:space-y-14 mt-24">
+      <div className="bg-slate-100 flex flex-col pl-4 lg:pt-32 md:pt-8 md:justify-center md:items-center lg:pb-32 md:pb-12 md:flex-col lg:flex-col lg:space-y-14 md:space-y-14 mt-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 md:ml-24 lg:ml-2">
           <h1 className="snowball-heading">Snowball in the Media</h1>
           <div className="hidden lg:grid lg:justify-center">
@@ -302,7 +307,7 @@ export default function Home(){
       </div>
       <div className="bg-c-black relative">
         <div className="concave-border bg-slate-100"></div>
-        <div className="bg-c-black flex flex-col mt-8 pl-4 lg:pl-56 lg:justify-normal lg:items-stretch md:justify-center md:items-center lg:pt-0 md:pt-8 lg:pb-0 md:pb-12 md:flex-col lg:flex-row lg:space-x-24 lg:space-y-2 space-y-4 md:space-y-14">
+        <div className="bg-c-black flex flex-col mt-8 pl-4 lg:pl-56 lg:justify-center lg:items-stretch md:justify-center md:items-center lg:pt-0 md:pt-8 lg:pb-0 md:pb-12 md:flex-col lg:flex-row lg:space-x-24 lg:space-y-2 space-y-4 md:space-y-14">
         {/* <div className="bg-c-black flex flex-col pl-4 lg:pl-64 md:pl-60 md:flex-row lg:flex-row lg:space-x-14 md:space-x-24"> */}
           <div className="flex flex-col justify-center space-y-4 md:space-y-12 lg::space-y-12">
             <div className="snowball-money-section grid grid-cols-2">
@@ -332,9 +337,9 @@ export default function Home(){
         </div>
         <div className="concave-border-2 bg-white"></div>
       </div>
-      <div className="flex flex-col lg:pl-56 lg:justify-normal space-y-8 lg:items-stretch md:justify-center md:items-center lg:pt-0 md:pt-8 lg:pb-0 md:pb-12 md:flex-col lg:flex-row lg:space-x-24 lg:space-y-2 md:space-y-14">
+      <div className="flex flex-col lg:justify-center space-y-8 lg:items-center md:justify-center md:items-center lg:pt-0 md:pt-8 lg:pb-0 md:pb-12 md:flex-col lg:flex-row lg:space-x-24 lg:space-y-2 md:space-y-14">
 
-      {/* <div className="grid grid-cols-1 pl-4 lg:pl-40 md:pl-40 lg:pb-32 md:pb-32 md:grid-cols-2 lg:grid-cols-2 mt-24"> */}
+        {/* <div className="grid grid-cols-1 pl-4 lg:pl-40 md:pl-40 lg:pb-32 md:pb-32 md:grid-cols-2 lg:grid-cols-2 mt-24"> */}
         <div className="flex flex-row justify-center space-y-12">
           <div className="flex flex-col space-y-4">
             <h1 className="brand-header">

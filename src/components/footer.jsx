@@ -7,8 +7,8 @@ import LinkedInLogo from '../assets/linkedIn.png'
 
 export default function Footer() {
   return (
-    <footer className="p-6 w-full left-0 bottom-0 footer-color md:pt-16 md:pb-16 md:pr-60">
-      <div className="container grid grid-cols-1 mx-auto gap-y-8 sm:grid-cols-3 md:grid-cols-1">
+    <footer className="p-6 w-full left-0 bottom-0 footer-color justify-center items-center md:pt-16 md:pb-16">
+      <div className="container grid grid-cols-1 mx-auto gap-y-8 sm:grid-cols-3 md:grid-cols-1 lg:grid-cols-4">
         <div className="flex flex-col space-y-4">
           <img className="footer-logo-d" src={Logo} alt="" />
         </div>
