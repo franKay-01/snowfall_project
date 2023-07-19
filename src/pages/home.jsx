@@ -2,6 +2,7 @@ import Footer from "../components/footer";
 import Navbar from "../components/navbar";
 import BannerPhoneImg from "../assets/banner_phone.png"
 import BannerPhoneVideo from "../assets/Assets/Home/SnowballHero.mp4"
+import BannerPhoneVideoAlt from "../assets/Assets/Home/SnowballHero.mov"
 import ApplePlayImg from "../assets/apple_store_img.png"
 import GooglePlayImg from "../assets/google_play_img.png"
 import SwirlLogoImg from "../assets/swirl_logo.png"
@@ -251,7 +252,7 @@ export default function Home(){
         </div>
       </div>
       <div className="bg-slate-100 flex flex-col pl-4 lg:pt-32 md:pt-8 md:justify-center md:items-center lg:pb-32 md:pb-12 md:flex-col lg:flex-col lg:space-y-14 md:space-y-14 mt-24">
-        <div className="grid grid-cols-1 lg:grid-cols-2 md:ml-24 lg:ml-2">
+        <div className="grid grid-cols-1 lg:grid-cols-2 md:ml-0 lg:ml-2">
           <h1 className="snowball-heading">Snowball in the Media</h1>
           <div className="hidden lg:grid lg:justify-center">
             <button className="snowball-button">
@@ -261,7 +262,7 @@ export default function Home(){
             </button>
           </div>
         </div>
-        <div className="flex flex-col space-y-8 lg:flex-row md:flex-col md:space-y-8 lg:justify-normal md:justify-center md:items-center lg:space-x-8">
+        <div className="flex flex-col space-y-8 lg:flex-row md:flex-col md:space-y-8 lg:space-y-0 lg:justify-normal md:justify-center md:items-center lg:space-x-8">
           <div className="snowball-media-lg snowball-media-1 relative">
             <div class="grid content-between overlay p-4 lg:p-12 md:p-12">
               <div className="snowball-media-top-button">
@@ -348,10 +349,10 @@ export default function Home(){
             <h1 className="brand-header-sub">
             Be a part of Snowball. Join our ambassadorship program
             </h1>
-            <div className="brand-input-box flex flex-row">
+            <div className="brand-input-box brand-input-box-alt flex flex-row">
               <input className='main-input-box'  placeholder="Full Name*"/>
             </div>
-            <div className="brand-input-box flex flex-row">
+            <div className="brand-input-box brand-input-box-alt flex flex-row">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M3.00001 12.3092C3.00067 16.1205 2.99878 16.0746 3.17661 16.5529C3.47414 17.3529 4.2176 18 5.06903 18.1999C5.32271 18.2594 5.71473 18.263 12.0017 18.263C18.2887 18.263 18.6807 18.2594 18.9344 18.1999C19.8101 17.9943 20.5527 17.333 20.8439 16.4995C21.0052 16.0378 21.0068 15.9925 20.9964 12.2777L20.9865 8.75391L16.8018 11.3043C14.5002 12.707 12.542 13.8934 12.4502 13.9406C12.2124 14.0632 11.9279 14.0855 11.6852 14.0007C11.5774 13.963 9.62585 12.7932 7.27199 11.3553C4.95108 9.93746 3.04031 8.77054 3.02578 8.76206C3.01126 8.75359 2.99969 10.3498 3.00001 12.3092Z" fill="#838B9D"/>
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M5.33822 5.02434C5.02757 5.06123 4.65528 5.18642 4.34702 5.35757C4.03904 5.52861 3.58453 5.98122 3.39509 6.30555C3.21058 6.62141 3.07495 7.00682 3.12305 7.07863C3.15287 7.12311 11.8713 12.4561 11.9866 12.5003C12.0338 12.5184 20.8289 7.15789 20.8813 7.07901C20.906 7.0417 20.8924 6.95696 20.8347 6.78901C20.7039 6.40901 20.4944 6.08728 20.164 5.75905C19.9132 5.50994 19.8046 5.43099 19.5275 5.2961C18.8736 4.97775 19.5924 5.00658 12.1604 5.0005C8.54365 4.99751 5.47368 5.00827 5.33822 5.02434Z" fill="#838B9D"/>
