@@ -81,8 +81,8 @@ export default function Home(){
               Gain access to high-yield stablecoin vaults and generate interest in real-time via DeFi
             </h1>
             <div className="mt-4 flex flex-row space-x-4 ml-8 lg:ml-0 md:ml-2">
-              <img className="home-store-button" src={ApplePlayImg} alt=""/>
-              <img className="home-store-button" src={GooglePlayImg} alt=""/>
+              <a href="https://click.google-analytics.com/redirect?tid=UA-119873557-1&url=https%3A%2F%2Fitunes.apple.com%2Fapp%2Fapple-store%2Fid1449662311&aid=money.snowball.app&idfa=%{idfa}&cs=snowball.money&cm=main%20download%20link&cn=email-campaign" target="_blank" rel="noreferrer"><img className="home-store-button" src={ApplePlayImg} alt=""/></a>
+              <a href="https://play.google.com/store/apps/details?id=money.snowball.defi&referrer=utm_source%3Dwebsite%26utm_campaign%3Dwebsite" target="_blank" rel="noreferrer"><img className="home-store-button" src={GooglePlayImg} alt=""/></a>
             </div>
           </div>
         </div>

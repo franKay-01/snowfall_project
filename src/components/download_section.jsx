@@ -13,8 +13,8 @@ export default function DownloadSection() {
           <h1 className="share-section-header">Time to Download your trusted Crypto Investment App</h1>
           <h1 className="hidden lg:block md:block share-section-sub">Gain access to high-yield stablecoin vaults and generate interest in real-time via DeFi</h1>
           <div className="flex flex-col space-x-0 space-y-4 md:flex-col md:space-y-4 lg:space-y-0 lg:flex-row lg:space-x-4 md:space-x-0 mt-4">
-            <img className="home-store-button" src={ApplePlayImg} alt=""/>
-            <img className="home-store-button" src={GooglePlayImg} alt=""/>
+          <a href="https://click.google-analytics.com/redirect?tid=UA-119873557-1&url=https%3A%2F%2Fitunes.apple.com%2Fapp%2Fapple-store%2Fid1449662311&aid=money.snowball.app&idfa=%{idfa}&cs=snowball.money&cm=main%20download%20link&cn=email-campaign" target="_blank" rel="noreferrer"><img className="home-store-button" src={ApplePlayImg} alt=""/></a>
+          <a href="https://play.google.com/store/apps/details?id=money.snowball.defi&referrer=utm_source%3Dwebsite%26utm_campaign%3Dwebsite" target="_blank" rel="noreferrer"><img className="home-store-button" src={GooglePlayImg} alt=""/></a>
           </div>
         </div>
         <div className="grid justify-center items-center download-img-position">
