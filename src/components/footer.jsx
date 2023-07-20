@@ -1,9 +1,9 @@
 import Logo from '../assets/logo.png'
-import FacebookLogo from '../assets/facebook.png'
-import InstagramLogo from '../assets/instagram.png'
-import TelegramLogo from '../assets/telegram.png'
-import TwitterLogo from '../assets/twitter.png'
-import LinkedInLogo from '../assets/linkedIn.png'
+// import FacebookLogo from '../assets/facebook.png'
+// import InstagramLogo from '../assets/instagram.png'
+// import TelegramLogo from '../assets/telegram.png'
+// import TwitterLogo from '../assets/twitter.png'
+// import LinkedInLogo from '../assets/linkedIn.png'
 
 export default function Footer() {
   return (

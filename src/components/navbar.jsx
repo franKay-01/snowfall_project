@@ -1,14 +1,14 @@
 import { Disclosure } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import Logo from '../assets/logo.png'
-import AppleLogo from '../assets/apple.png'
-import GooglePlayLogo from '../assets/google_play.png'
+// import AppleLogo from '../assets/apple.png'
+// import GooglePlayLogo from '../assets/google_play.png'
 
-import FacebookLogo from '../assets/facebook.png'
-import InstagramLogo from '../assets/instagram.png'
-import TelegramLogo from '../assets/telegram.png'
-import TwitterLogo from '../assets/twitter.png'
-import LinkedInLogo from '../assets/linkedIn.png'
+// import FacebookLogo from '../assets/facebook.png'
+// import InstagramLogo from '../assets/instagram.png'
+// import TelegramLogo from '../assets/telegram.png'
+// import TwitterLogo from '../assets/twitter.png'
+// import LinkedInLogo from '../assets/linkedIn.png'
 
 import {Link, NavLink} from 'react-router-dom'
 import { useEffect, useState } from 'react'
@@ -29,7 +29,7 @@ export default function Navbar() {
   const [teamUrl, setTeamUrl] = useState(false)
   const [blogUrl, setBlogUrl] = useState(false)
 
-  useEffect(()=>{
+  useEffect(() => {
     const currentUrl = window.location.href;
     let pathway = currentUrl.split('/')[3]
 
@@ -69,8 +69,16 @@ export default function Navbar() {
         setTeamUrl(false)
         setBlogUrl(true)
         break;
+      default:
+        setHomeUrl(true)
+        setAirUrl(false)
+        setRefUrl(false)
+        setTeamUrl(false)
+        setBlogUrl(false)
+        break;
+      
     }
-  })
+  }, [])
   return (
     
     <Disclosure as="nav" className={`${homeUrl ? 'nav-bg-custom-alt':'nav-bg-custom'} sticky mobile-nav box-shad w-full left-0 top-0 nav-index`}>

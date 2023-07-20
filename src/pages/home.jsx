@@ -1,8 +1,8 @@
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
-import BannerPhoneImg from "../assets/banner_phone.png"
+// import BannerPhoneImg from "../assets/banner_phone.png"
 import BannerPhoneVideo from "../assets/Assets/Home/SnowballHero.mp4"
-import BannerPhoneVideoAlt from "../assets/Assets/Home/SnowballHero.mov"
+// import BannerPhoneVideoAlt from "../assets/Assets/Home/SnowballHero.mov"
 import ApplePlayImg from "../assets/apple_store_img.png"
 import GooglePlayImg from "../assets/google_play_img.png"
 import SwirlLogoImg from "../assets/swirl_logo.png"
@@ -10,7 +10,7 @@ import Component_1 from "../assets/component_1.png"
 import AirdropImg from "../assets/airdrop.png"
 import IphoneImg from "../assets/iphone_alt.png"
 import ShareEarnImg from "../assets/share_earn.png"
-import BuyDefiImg from "../assets/buy_defi_screen.png"
+// import BuyDefiImg from "../assets/buy_defi_screen.png"
 import BundleImg from "../assets/bundles.png"
 import VaultsImg from "../assets/vaults.png"
 import ReferralImg from "../assets/referrals.png"
@@ -20,7 +20,7 @@ import Frame1 from "../assets/frame_1.png"
 import Frame2 from "../assets/frame_2.png"
 import Frame1Alt from "../assets/frame_1_alt.png"
 import DownloadSection from '../components/download_section';
-import ReferralSection from '../components/referral_section';
+// import ReferralSection from '../components/referral_section';
 
 import Slide1 from '../assets/Assets/Home/BuyCrypto/Slideshow/Slideshow1.png';
 import Slide2 from '../assets/Assets/Home/BuyCrypto/Slideshow/Slideshow2.png';
@@ -61,7 +61,7 @@ export default function Home(){
     
   }
 
-  useEffect(()=>{
+  useEffect(()=> {
     index = 0;
     slides = document.querySelectorAll(".slides");
     changeSlide();
@@ -191,31 +191,31 @@ export default function Home(){
       <div className="flex flex-col pl-4 space-y-4 lg:flex-row md:flex-col md:justify-center md:items-center lg:flex-row lg:space-x-14 md:space-y-14 mt-24">
         <div id="slider">  
           <div className="slides buy-defi-image">  
-            <img src={Slide1} width="100%" />
+            <img src={Slide1} width="100%"  alt=""/>
           </div> 
           <div className="slides buy-defi-image">  
-            <img src={Slide2} width="100%" />
+            <img src={Slide2} width="100%" alt=""/>
           </div> 
           <div className="slides buy-defi-image">  
-            <img src={Slide3} width="100%" />
+            <img src={Slide3} width="100%" alt="" />
           </div> 
           <div className="slides buy-defi-image">  
-            <img src={Slide4} width="100%" />
+            <img src={Slide4} width="100%" alt="" />
           </div> 
           <div className="slides buy-defi-image">  
-            <img src={Slide5} width="100%" />
+            <img src={Slide5} width="100%" alt=""/>
           </div> 
           <div className="slides buy-defi-image">  
-            <img src={Slide6} width="100%" />
+            <img src={Slide6} width="100%" alt="" />
           </div> 
           <div className="slides buy-defi-image">  
-            <img src={Slide7} width="100%" />
+            <img src={Slide7} width="100%" alt=""/>
           </div> 
           <div className="slides buy-defi-image">  
-            <img src={Slide8} width="100%" />
+            <img src={Slide8} width="100%" alt="" />
           </div> 
           <div className="slides buy-defi-image">  
-            <img src={Slide9} width="100%" />
+            <img src={Slide9} width="100%" alt="" />
           </div>             
         </div>
         <div className="flex flex-col space-y-8">

@@ -1,6 +1,6 @@
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
-import AirDropImg from "../assets/airdrop_screen.png"
+// import AirDropImg from "../assets/airdrop_screen.png"
 import BootstrapCommunity from "../assets/Assets/Airdrop/Bootstrap_Community.png"
 import AirDrop1Img from "../assets/airdrop_screen_1.png"
 import AirDropIcon1Img from "../assets/airdrop_icon_1.png"
@@ -39,13 +39,13 @@ export default function AirDrop(){
           <div class="flex flex-col lg:grid md:grid lg:grid-cols-2 md:grid-cols-2 space-y-8 lg:gap-8 md:gap-8">
             <div class="flex flex-col space-y-8">
               <div className="airdrop-card p-8 flex flex-col space-y-8 relative">
-                <img className="airdrop-icon-img" src={AirDropIcon1Img}/>
+                <img className="airdrop-icon-img" src={AirDropIcon1Img} alt=""/>
                 <span className="absolute bottom-4 airdrop-text-gradient p-0.5 text-left font-normal inline-block from-black via-sky-700 to-teal-400 bg-gradient-to-r bg-clip-text text-transparent">
                   Follow your project on Twitter
                 </span>
               </div>
               <div className="airdrop-card p-8 flex flex-col space-y-8 relative">
-                <img className="airdrop-icon-img" src={AirDropIcon3Img}/>
+                <img className="airdrop-icon-img" src={AirDropIcon3Img} alt=""/>
                 <span className="absolute bottom-4 airdrop-text-gradient p-0.5 text-left font-normal inline-block from-black via-sky-700 to-teal-400 bg-gradient-to-r bg-clip-text text-transparent">
                 Join your Discord
                 </span>
@@ -53,13 +53,13 @@ export default function AirDrop(){
             </div>
             <div class="flex flex-col space-y-8 mt-24">
               <div className="airdrop-card p-8 flex flex-col space-y-8 relative">
-                <img className="airdrop-icon-img" src={AirDropIcon2Img}/>
+                <img className="airdrop-icon-img" src={AirDropIcon2Img} alt=""/>
                 <span className="absolute bottom-4 airdrop-text-gradient p-0.5 text-left font-normal inline-block from-black via-sky-700 to-teal-400 bg-gradient-to-r bg-clip-text text-transparent">
                 Retweet a Tweet you want to be amplified
                 </span>
               </div>
               <div className="airdrop-card p-8 flex flex-col space-y-8 relative">
-                <img className="airdrop-icon-img" src={AirDropIcon4Img}/>
+                <img className="airdrop-icon-img" src={AirDropIcon4Img} alt=""/>
                 <span className="absolute bottom-4 airdrop-text-gradient p-0.5 text-left font-normal inline-block from-black via-sky-700 to-teal-400 bg-gradient-to-r bg-clip-text text-transparent">
                 Join your Telegram
                 </span>
