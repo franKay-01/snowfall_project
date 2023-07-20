@@ -16,7 +16,7 @@ export default function AirDrop(){
       <div className="center-container-alt">
         <div className="career-section airdrop-section flex flex-col mt-24 sh-p-12-alt-n relative md:pt-8 md:pb-8 md:pr-20 md:pl-20 lg:pt-24 lg:pb-24 lg:pr-80 lg:pl-80">
           <h1 className="career-banner-header airdrop-banner-header">
-          Snowball Airdrop Campaign
+            Snowball Airdrop Campaign
           </h1>
           <h1 className="career-banner-sub airdrop-banner-header">
             Have Web 2.0 fans that you want to convert? No problem! Snowball is available on iOS App Store and Google. Users can download and apply to airdrop and be integrated to your ecosystem in less than 3 steps!
