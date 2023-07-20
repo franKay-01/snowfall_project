@@ -14,12 +14,11 @@ import {Link, NavLink} from 'react-router-dom'
 import { useEffect, useState } from 'react'
 
 const navigation = [
-  { name: 'HOME', href: '/pension', current: false },
-  { name: 'GALLERY', href: '/provident', current: false },
-  { name: 'SHOP', href: '/occupational', current: false },
-  { name: 'ABOUT US', href: '/about', current: false },
-  { name: 'CONTACT US', href: '/faqs', current: false },
-  { name: 'WHOLESALE', href: '/calculator', current: false },
+  { name: 'Home', href: '/', current: false },
+  { name: 'Airdrop', href: '/airdrop', current: false },
+  { name: 'Referral', href: '/referral', current: false },
+  { name: 'Team', href: '/team', current: false },
+  { name: 'Blog', href: '/blog', current: false },
 ]
 
 export default function Navbar() {
@@ -91,7 +90,7 @@ export default function Navbar() {
                 <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
-                  <XIcon className="block h-6 w-6" aria-hidden="true" />
+                  <XIcon className="hidden h-6 w-6" aria-hidden="true" />
                   ) : (
                   <MenuIcon className="block h-6 w-6" aria-hidden="true" />
                   )}
@@ -175,10 +174,10 @@ export default function Navbar() {
 
           <Disclosure.Panel className="sm:hidden md:block mobile-nav-bg">
             <div className="px-2 pt-2 pb-3">
-              <Disclosure.Button className="inline-flex place-x mt-8 link-button-position items-center justify-right p-2 rounded-md text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+              <Disclosure.Button className="inline-flex place-x link-button-position items-center justify-right rounded-md text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
-                    <XIcon className="block h-12 w-12 text-white" aria-hidden="true" />
+                    <XIcon className="block h-8 w-8 text-white close-button" aria-hidden="true" />
                   ) : (
                     <img className='w-10' src={MenuIcon} alt=""/>
                   )}

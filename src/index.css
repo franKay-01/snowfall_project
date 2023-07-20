@@ -17,6 +17,15 @@ body{
   @apply m-auto max-w-screen-xl p-4
 }
 
+.close-button{
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  color: black;
+}
+
 .text-container{
   display: flex;
   justify-content: center;
@@ -94,7 +103,7 @@ div.nav-card {
 
 .home-banner{
   background-color: #F8F9FC;
-  height: 750px;
+  height: 40rem;
 }
 
 .nav-bg-custom-alt{
@@ -104,7 +113,7 @@ div.nav-card {
 
 .nav-bg-custom{
   background-color: #fff;
-  z-index: 99;
+  z-index: 999;
 }
 
 .vid-bg{
@@ -112,10 +121,14 @@ div.nav-card {
 }
 
 .video-container {
-  position: absolute;
+  /* position: absolute;
   top: 9rem;
   left: 35rem;
-  width: 59rem;
+  width: 59rem; */
+  position: absolute;
+  top: 0rem;
+  left: 24rem;
+  width: 70rem;
 }
 
 .z-id{
@@ -129,6 +142,13 @@ div.nav-card {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.share-earn-banner-alt{
+  background-image: url("assets/referral-share-earn.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 2rem;
 }
 
 .share-earn-banner {
@@ -1143,7 +1163,7 @@ div.nav-card {
 .dialog-box-alt-2{
   border-radius: 2rem;
   width: 45.75rem;
-  height: 45rem;
+  /* height: 45rem; */
   padding: 2.5rem;
 }
 
@@ -1229,6 +1249,32 @@ div.nav-card {
 }
 
 @media screen and (max-width: 768px) {
+  .thank-you-note{
+    width: 15rem;
+  }
+  
+  .scrollable-div {
+    height: 200px;
+    width: 300px;
+    overflow: auto;
+    padding: 10px;
+  }
+
+  .dialog-box{
+    border-radius: 2rem;
+    width: auto;
+    padding: 2.5rem;
+  }
+
+  .header-alt{
+    color: #282D39;
+    font-size: 2rem;
+    width: auto;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.5rem;
+  }
+
   .share-section-image-alt{
     position: relative;
     top: -6rem;
@@ -1350,9 +1396,9 @@ div.nav-card {
     width: auto
   }
 
-  /* .brand-input-box-alt{
-    width: 21.5625rem !important;
-  } */
+  .brand-input-box-alt-2{
+    width: 16rem !important;
+  }
 
   .brand-header-sub{
     width: 17.5625rem;
@@ -1578,12 +1624,13 @@ div.nav-card {
   .snowball-heading{
     font-size: 2.5rem;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 500;
     line-height: 2.75rem;
     letter-spacing: 0.005rem;
     width: 14rem;
     display: flex;
-    margin-bottom: 1rem
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 
   .snowball-media-n-lg{
@@ -1658,6 +1705,32 @@ div.nav-card {
     width: 9.5625rem;
     height: 3.25rem;
   }
+
+  .career-text-container{
+    margin: 5rem auto;
+    padding: 0rem 2rem;
+    position: relative;
+  }
+
+  .perk-card{
+    width: auto;
+  }
+
+  .career-heading-sub{
+    width: 20rem;
+  }
+
+  .role-card{
+    width: auto;
+  }
+
+  .role-card-info-name{
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.75rem;
+    width: 15rem;
+  }
 }
 /* 
 @media (min-width: 1201px) {
@@ -1684,6 +1757,35 @@ div.nav-card {
 } */
 
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+  .role-card-info-name{
+    width: 17rem;
+    color: #282D39;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.25rem;
+  }
+  .career-text-container{
+    margin: 3rem 0px;
+    padding: 0px 10rem;
+    position: relative;
+  }
+
+  .role-card{
+    width: auto;
+  }
+
+  .career-heading-sub{
+    width: 20rem;
+  }
+
+  .career-world-img{
+    position: absolute;
+    right: 0;
+    top: 7rem;
+  }
+
   .nav-items-margin{
     margin-left: 5%;
   }
