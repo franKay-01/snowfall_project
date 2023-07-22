@@ -89,7 +89,7 @@ export default function Home(){
         <div className="video-container">
           <video className="custom-banner-video" src={BannerPhoneVideo} autoPlay loop muted />
         </div>
-        <div className="grid justify-center h-12 mb-8 home-order-learn">
+        <div className="grid justify-center h-12 mb-8 home-order-learn z-id">
           <div className="flex flex-row">
             <img src={SwirlLogoImg} alt=""/>
             <h1 className="text-container items-center w-28">Learn More</h1>

@@ -147,22 +147,24 @@ div.nav-card {
 .share-earn-banner-alt{
   background-image: url("assets/referral-share-earn.png");
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: round;
   border-radius: 2rem;
 }
 
 .share-earn-banner {
   justify-content: center;
   align-items: center;
-  height: 30rem;
+  /* height: 30rem; */
   flex-shrink: 0;
   border-radius: 2rem;
-  width: auto;
+  /* width: auto; */
   border-radius: 32px;
   background: linear-gradient(179deg, rgba(19, 91, 92, 0.64) 0%, rgba(74, 145, 152, 0.00) 100%), url("assets/referral-share-earn.png"), lightgray -8px -132px / 100.87% 217.5% no-repeat;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  background-size: contain;
-  background-repeat: round;
+}
+
+.faq-position{
+  width: 70%;
 }
 
 .referral-banner-header {
@@ -186,11 +188,37 @@ div.nav-card {
   line-height: 1.5rem;
 }
 
+.referral-program-header{
+  line-height: 2.1rem;
+  font-weight: 600;
+  font-size: 2.3rem;
+  width: 32rem;
+  color: white;
+}
+
+.explanation-text-header{
+  color: #282D39;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.25rem;
+}
+
+.explanation-text{
+  margin-bottom: 1rem;
+  width: 40rem;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: #414A5B;
+}
+
 .referral-rules-section-1 {
-  width: 100%;
+  /* width: 100%; */
   flex-shrink: 0;
   border-radius: 24px;
-  background: #F5F8FA;
+  /* background: #F5F8FA; */
 }
 
 .referral-rules-section-1-text {
@@ -211,7 +239,7 @@ div.nav-card {
   border-radius: 24px;
   border: 1px solid #E6EBF4;
   background: #1B1E26;
-  height: 20rem;
+  /* height: 20rem; */
 }
 
 .referral-rules-section-3 {
@@ -258,7 +286,6 @@ div.nav-card {
   gap: 2.5rem;
   border-radius: 2rem;
   background: #F9FBFC;
-  margin-bottom: 8rem;
 }
 
 .faq-items {
@@ -1249,6 +1276,51 @@ div.nav-card {
 }
 
 @media screen and (max-width: 768px) {
+
+  .explanation-text{
+    width: auto;
+  }
+
+  .referral-banner-header{
+    width: auto;
+    font-size: 3rem;
+  }
+
+  .referral-banner-sub{
+    margin-top: 2rem;
+    color: #FFF;
+    text-align: center;
+    width: 21.125rem;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.5rem;
+  }
+
+  .referral-program-image-card{
+    height: 11rem;
+  }
+
+  .referral-program-image{
+    width: 18rem;
+  }
+
+  .referral-program-header {
+    line-height: 2.1rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+    width: 14rem;
+    color: white;
+  }
+
+  .referral-rules-section-1-text {
+    color: #414A5B;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.75rem;
+    width: 16rem;
+  }
+
   .thank-you-note{
     width: 15rem;
   }
@@ -1307,6 +1379,10 @@ div.nav-card {
 
   .sh-p-12-alt-n{
     padding: 3rem 1rem;
+  }
+
+  .sh-p-12-alt-r{
+    padding: 3rem 0rem;
   }
 
   .airdrop-header-sub{
@@ -1757,6 +1833,33 @@ div.nav-card {
 } */
 
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+  .referral-rules-section-1-text{
+    width: auto;
+  }
+  .referral-banner-header{
+    font-size: 3rem;
+  }
+
+  .faq-position{
+    width: 100%;
+  }
+
+  .referral-rules-section-1-text-n {
+    color: #414A5B;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.2rem;
+  }
+
+  .referral-program-header {
+    line-height: 1.5rem;
+    font-weight: 600;
+    font-size: 1.3rem;
+    width: 18rem;
+    color: white;
+  }
+  
 
   .role-card-info-name{
     width: 17rem;
