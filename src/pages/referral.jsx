@@ -345,7 +345,7 @@ export default function Referral() {
           <h3 className="text-md text-center justify-center md:text-2xl lg:text-4xl mt-8">
             Rules for a referral program
           </h3>
-          <div className="flex flex-col lg:grid md:grid lg:grid-cols-4 md:grid-cols-3 space-x-0 lg:space-x-4 md:space-x-4 space-y-4">
+          <div className="flex flex-col lg:grid md:grid lg:grid-cols-4 md:grid-cols-3 space-x-0 lg:space-x-4 md:space-x-4 space-y-4 lg:space-y-0 md:space-y-0">
             <div className="flex justify-center items-center flex-col referral-rules-section-1">
               <div className="relative p-4">
                 <p className="referral-rules-section-1-text">
