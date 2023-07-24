@@ -61,7 +61,7 @@ export default function Referral() {
       <Navbar />
       <div class="mt-3 mx-auto px-2 sm:px-6 lg:px-8 h-18">
         <div className="center-container-alt">
-          <div className="share-earn-banner share-earn-banner-alt flex flex-col justify-center items-center mt-24 sh-p-12-alt-n relative md:pt-8 md:pb-8 md:pr-20 md:pl-20 lg:pt-24 lg:pb-24 lg:pr-80 lg:pl-80">
+          <div className="share-earn-banner share-earn-banner-alt flex flex-col justify-center items-center mt-24 sh-p-12-alt-n relative md:pt-8 md:pb-8 md:pr-20 md:pl-20 lg:pt-24 lg:pb-24 lg:pr-96 lg:pl-96">
             <h4 className="items-center justify-center referral-banner-header ">
               Share and Earn
             </h4>

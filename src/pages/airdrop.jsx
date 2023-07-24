@@ -14,7 +14,7 @@ export default function AirDrop(){
     <>
       <Navbar/>
       <div className="center-container-alt">
-        <div className="career-section airdrop-section flex flex-col mt-24 sh-p-12-alt-n relative md:pt-8 md:pb-8 md:pr-20 md:pl-20 lg:pt-24 lg:pb-24 lg:pr-80 lg:pl-80">
+        <div className="career-section airdrop-section flex flex-col mt-24 sh-p-12-alt-n relative md:pt-8 md:pb-8 md:pr-20 md:pl-20 lg:pt-24 lg:pb-24 lg:pr-96 lg:pl-96">
           <h1 className="career-banner-header airdrop-banner-header">
             Snowball Airdrop Campaign
           </h1>
