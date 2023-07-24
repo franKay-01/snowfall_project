@@ -204,9 +204,31 @@ div.nav-card {
   line-height: 2.25rem;
 }
 
+.explanation-ask-q-text{
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.375rem; /* 137.5% */
+  text-transform: uppercase;
+}
+
+.explanation-ask-q-button{
+  width: 16.75rem;
+  height: 3.5rem;
+  justify-content: center;
+  align-items: center;
+  background: #FFF;
+  border-radius: 1rem;
+}
+
+.explanation-image{
+  height: 38rem;
+  width: 23rem;
+}
+
 .explanation-text{
   margin-bottom: 1rem;
-  width: 40rem;
+  width: 35rem;
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
