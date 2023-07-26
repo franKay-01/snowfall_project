@@ -1,11 +1,34 @@
+import { useState } from "react";
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
 import BlogPostImg from "../assets/blog_post.png"
 
 import MediaSection from "../components/media_section";
 import DownloadSection from "../components/download_section";
+import { useEffect } from "react";
 
 export default function Blog(){
+  const data = [
+    {name: "The Synergy of Web3 and the AI-Internet: A Powerful Combination", date:"20-12-2023", image: BlogPostImg, tags: ['web3', 'ruby']}, 
+    {name: "The Synergy of Web3 and the AI-Internet: A Powerful Combination", date:"20-12-2023", image: BlogPostImg, tags: ['web3', 'rails8']},
+    {name: "The Synergy of Web3 and the AI-Internet: A Powerful Combination", date:"20-12-2023", image: BlogPostImg, tags: ['web3', 'blockchain']}, 
+    {name: "The Synergy of Web3 and the AI-Internet: A Powerful Combination", date:"20-12-2023", image: BlogPostImg,tags: ['web3', 'sql']}, 
+    {name: "The Synergy of Web3 and the AI-Internet: A Powerful Combination", date:"20-12-2023", image:BlogPostImg,tags: ['web3', 'mongodb']}, 
+    {name: "The Synergy of Web3 and the AI-Internet: A Powerful Combination", date:"20-12-2023", image:BlogPostImg,tags: ['web3', 'psql']},
+    {name: "The Synergy of Web3 and the AI-Internet: A Powerful Combination", date:"20-12-2023", image:BlogPostImg,tags: ['web3', 'java']}
+  ]
+  
+  const itemsPerPage = 3;
+  const [visibleItems, setVisibleItems] = useState(itemsPerPage);
+
+  const handleLoadMore = () => {
+    setVisibleItems(prevVisibleItems => prevVisibleItems + itemsPerPage);
+  };
+
+  useEffect(()=>{
+    console.log("LENGTH " + data.length)
+  }, [])
+
   return (
     <>
       <Navbar/>
@@ -32,115 +55,36 @@ export default function Blog(){
               </div>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 p-4 gap-4 lg:gap-4 md:gap-4">
-              <div className="blog-post-card flex flex-col">
-                <img src={BlogPostImg}/>
-                <h1 className="blog-post-card-header pr-4 pl-4 pt-4">
-                  The Synergy of Web3 and the AI-Internet: A Powerful Combination
-                </h1>
-                <h1 className="blog-post-card-date p-4">
-                  March 8, 2023
-                </h1>
-                <svg className="pl-4" xmlns="http://www.w3.org/2000/svg" width="328" height="2" viewBox="0 0 328 2" fill="none">
-                  <path d="M0 1H328" stroke="#E6EBF4"/>
-                </svg>
-                <div className="flex flex-row pl-4 pt-2">
-                  <div className="blog-tag">
-                    <h1 className="blog-tag-text">Web3</h1>
-                  </div>
-                </div>
-              </div>
-              <div className="blog-post-card flex flex-col">
-                <img src={BlogPostImg}/>
-                <h1 className="blog-post-card-header pr-4 pl-4 pt-4">
-                  The Synergy of Web3 and the AI-Internet: A Powerful Combination
-                </h1>
-                <h1 className="blog-post-card-date p-4">
-                  March 8, 2023
-                </h1>
-                <svg className="pl-4" xmlns="http://www.w3.org/2000/svg" width="328" height="2" viewBox="0 0 328 2" fill="none">
-                  <path d="M0 1H328" stroke="#E6EBF4"/>
-                </svg>
-                <div className="flex flex-row pl-4 pt-2">
-                  <div className="blog-tag">
-                    <h1 className="blog-tag-text">Web3</h1>
-                  </div>
-                </div>
-              </div>
-              <div className="blog-post-card flex flex-col">
-                <img src={BlogPostImg}/>
-                <h1 className="blog-post-card-header pr-4 pl-4 pt-4">
-                  The Synergy of Web3 and the AI-Internet: A Powerful Combination
-                </h1>
-                <h1 className="blog-post-card-date p-4">
-                  March 8, 2023
-                </h1>
-                <svg className="pl-4" xmlns="http://www.w3.org/2000/svg" width="328" height="2" viewBox="0 0 328 2" fill="none">
-                  <path d="M0 1H328" stroke="#E6EBF4"/>
-                </svg>
-                <div className="flex flex-row pl-4 pt-2">
-                  <div className="blog-tag">
-                    <h1 className="blog-tag-text">Web3</h1>
-                  </div>
-                </div>
-              </div>
-              <div className="blog-post-card flex flex-col">
-                <img src={BlogPostImg}/>
-                <h1 className="blog-post-card-header pr-4 pl-4 pt-4">
-                  The Synergy of Web3 and the AI-Internet: A Powerful Combination
-                </h1>
-                <h1 className="blog-post-card-date p-4">
-                  March 8, 2023
-                </h1>
-                <svg className="pl-4" xmlns="http://www.w3.org/2000/svg" width="328" height="2" viewBox="0 0 328 2" fill="none">
-                  <path d="M0 1H328" stroke="#E6EBF4"/>
-                </svg>
-                <div className="flex flex-row pl-4 pt-2">
-                  <div className="blog-tag">
-                    <h1 className="blog-tag-text">Web3</h1>
-                  </div>
-                </div>
-              </div>
-              <div className="blog-post-card flex flex-col">
-                <img src={BlogPostImg}/>
-                <h1 className="blog-post-card-header pr-4 pl-4 pt-4">
-                  The Synergy of Web3 and the AI-Internet: A Powerful Combination
-                </h1>
-                <h1 className="blog-post-card-date p-4">
-                  March 8, 2023
-                </h1>
-                <svg className="pl-4" xmlns="http://www.w3.org/2000/svg" width="328" height="2" viewBox="0 0 328 2" fill="none">
-                  <path d="M0 1H328" stroke="#E6EBF4"/>
-                </svg>
-                <div className="flex flex-row pl-4 pt-2">
-                  <div className="blog-tag">
-                    <h1 className="blog-tag-text">Web3</h1>
-                  </div>
-                </div>
-              </div>
-              <div className="blog-post-card flex flex-col">
-                <img src={BlogPostImg}/>
-                <h1 className="blog-post-card-header pr-4 pl-4 pt-4">
-                  The Synergy of Web3 and the AI-Internet: A Powerful Combination
-                </h1>
-                <h1 className="blog-post-card-date p-4">
-                  March 8, 2023
-                </h1>
-                <svg className="pl-4" xmlns="http://www.w3.org/2000/svg" width="328" height="2" viewBox="0 0 328 2" fill="none">
-                  <path d="M0 1H328" stroke="#E6EBF4"/>
-                </svg>
-                <div className="flex flex-row pl-4 pt-2">
-                  <div className="blog-tag">
-                    <h1 className="blog-tag-text">Web3</h1>
-                  </div>
-                </div>
-              </div>
+               {data.slice(0, visibleItems).map((item, index) => (
+                  <a href="/article" className="blog-post-card flex flex-col">
+                    <img src={item.image}/>
+                    <h1 className="blog-post-card-header pr-4 pl-4 pt-4">
+                      {item.name}
+                    </h1>
+                    <h1 className="blog-post-card-date p-4">
+                      {item.date}
+                    </h1>
+                    <svg className="pl-4 pr-8" xmlns="http://www.w3.org/2000/svg" width="328" height="2" viewBox="0 0 328 2" fill="none">
+                      <path d="M0 1H328" stroke="#E6EBF4"/>
+                    </svg>
+                    <div className="flex flex-row pl-4 space-x-2 pt-2">
+                      {item.tags.map((tag, index) => (
+                        <div key={index} className="blog-tag">
+                          <h1 className="blog-tag-text">{tag}</h1>
+                        </div>
+                      ))} 
+                    </div>
+                  </a>
+               ))}
             </div>
-            
           </div>
           <div className="flex justify-between items-center mt-12">
-            <button className="blog-load-button">
-              <h1 className="blog-load-text">load more</h1>
-            </button>
+            {visibleItems < data.length ? 
+              <button onClick={handleLoadMore} className="blog-load-button">
+                <h1 className="blog-load-text">load more</h1>
+              </button>
+              :null
+            }
           </div>
         </div>
        

@@ -63,7 +63,7 @@ export default function Blog(){
             <h1 className="blog-post-card-date p-4">
               March 8, 2023
             </h1>
-            <svg className="pl-4" xmlns="http://www.w3.org/2000/svg" width="328" height="2" viewBox="0 0 328 2" fill="none">
+            <svg className="pl-4 pr-8" xmlns="http://www.w3.org/2000/svg" width="328" height="2" viewBox="0 0 328 2" fill="none">
               <path d="M0 1H328" stroke="#E6EBF4"/>
             </svg>
             <div className="flex flex-row pl-4 pt-2">
@@ -80,7 +80,7 @@ export default function Blog(){
             <h1 className="blog-post-card-date p-4">
               March 8, 2023
             </h1>
-            <svg className="pl-4" xmlns="http://www.w3.org/2000/svg" width="328" height="2" viewBox="0 0 328 2" fill="none">
+            <svg className="pl-4 pr-8" xmlns="http://www.w3.org/2000/svg" width="328" height="2" viewBox="0 0 328 2" fill="none">
               <path d="M0 1H328" stroke="#E6EBF4"/>
             </svg>
             <div className="flex flex-row pl-4 pt-2">
@@ -97,7 +97,7 @@ export default function Blog(){
             <h1 className="blog-post-card-date p-4">
               March 8, 2023
             </h1>
-            <svg className="pl-4" xmlns="http://www.w3.org/2000/svg" width="328" height="2" viewBox="0 0 328 2" fill="none">
+            <svg className="pl-4 pr-8" xmlns="http://www.w3.org/2000/svg" width="328" height="2" viewBox="0 0 328 2" fill="none">
               <path d="M0 1H328" stroke="#E6EBF4"/>
             </svg>
             <div className="flex flex-row pl-4 pt-2">
