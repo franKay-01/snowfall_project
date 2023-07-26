@@ -17,7 +17,7 @@ const navigation = [
   { name: 'Home', href: '/', current: false },
   { name: 'Airdrop', href: '/airdrop', current: false },
   { name: 'Referral', href: '/referral', current: false },
-  { name: 'Team', href: '/team', current: false },
+  { name: 'Team', href: '/career', current: false },
   { name: 'Blog', href: '/blog', current: false },
 ]
 
@@ -68,6 +68,13 @@ export default function Navbar() {
         setTeamUrl(false)
         setBlogUrl(true)
         break;
+      case 'article':
+        setHomeUrl(false)
+        setAirUrl(false)
+        setRefUrl(false)
+        setTeamUrl(false)
+        setBlogUrl(true)
+        break;
       default:
         setHomeUrl(true)
         setAirUrl(false)
@@ -107,7 +114,7 @@ export default function Navbar() {
                     <NavLink className={`${airUrl ? 'nav-bar-text-alt': ''} block px-3 py-2 nav-bar-text`} exact to="/airdrop">Airdrop</NavLink>
                     <NavLink className={`${refUrl ? 'nav-bar-text-alt': ''} block px-3 py-2 nav-bar-text`} exact to="/referral">Referral</NavLink>
                     <NavLink className={`${teamUrl ? 'nav-bar-text-alt': ''} block px-3 py-2 nav-bar-text`} exact to="/career">Team</NavLink>
-                    <NavLink className={`${blogUrl ? 'nav-bar-text-alt': ''} block px-3 py-2 nav-bar-text`} exact to="/">Blog</NavLink>
+                    <NavLink className={`${blogUrl ? 'nav-bar-text-alt': ''} block px-3 py-2 nav-bar-text`} exact to="/blog">Blog</NavLink>
                     <div className='mini-nav-card flex flex-row space-x-2 hidden lg:flex'>
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M17.0884 12.1388C17.1085 10.581 17.9252 9.14197 19.2524 8.32599C18.4113 7.12476 17.053 6.39045 15.5873 6.34459C14.0453 6.18273 12.5503 7.26733 11.7645 7.26733C10.9635 7.26733 9.75367 6.36066 8.45085 6.38747C6.73668 6.44285 5.17734 7.39383 4.34336 8.89248C2.56737 11.9673 3.8921 16.4863 5.59335 18.9718C6.44453 20.1889 7.4393 21.5484 8.74095 21.5002C10.0147 21.4474 10.4904 20.688 12.0279 20.688C13.5512 20.688 13.9975 21.5002 15.3255 21.4695C16.6923 21.4473 17.5535 20.2471 18.3748 19.0185C18.9863 18.1513 19.4569 17.1928 19.7691 16.1786C18.1458 15.492 17.0903 13.9014 17.0884 12.1388Z" fill="white"/>
