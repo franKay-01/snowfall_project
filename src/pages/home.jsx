@@ -33,6 +33,7 @@ import Slide8 from '../assets/Assets/Home/BuyCrypto/Slideshow/Slideshow8.png';
 import Slide9 from '../assets/Assets/Home/BuyCrypto/Slideshow/Slideshow9.png';
 
 import { useEffect } from "react";
+import MediaSection from "../components/media_section";
 
 export default function Home(){
 
@@ -251,61 +252,7 @@ export default function Home(){
           </div>
         </div>
       </div>
-      <div className="bg-slate-100 flex flex-col pl-4 lg:pt-32 md:pt-8 md:justify-center md:items-center lg:pb-32 md:pb-12 md:flex-col lg:flex-col lg:space-y-14 md:space-y-14 mt-24">
-        <div className="grid grid-cols-1 lg:grid-cols-2 md:ml-0 lg:ml-2">
-          <h1 className="snowball-heading">Snowball in the Media</h1>
-          <div className="hidden lg:grid lg:justify-center">
-            <button className="snowball-button">
-              <h1 className="snowball-button-text">
-                show all
-              </h1>
-            </button>
-          </div>
-        </div>
-        <div className="flex flex-col space-y-8 lg:flex-row md:flex-col md:space-y-8 lg:space-y-0 lg:justify-normal md:justify-center md:items-center lg:space-x-8">
-          <div className="snowball-media-lg snowball-media-1 relative">
-            <div class="grid content-between overlay p-4 lg:p-12 md:p-12">
-              <div className="snowball-media-top-button">
-                <h1 className="snowball-media-top-button-text">podcast</h1>
-              </div>
-              <div className="flex flex-col space-y-4">
-                <h1 className="snowball-media-bottom-text">
-                  Snowball Podcast #2 Available now!
-                </h1>
-                <h1 className="snowball-media-bottom-date">March 9, 2023</h1>
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-col space-y-8">
-            <div className="snowball-media-n-lg snowball-media-2 relative">
-              <div class="grid content-between overlay p-8">
-                <div className="snowball-media-top-button">
-                  <h1 className="snowball-media-top-button-text">news</h1>
-                </div>
-                <div className="flex flex-col space-y-4">
-                  <h1 className="snowball-media-bottom-text-n">
-                  Snowball: Automating Cryptocurrency Investing
-                  </h1>
-                  <h1 className="snowball-media-bottom-date">March 8, 2023</h1>
-                </div>
-              </div>
-            </div>
-            <div className="snowball-media-n-lg snowball-media-3 relative">
-              <div class="grid content-between overlay p-8">
-                <div className="snowball-media-top-button">
-                  <h1 className="snowball-media-top-button-text">news</h1>
-                </div>
-                <div className="flex flex-col space-y-4">
-                  <h1 className="snowball-media-bottom-text-n">
-                  Republic: Invest in Snowball Money
-                  </h1>
-                  <h1 className="snowball-media-bottom-date">March 7, 2023</h1>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <MediaSection status={true}/>
       <div className="bg-c-black relative">
         <div className="concave-border bg-slate-100"></div>
         <div className="bg-c-black flex flex-col mt-8 pl-4 lg:pl-56 lg:justify-center lg:items-stretch md:justify-center md:items-center lg:pt-0 md:pt-8 lg:pb-0 md:pb-12 md:flex-col lg:flex-row lg:space-x-24 lg:space-y-2 space-y-4 md:space-y-14">
