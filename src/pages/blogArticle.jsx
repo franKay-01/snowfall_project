@@ -8,7 +8,7 @@ export default function Blog(){
   return (
     <>
       <Navbar/>
-      <div className="pl-4 pb-4 lg:pb-4 md:pb-4 lg:pl-12 md:pl-12 pt-4">
+      <div className="pl-4 mt-28 pb-4 lg:pb-4 md:pb-4 lg:pl-20 md:pl-12 pt-4">
         <button className="article-return-button">
           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M0.467713 14.8592C-0.155904 15.4885 -0.155904 16.5089 0.467713 17.1382L8.11939 24.86C8.74301 25.4894 9.75409 25.4894 10.3777 24.86C11.0013 24.2307 11.0013 23.2103 10.3777 22.581L5.45251 17.6107L30.4031 17.6102C31.2851 17.6102 32 16.8887 32 15.9987C32 15.1087 31.2851 14.3872 30.4031 14.3872L5.45164 14.3876L10.3777 9.41638C11.0013 8.78705 11.0013 7.7667 10.3777 7.13736C9.75409 6.50803 8.74301 6.50803 8.11939 7.13736L0.467713 14.8592Z" fill="#414A5B"/>

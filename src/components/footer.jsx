@@ -15,19 +15,21 @@ export default function Footer() {
         <div className="flex flex-col space-y-4">
           <div className="flex flex-col space-y-5 text-sm dark:text-gray-400">
             <a rel="noopener noreferrer" className='nav-bar-text' href="/">Home</a>
-            <a rel="noopener noreferrer" className='nav-bar-text' href="/airdrop">Airdrop</a>
             <a rel="noopener noreferrer" className='nav-bar-text' href="/referral">Referral</a>
             <a rel="noopener noreferrer" className='nav-bar-text' href="/career">Team</a>
             <a rel="noopener noreferrer" className='nav-bar-text' href="/">Blog</a>
+            <a rel="noopener noreferrer" className='nav-bar-text' href="/">Deposit</a>
+            
           </div>
         </div>
         
         <div className="flex flex-col space-y-4">
           <div className="flex flex-col space-y-5 text-sm dark:text-gray-400">
+            <a rel="noopener noreferrer" className='nav-bar-text' href="/">Career</a>
+            <a rel="noopener noreferrer" className='nav-bar-text' href="/">Terms of Service</a>
             <a rel="noopener noreferrer" className='nav-bar-text' href="/">Snowball Crypto User Agreement</a>
             <a rel="noopener noreferrer" className='nav-bar-text' href="/">Cryptocurrency Risk Disclosure</a>
-            <a rel="noopener noreferrer" className='nav-bar-text' href="/">Privacy Policy</a>
-            <a rel="noopener noreferrer" className='nav-bar-text' href="/">Terms of Service</a>
+            <a rel="noopener noreferrer" className='nav-bar-text' href="/">Privacy Policy & Terms of Service</a>
           </div>
         </div>
         <div className="flex flex-col space-y-4">
