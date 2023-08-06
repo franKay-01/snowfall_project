@@ -20,8 +20,7 @@ body{
 .close-button{
   position: absolute;
   right: 1rem;
-  top: 1rem;
-  border: 1px solid black;
+  top: 1.5rem;
   border-radius: 0.5rem;
   color: black;
 }
@@ -40,15 +39,16 @@ body{
 .mini-nav-card{
   text-align: center;
   border-radius: 25px;
-  padding: 8px 15px;
+  padding: 8px 10px;
   background: #1B1E26;
 }
 
 div.nav-card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0px 8px 40px 0px rgba(225, 230, 236, 0.60);
   text-align: center;
   border-radius: 25px;
-  padding: 8px 30px;
+  padding: 8px 10px;
+  background: white;
 }
 
 .nav-bar-text-alt{
@@ -73,7 +73,7 @@ div.nav-card {
 .banner-sub-text{
   margin-top: 1rem;
   font-size: 25px;
-  width: 567px;
+  width: 29rem;
   font-weight: 100;
   color: #282D39;
 }
@@ -88,6 +88,7 @@ div.nav-card {
 
 .vertical-hr {
   width: 1px;
+  margin-right: 0.5rem !important;
   height: 25px;
   background-color: #fff;
 }
@@ -103,16 +104,17 @@ div.nav-card {
 
 .home-banner{
   background-color: #F8F9FC;
-  height: 40rem;
+  height: 52rem;
+  margin-bottom: 5rem
 }
 
 .nav-bg-custom-alt{
-  background-color: #F8F9FC;
+  /* background-color: #F8F9FC; */
   z-index: 999;
 }
 
 .nav-bg-custom{
-  background-color: #fff;
+  /* background-color: #fff; */
   z-index: 999;
 }
 
@@ -121,14 +123,10 @@ div.nav-card {
 }
 
 .video-container {
-  /* position: absolute;
-  top: 9rem;
-  left: 35rem;
-  width: 59rem; */
   position: absolute;
-  top: 0rem;
-  left: 24rem;
-  width: 70rem;
+  top: 1rem;
+  left: 20rem;
+  width: 75rem;
 }
 
 .z-id{
@@ -164,7 +162,7 @@ div.nav-card {
 }
 
 .faq-position{
-  width: 70%;
+  width: 72%;
 }
 
 .referral-banner-header {
@@ -318,7 +316,7 @@ div.nav-card {
 }
 
 .banner-card{
-  width: 400px;
+  /* width: 400px; */
   height: 260px;
   background-color: #F9FBFC;
   border-radius: 15px;
@@ -330,18 +328,26 @@ div.nav-card {
   height: 64px;
 }
 
+.gradient-text-custom{
+  font-size: 5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 5.625rem; /* 112.5% */
+  letter-spacing: -0.03125rem;
+}
+
 .banner-card-heading{
   font-size: 32px;
   font-weight: 400;
   width: 222px;
-  line-height: 40px;
+  line-height: 2.25rem;
 }
 
 .banner-card-heading-sub{
   margin-top: 1rem;
   font-size: 16px;
   font-weight: 100;
-  width: 242px;
+  width: 290px;
   line-height: 20px;
 }
 
@@ -414,7 +420,7 @@ div.nav-card {
 }
 
 .popular-card-text{
-  width: 25.25rem;
+  width: 22.25rem;
   font-size: 2.5rem;
   font-style: normal;
   font-weight: 500;
@@ -423,6 +429,7 @@ div.nav-card {
 
 .popular-card-text-sub{
   font-size: 1rem;
+  width: 20rem;
   color: #838B9D;
   font-style: normal;
   font-weight: 400;
@@ -488,9 +495,14 @@ div.nav-card {
   text-transform: uppercase;
 }
 
-/* .sh-p-12-alt-n{
-  padding: 7rem 20rem;
-} */
+.social-icons-bg{
+  display: inline-flex;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6.25rem;
+  background: #F9FBFC
+}
 
 .sh-p-12{
   padding: 3rem 9rem;
@@ -506,7 +518,7 @@ div.nav-card {
   font-style: normal;
   width: 30rem;
   font-weight: 400;
-  line-height: 4.5rem;
+  line-height: 4rem;
 }
 
 .share-section-image{
@@ -712,9 +724,9 @@ div.nav-card {
 }
 
 .buy-defi-image{
-  height: 40rem;
-  width: 38rem;
-  border-radius: 3rem;
+  height: 42rem;
+  width: 42rem;
+  border-radius: 3rem 3rem 0 0;
 }
 
 .overlay{
@@ -770,7 +782,7 @@ div.nav-card {
   width: 23.75rem;
   height: 3.5rem;
   border-radius: 6.25rem;
-  background: #282D39;
+  background: rgba(20, 22, 28, 0.60);
   justify-content: end;
   align-items: center;
   padding: 0.2rem;
@@ -780,7 +792,8 @@ div.nav-card {
   width: 11.5625rem;
   height: 3rem;
   border-radius: 6.25rem;
-  background: rgba(20, 22, 28, 0.60);
+  /* background: rgba(20, 22, 28, 0.60); */
+  background: #282D39;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -802,7 +815,7 @@ div.nav-card {
 }
 
 .snowball-money-header{
-  width: 28.1875rem;
+  width: 32.1875rem;
   color:#D9F9F8;
   font-size: 4rem;
   font-style: normal;
@@ -1418,7 +1431,80 @@ div.nav-card {
   height: 30rem;
 }
 
+.snowball-money-view-open-roles-text{
+  color: #FFF;
+  text-align: center;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.375rem; /* 137.5% */
+  text-transform: uppercase;
+}
+
+.post-tag-bg-alt{
+  background: #414A5B !important;
+}
+
+.post-tag-text-alt{
+  color: #FFF !important;
+}
+
+.post-m{
+  margin-top: 2rem !important;
+}
+
+.post-tag-text{
+  color: #414A5B;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.75rem; /* 175% */
+  text-transform: uppercase;
+}
+
+.post-tag-bg{
+  padding: 0.1875rem 0.75rem;
+  display: flex;
+  height: 2.5rem;
+  align-items: center;
+  border-radius: 6.25rem;
+  background: #E6EBF4;
+  text-transform: uppercase;
+}
+
+.snowball-money-view-open-roles{
+  display: flex;
+  width: 13rem;
+  height: 3.5rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  background: #00B9C2;
+  box-shadow: 0px 4px 15px 0px rgba(18, 193, 183, 0.25);
+}
+
+.snowball-media-article-button-text{
+  color: #FFF;
+  text-align: center;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.375rem; /* 137.5% */
+  text-transform: uppercase;
+}
+
+.snowball-media-article-button{
+  width: 12rem;
+  height: 3rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items : center;
+  border-radius: 1rem;
+  border: 1px solid #838B9D;
+}
+
 .thank-you-note-sub{
+  width: 20rem;
   color: #414A5B;
   text-align: center;
   font-size: 1rem;
@@ -1468,6 +1554,11 @@ div.nav-card {
 }
 
 @media screen and (max-width: 768px) {
+
+  .post-tag-w{
+    width: 20rem;
+  }
+
   .article-main-header {
     width: 20.5rem;
     color: #282D39;
@@ -1666,6 +1757,11 @@ div.nav-card {
 
   .home-banner{
     height: auto;
+    margin-bottom: 0rem;
+  }
+
+  .share-section-button-alt{
+    width: auto;
   }
 
   .share-section-alt-n{
@@ -1785,6 +1881,47 @@ div.nav-card {
     border-radius: 2.5rem;
   }
 
+  .red-label{
+    color: #000;
+  }
+  
+  .mob-menu-bg-sub{
+    display: flex;
+    width: 2rem;
+    height: 2rem;
+    padding: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6.25rem;
+    background: #F5F8FA;
+  }
+
+  .link-text{
+    color: #414A5B;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 116%
+  }
+
+  .mobile-nav-bg {
+    background: #fff;
+    height: 27rem;
+    top: 0.5rem;
+    border-radius: 1.5rem;
+    left: 5%;
+    width: 90%;
+    position: absolute;
+    box-shadow: 0px 8px 40px 0px rgba(225, 230, 236, 0)
+  }
+
+  .mob-menu-bg{
+    padding: 0.5rem 1rem;
+    border-radius: 6.25rem;
+    background: #FFF;
+    box-shadow: 0px 8px 40px 0px rgba(225, 230, 236, 0.60);
+  }
+
   .popular-card-text-sub-alt{
     padding: 0 2rem;
     font-size: 0.9375rem;
@@ -1829,7 +1966,7 @@ div.nav-card {
   .gradient-text{
     font-size: 2.5rem;
     font-style: normal;
-    line-height: 1.75rem;
+    line-height: 2.75rem;
     letter-spacing: -0.03125rem;
   }
 
@@ -1839,6 +1976,7 @@ div.nav-card {
   }
 
   .video-container{
+    margin-top: 5rem;
     position: relative;
     top: 0;
     left: 0;
@@ -1846,7 +1984,7 @@ div.nav-card {
   }
 
   .banner-card{
-    width: 18rem;
+    /* width: 18rem; */
     height: 13rem;
     margin-right: 2rem;
     background-color: #F9FBFC;
@@ -1928,7 +2066,7 @@ div.nav-card {
   }
 
   .buy-defi-button-text{
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-style: normal;
     font-weight: 500;
     line-height: 1.875rem;
@@ -2071,13 +2209,35 @@ div.nav-card {
 } */
 
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .post-tag-w{
+    width: 40rem;
+  }
+  
   .article-section-p {
     padding-left: 2rem;
     margin-bottom: 4rem;
   }
+  
+  .d-bg{
+    height: inherit;
+    padding: 8rem 15rem;
+  }
+
+  .gradient-text-custom{
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 4.625rem;
+    letter-spacing: -0.03125rem;
+  }
 
   .article-text{
     width: 45rem;
+  }
+
+  .share-section{
+    width: 90%;
+    justify-content: left;
   }
 
   .article-sub-header{
@@ -2124,7 +2284,6 @@ div.nav-card {
     color: white;
   }
   
-
   .role-card-info-name{
     width: 17rem;
     color: #282D39;
@@ -2205,7 +2364,7 @@ div.nav-card {
   }
 
   .sh-p-12{
-    padding: 1rem 3rem
+    padding: 1rem 6rem
   }
 
   .home-order-1{
@@ -2248,7 +2407,9 @@ div.nav-card {
   }
 
   .share-section-image{
-    border-radius: 2rem
+    border-radius: 2rem;
+    height: 28rem;
+    width: 15rem;
   }
 
   .footer-logo-d{
@@ -2257,12 +2418,18 @@ div.nav-card {
   }
 
   .share-section-header{
-    color: #D9F9F8;
+    /* color: #D9F9F8;
     font-size: 1.5rem;
     font-style: normal;
     width: 10rem;
     font-weight: 400;
-    line-height: 1.75rem;
+    line-height: 1.75rem; */
+    color: #D9F9F8;
+    font-size: 2.5rem;
+    font-style: normal;
+    width: 21rem;
+    font-weight: 400;
+    line-height: 2.75rem;
   }
 
   .share-section-sub{
@@ -2271,7 +2438,7 @@ div.nav-card {
     font-style: normal;
     font-weight: 200;
     line-height: 2rem;
-    width: 19.6875rem;
+    /* width: auto; */
   }
 
   .home-store-button{
@@ -2317,13 +2484,29 @@ div.nav-card {
   }
 }
 
-
 @keyframes fade{
   from{
     opacity:0.4;
   }
   to{
     opacity:1;
+  }
+}
+
+.fade-in-out {
+  animation: fadeInOut 2s infinite;
+  opacity: 0; /* Start with the element hidden */
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0; /* Hide the element at the start of the animation */
+  }
+  50% {
+    opacity: 1; /* Make the element fully visible at the middle of the animation */
+  }
+  100% {
+    opacity: 0; /* Hide the element again at the end of the animation */
   }
 }
 
@@ -2334,7 +2517,7 @@ div.nav-card {
 
 .slides{
   overflow:hidden;
-  animation-name:fade;
+  animation-name:fade-in-out;
   animation-duration:1s;
   display:none;
 }
@@ -2343,6 +2526,7 @@ div.nav-card {
   margin:0 auto;
   text-align:center;
 }
+
 .dot{
   display:inline-block;
   border-radius:50%;

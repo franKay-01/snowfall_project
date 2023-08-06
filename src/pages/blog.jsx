@@ -18,21 +18,40 @@ export default function Blog(){
     {name: "The Synergy of Web3 and the AI-Internet: A Powerful Combination", date:"20-12-2023", image:BlogPostImg,tags: ['web3', 'java']}
   ]
   
+  const postTagData = ['News', 'Podcasts', 'updates', 'annoucements', 'ar', 'vr', 'web3', 'bitcoin', 'etherum']
+
   const itemsPerPage = 3;
   const [visibleItems, setVisibleItems] = useState(itemsPerPage);
+  const [previous, setPrevious] = useState('initial')
 
   const handleLoadMore = () => {
     setVisibleItems(prevVisibleItems => prevVisibleItems + itemsPerPage);
   };
 
-  useEffect(()=>{
-    console.log("LENGTH " + data.length)
-  }, [])
+  // useEffect(()=>{
+  //   console.log("LENGTH " + data.length)
+  // }, [])
+
+  const makeActive = (index) => {
+    console.log("INDEX "+index)
+    const previousItem = document.getElementById(previous);
+    const previousItemH1 = document.getElementById(`initial-${previous}`);
+
+    previousItem.classList.remove('post-tag-bg-alt');
+    previousItemH1.classList.remove('post-tag-text-alt');
+
+    const divItem = document.getElementById(index);
+    const divItemH1 = document.getElementById(`initial-${index}`);
+    divItem.classList.add('post-tag-bg-alt');
+    divItemH1.classList.add('post-tag-text-alt');
+
+    setPrevious(index)
+  }
 
   return (
     <>
       <Navbar/>
-      <div className="center-container-alt">
+      <div className="center-container-alt mt-4">
         <div className="blog-section flex flex-col mt-24 sh-p-12-alt-n relative md:pt-28 md:pb-28 md:pr-20 md:pl-20 lg:pt-40 lg:pb-40 lg:pr-96 lg:pl-96">
           <h1 className="career-banner-header airdrop-banner-header">
             Blog
@@ -42,8 +61,8 @@ export default function Blog(){
       <MediaSection/>
       <div className="flex flex-col justify-center items-center">
         <div className="post-item-bg flex justify-center items-center w-auto lg:w-11/12 md:w-full flex-col mt-24 relative md:pt-8 md:pb-8 md:pr-20 md:pl-20 lg:pt-8 lg:pb-12 lg:pr-44 lg:pl-44">
-          <div className="flex flex-col space-y-4 lg:space-y-12 md:space-y-12 p-4">
-            <div className="flex flex-col p-4 lg:flex-row md:flex-row justify-between items-start	lg:items-center md:items-center">
+          <div className="flex flex-col space-y-4 lg:space-y-4 md:space-y-12 p-4">
+            <div className="flex flex-col lg:flex-row md:flex-row justify-between items-start	lg:items-center md:items-center">
               <h1 className="blog-header">
                 Our Posts
               </h1>
@@ -54,7 +73,17 @@ export default function Blog(){
                 <input type="text" className="blog-input-box" placeholder="Search by articles"/>
               </div>
             </div>
-            <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 p-4 gap-4 lg:gap-4 md:gap-4">
+            <div className="flex flex-row overflow-auto post-tag-w space-x-4">
+              <div onClick={()=>makeActive('initial')}  id="initial" className="post-tag-bg post-tag-bg-alt cursor-pointer">
+                <h1 id="initial-initial" className="post-tag-text post-tag-text-alt">all</h1>
+              </div>
+              { postTagData.map((data, index) => (
+                <div id={index} onClick={()=>makeActive(index)} className="post-tag-bg cursor-pointer">
+                  <h1 id={`initial-${index}`} className="post-tag-text">{data}</h1>
+                </div>
+              ))}
+            </div>
+            <div className="post-m grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 p-4 lg:p-0 md:p-0 gap-4 lg:gap-4 md:gap-4">
                {data.slice(0, visibleItems).map((item, index) => (
                   <a href="/article" className="blog-post-card flex flex-col">
                     <img src={item.image}/>

@@ -34,7 +34,7 @@ export default function Career(){
   return (
     <>
       <Navbar/>
-      <div className="center-container-alt">
+      <div className="center-container-alt mt-4">
         {/* <div className="career-section flex flex-col mt-24 sh-p-12 relative"> */}
         <div className="career-section flex flex-col mt-24 sh-p-12-alt-n relative md:pt-8 md:pb-8 md:pr-20 md:pl-20 lg:pt-24 lg:pb-24 lg:pr-96 lg:pl-96">
 
