@@ -151,7 +151,7 @@ export default function Navbar() {
                   </defs>
                 </svg>
               </Link>
-              <div className="flex-1 flex items-center sm:items-stretch justify-center z-1">
+              <div className="flex-1 flex items-center sm:items-stretch justify-center z-1 ml-40">
                 <div className="hidden sm:block">
                   <div className="flex space-x-4 nav-card">
                     <NavLink className={`${homeUrl ? 'nav-bar-text-alt': ''} block px-3 py-2 nav-bar-text`} exact to="/">Home</NavLink>

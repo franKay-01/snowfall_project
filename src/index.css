@@ -377,7 +377,7 @@ div.nav-card {
   background-image: url('./assets/most_popular_network.png');
   background-size: contain;
   background-size: contain;
-  height: 480px;
+  height: 40rem;
   padding: 4rem;
   margin-top: 5rem ;
   width: 100%;
@@ -1761,7 +1761,7 @@ div.nav-card {
   }
 
   .share-section-button-alt{
-    width: auto;
+    width: 100%;
   }
 
   .share-section-alt-n{
@@ -2212,15 +2212,15 @@ div.nav-card {
   .post-tag-w{
     width: 40rem;
   }
-  
+
   .article-section-p {
     padding-left: 2rem;
     margin-bottom: 4rem;
   }
   
   .d-bg{
-    height: inherit;
-    padding: 8rem 15rem;
+    height: 20rem;
+    /* padding: 8rem 15rem; */
   }
 
   .gradient-text-custom{
