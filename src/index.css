@@ -750,6 +750,33 @@ div.nav-card {
   background:#F5F8FA;
 }
 
+.bundles:hover {
+  background: url('./assets/Assets/Home/BuyCrypto/Tag Icons – Hover/Bandles.png');
+  background-size: cover;
+  width: 10rem;
+  
+}
+
+.vaults:hover {
+  background: url('./assets/Assets/Home/BuyCrypto/Tag Icons – Hover/Vaults.png');
+  background-size: cover;
+}
+
+.referrals:hover {
+  background: url('./assets/Assets/Home/BuyCrypto/Tag Icons – Hover/Referral.png');
+  background-size: cover;
+}
+
+.tokens:hover {
+  background: url('./assets/Assets/Home/BuyCrypto/Tag Icons – Hover/Tokens.png');
+  background-size: cover;
+}
+
+.airdrops:hover {
+  background: url('./assets/Assets/Home/BuyCrypto/Tag Icons – Hover/AirDrops.png');
+  background-size: cover;
+}
+
 .buy-defi-button-text{
   color:#414A5B;
   font-size: 2rem;
@@ -1880,6 +1907,10 @@ div.nav-card {
     background-color: #F5F8FA;
     border-radius: 2.5rem;
   }
+  
+  /* .most-popular-card:hover {
+    background-color: #838B9D;
+  } */
 
   .red-label{
     color: #000;

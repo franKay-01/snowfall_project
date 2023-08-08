@@ -12,7 +12,25 @@ import CompleteApplication from "../assets/application.png";
 import { useState } from "react";
 
 export default function AirDrop(){
-  const [submit, setSubmit] = useState(false)
+  const [submit, setSubmit] = useState(false);
+  const [fullname, setFullname] = useState("");
+  const [email, setEmail] = useState("");
+  const [website, setWebsite] = useState("");
+
+  const submitAirdropForm = () => {
+  
+    const formData = {
+      fullname: fullname,
+      email: email,
+      website: website
+    }
+
+    setSubmit(true);
+
+    console.log(formData);
+
+    // TODO: implement logic to submit form data after team agree how to approach this.
+  }
 
   return (
     <>
@@ -93,7 +111,7 @@ export default function AirDrop(){
                 <h1 className="airdrop-campaign-header">Interested in starting your campaign?</h1>
                 <h1 className="airdrop-header-sub">Fill out the form below</h1>
                 <div className="brand-input-box brand-input-box-alt flex flex-row">
-                  <input className='main-input-box' placeholder="Full Name*"/>
+                  <input value={fullname} onChange={(event) => setFullname(event.target.value)} className='main-input-box' placeholder="Full Name*"/>
                 </div>
                 <div className="brand-input-box brand-input-box-alt flex flex-row">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -101,17 +119,17 @@ export default function AirDrop(){
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M5.33822 5.02434C5.02757 5.06123 4.65528 5.18642 4.34702 5.35757C4.03904 5.52861 3.58453 5.98122 3.39509 6.30555C3.21058 6.62141 3.07495 7.00682 3.12305 7.07863C3.15287 7.12311 11.8713 12.4561 11.9866 12.5003C12.0338 12.5184 20.8289 7.15789 20.8813 7.07901C20.906 7.0417 20.8924 6.95696 20.8347 6.78901C20.7039 6.40901 20.4944 6.08728 20.164 5.75905C19.9132 5.50994 19.8046 5.43099 19.5275 5.2961C18.8736 4.97775 19.5924 5.00658 12.1604 5.0005C8.54365 4.99751 5.47368 5.00827 5.33822 5.02434Z" fill="#838B9D"/>
                   </svg>
 
-                  <input className='main-input-box'  placeholder="Email"/>
+                  <input value={email} onChange={(event) => setEmail(event.target.value)} className='main-input-box'  placeholder="Email"/>
                 </div>
                 <div className="brand-input-box brand-input-box-alt flex flex-row">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                     <path d="M11.9995 3C7.037 3 2.99951 7.03748 2.99951 12C2.99951 16.9625 7.037 21 11.9995 21C16.962 21 20.9995 16.9625 20.9995 12C20.9995 7.03748 16.962 3 11.9995 3ZM19.112 14.9697C18.2273 17.0811 16.4286 18.7182 14.213 19.3835C14.2527 19.3098 14.2912 19.2352 14.3284 19.1598C14.5188 18.7746 14.7188 18.503 15.0544 18.2321C15.3113 18.0247 15.8157 17.7034 15.7333 17.2982C15.6738 17.0054 15.3395 16.8852 15.0868 16.8137C14.686 16.7001 14.2573 16.6707 13.8436 16.642C13.4854 16.617 13.1135 16.6298 12.7638 16.5406C12.2404 16.4074 12.1225 15.9543 12.0893 15.4768C12.0598 15.0523 12.0662 14.6159 11.8574 14.2317C11.5886 13.7373 10.9699 13.5967 10.4568 13.5495C10.0237 13.5099 9.5912 13.5308 9.16045 13.4586C8.74603 13.3892 8.35355 13.2436 7.928 13.2601C7.37648 13.2814 7.1288 13.6552 6.89354 14.0875C6.77742 14.301 6.04394 15.9428 5.61299 16.3109C4.86988 15.2139 4.40242 13.9159 4.30933 12.517C4.37023 12.5006 4.4306 12.4779 4.49188 12.4474C4.73166 12.3283 4.89964 12.1134 5.16056 12.0283C5.40933 11.9473 5.73074 12.0191 5.98492 12.044C6.23784 12.0688 6.49469 12.095 6.74782 12.0605C7.25312 11.9915 7.52086 11.6425 7.60157 11.1552C7.64954 10.8642 7.61212 10.5715 7.62078 10.2784C7.63447 9.82175 7.93415 9.65791 8.3471 9.61906C9.12713 9.5458 10.9467 9.75251 10.9835 8.55204C10.9992 8.03854 10.3881 7.77352 9.99 7.63647C9.21491 7.36981 8.36803 7.46291 7.57528 7.27768C7.15362 7.17914 6.79797 6.91613 6.49976 6.60527C7.89974 5.17871 9.8478 4.29198 11.9995 4.29198C12.4597 4.29198 12.9102 4.33259 13.3482 4.41036C13.1243 4.45197 12.9032 4.51108 12.6881 4.59794C11.5534 5.05543 11.5192 6.34277 12.0152 7.30987C12.3228 7.90965 12.8209 8.41214 13.3413 8.82999C13.845 9.23432 14.3954 9.47326 14.9539 9.77997C15.6948 10.1874 15.6054 11.2514 15.7928 11.9683C15.9509 12.5729 16.3306 13.0829 16.929 13.2922C17.2908 13.4187 17.7158 13.32 18.0326 13.5721C18.3047 13.7879 18.3686 14.2299 18.5241 14.5269C18.679 14.8232 18.8852 14.9479 19.112 14.9697Z" fill="#838B9D"/>
                   </svg>
 
-                  <input className='main-input-box'  placeholder="Website"/>
+                  <input value={website} onChange={(event) => setWebsite(event.target.value)} className='main-input-box'  placeholder="Website"/>
                 </div>
                 <div className='grid justify-center'>
-                  <button className='brand-button brand-button-alt mt-8' onClick={()=> setSubmit(true)}>
+                  <button className='brand-button brand-button-alt mt-8' onClick={submitAirdropForm}>
                     <h1 className='brand-button-text'>Submit an application</h1>
                   </button>
                 </div>
