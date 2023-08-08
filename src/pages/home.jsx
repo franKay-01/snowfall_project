@@ -206,7 +206,9 @@ export default function Home(){
       </div>
       <div className="container grid lg:grid lg:justify-center lg:grid-row-2 md:justify-center md:items-center space-y-12 lg:space-y-4 md:space-y-4">
         <div className="grid grid-cols-1 space-y-12 lg:grid-cols-1 md:flex md:justify-end md:items-center">
-          <div className="d-bg"></div>
+          <div className="d-bg">
+            <div className="overlay"></div>
+          </div>
         </div>
         <div className="grid grid-cols-1 lg:grid lg:grid-cols-2 lg:gap-8 md:flex md:flex-col md:grid-cols-1 md:justify-center md:items-center">
           <div className="most-popular-card mb-8">
@@ -216,15 +218,10 @@ export default function Home(){
             <h1 className="popular-card-text pt-12 pl-12">
               New AirDrop every month
             </h1>
-            {/* <h1 className="block lg:block md:hidden popular-card-text-sub-alt">
-              In the eighteenth century the German philosopher Immanuel Kant developed
-            </h1> */}
             <h1 className="popular-card-text-sub lg:ml-12 mt-2">
-            In the eighteenth century the German philosopher Immanuel Kant developed
+              In the eighteenth century the German philosopher Immanuel Kant developed
             </h1>
-
-            {/* <div
-              className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-indigo-700 bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-50"></div> */}
+            <div className="overlay"></div>
           </div>
           
           <div className="most-popular-card grid grid-cols-2 relative mb-8">
@@ -240,6 +237,7 @@ export default function Home(){
             <div className="flex items-center">
               <img className="most-popular-card-image" src={IphoneImg} alt=""/>
             </div>
+            <div className="overlay"></div>
           </div>
 
         </div>
