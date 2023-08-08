@@ -1,14 +1,7 @@
 import { Disclosure } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import Logo from '../assets/logo.png'
-// import AppleLogo from '../assets/apple.png'
-// import GooglePlayLogo from '../assets/google_play.png'
 
-// import FacebookLogo from '../assets/facebook.png'
-// import InstagramLogo from '../assets/instagram.png'
-// import TelegramLogo from '../assets/telegram.png'
-// import TwitterLogo from '../assets/twitter.png'
-// import LinkedInLogo from '../assets/linkedIn.png'
 
 import {Link, NavLink} from 'react-router-dom'
 import { useEffect, useState } from 'react'

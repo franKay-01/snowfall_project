@@ -1,13 +1,13 @@
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
 // import AirDropImg from "../assets/airdrop_screen.png"
-import BootstrapCommunity from "../assets/Assets/Airdrop/Bootstrap_Community.png"
-import AirDrop1Img from "../assets/airdrop_screen_1.png"
-import AirDropIcon1Img from "../assets/airdrop_icon_1.png"
-import AirDropIcon2Img from "../assets/airdrop_icon_2.png"
-import AirDropIcon3Img from "../assets/airdrop_icon_3.png"
-import AirDropIcon4Img from "../assets/airdrop_icon_4.png"
-import SmartPhoneImg from "../assets/smart_phone.png"
+import BootstrapCommunity from "../assets/images/Airdrop/Bootstrap Community.png"
+import AirDrop1Img from "../assets/images/Airdrop/Wallet Count Increase.png"
+import AirDropIcon1Img from "../assets/images/Airdrop/Social Media Driver/1.png"
+import AirDropIcon2Img from "../assets/images/Airdrop/Social Media Driver/2.png"
+import AirDropIcon3Img from "../assets/images/Airdrop/Social Media Driver/3.png"
+import AirDropIcon4Img from "../assets/images/Airdrop/Social Media Driver/4.png"
+import SmartPhoneImg from "../assets/images/Airdrop/Interested in starting your campaign/Phone 2.png"
 import CompleteApplication from "../assets/application.png";
 import { useState } from "react";
 

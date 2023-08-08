@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
-import BlogPostImg from "../assets/blog_post.png"
+import BlogPostImg from "../assets/images/Blog/Blog.png"
 
 import MediaSection from "../components/media_section";
 import DownloadSection from "../components/download_section";

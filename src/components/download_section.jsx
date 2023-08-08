@@ -1,6 +1,6 @@
 import ApplePlayImg from "../assets/apple_store_img.png"
 import GooglePlayImg from "../assets/google_play_img.png"
-import DownloadPhoneImg from "../assets/download_phone.png"
+import DownloadPhoneImg from "../assets/images/Home/Time to Download /Phone.png"
 
 export default function DownloadSection() {
   return (

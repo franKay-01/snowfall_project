@@ -1,7 +1,7 @@
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
 import ArticleMainImg from "../assets/article_main.png"
-import BlogPostImg from "../assets/blog_post.png"
+import BlogPostImg from "../assets/images/Blog/Blog.png"
 import DownloadSection from "../components/download_section";
 
 export default function Blog(){

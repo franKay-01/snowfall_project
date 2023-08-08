@@ -119,7 +119,7 @@ div.nav-card {
 }
 
 .vid-bg{
-  background-image: url("assets/Assets/Home/SnowballHero.mp4");
+  background-image: url("assets/images/Home/Snowball\ Hero.mp4");
 }
 
 .video-container {
@@ -143,7 +143,7 @@ div.nav-card {
 }
 
 .share-earn-banner-alt{
-  background-image: url("assets/referral-share-earn.png");
+  background-image: url("assets/images/Referral/Hero\ Image.png");
   background-size: cover;
   background-repeat: round;
   border-radius: 2rem;
@@ -157,7 +157,7 @@ div.nav-card {
   border-radius: 2rem;
   /* width: auto; */
   border-radius: 32px;
-  background: linear-gradient(179deg, rgba(19, 91, 92, 0.64) 0%, rgba(74, 145, 152, 0.00) 100%), url("assets/referral-share-earn.png"), lightgray -8px -132px / 100.87% 217.5% no-repeat;
+  background: linear-gradient(179deg, rgba(19, 91, 92, 0.64) 0%, rgba(74, 145, 152, 0.00) 100%), url("assets/images/Referral/Hero\ Image.png"), lightgray -8px -132px / 100.87% 217.5% no-repeat;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -670,19 +670,19 @@ div.nav-card {
 }
 
 .snowball-media-1{
-  background: url('./assets/Assets/Home/News/SnowballPodcast.png');
+  background: url('./assets/images/Home/News/Snowball\ Podcast\ 2.png');
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .snowball-media-2{
-  background: url('./assets/Assets/Home/News/Snowball_Automating_Cryptocurrency_Investing.png');
+  background: url('./assets/images/Home/News/Snowball_\ Automating\ Cryptocurrency\ Investing.png');
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .snowball-media-3{
-  background: url('./assets/Assets/Home/News/Republic_Invest_in_Snowball_Money.png');
+  background: url('./assets/images/Home/News/Republic_\ Invest\ in\ Snowball\ Money.png');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -794,7 +794,7 @@ div.nav-card {
   width: 100%;
   height: 100%;
   border-radius: 5.0035rem;
-  background: url('./assets/Assets/Home/BuyCrypto/Tag Icons – Hover/Bandles.png');
+  background: url('./assets/images/Home/Buy Crypto/Tag Icons – Hover/Bandles.png');
   background-size: cover;
   z-index: 1;
 }
@@ -815,7 +815,7 @@ div.nav-card {
   width: 100%;
   height: 100%;
   border-radius: 5.0035rem;
-  background: url('./assets/Assets/Home/BuyCrypto/Tag Icons – Hover/Vaults.png');
+  background: url('./assets/images/Home/Buy Crypto/Tag Icons – Hover/Vaults.png');
   background-size: cover;
   z-index: 1;
 }
@@ -836,7 +836,7 @@ div.nav-card {
   width: 100%;
   height: 100%;
   border-radius: 5.0035rem;
-  background: url('./assets/Assets/Home/BuyCrypto/Tag Icons – Hover/Referral.png');
+  background: url('./assets/images/Home/Buy Crypto/Tag Icons – Hover/Referral.png');
   background-size: cover;
   z-index: 1;
 }
@@ -857,7 +857,7 @@ div.nav-card {
   width: 100%;
   height: 100%;
   border-radius: 5.0035rem;
-  background: url('./assets/Assets/Home/BuyCrypto/Tag Icons – Hover/Tokens.png');
+  background: url('./assets/images/Home/Buy Crypto/Tag Icons – Hover/Tokens.png');
   background-size: cover;
   z-index: 1;
 }
@@ -878,7 +878,7 @@ div.nav-card {
   width: 100%;
   height: 100%;
   border-radius: 5.0035rem;
-  background: url('./assets/Assets/Home/BuyCrypto/Tag Icons – Hover/AirDrops.png');
+  background: url('./assets/images/Home/Buy Crypto/Tag Icons – Hover/AirDrops.png');
   background-size: cover;
   z-index: 1;
 }
@@ -1136,7 +1136,7 @@ div.nav-card {
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
-  background-image: url('./assets/Assets/Career/Career.png');
+  background-image: url('./assets/images/Career/Career.png');
   border-radius: 2rem;
   background-size: contain;
   background-repeat: round;
@@ -1297,7 +1297,7 @@ div.nav-card {
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
-  background-image: url('./assets/blog_image.png');
+  background-image: url('./assets/images/Blog/Blog.png');
   border-radius: 2rem;
   background-size: auto;
   background-repeat: round;
@@ -1309,7 +1309,7 @@ div.nav-card {
 }
 
 .airdrop-section{
-  background-image: url('./assets/Assets/Airdrop/Airdrop_Hero_Image.png') !important;
+  background-image: url('./assets/images/Airdrop/Airdrop\ –\ Hero\ Image.png') !important;
   background-size: contain;
   background-repeat: round;
 }

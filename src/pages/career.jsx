@@ -1,8 +1,8 @@
 import { useState } from 'react';
-
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
-import WorldImg from "../assets/world.png";
+
+import WorldImg from "../assets/images/Career/Global Team.png";
 import PerksImg from "../assets/perks.png";
 import Frame3 from "../assets/frame_3.png";
 import Frame1Alt from "../assets/frame_1_alt.png"

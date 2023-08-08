@@ -5,13 +5,14 @@ import Navbar from "../components/navbar";
 
 import ApplePlayImg from "../assets/apple_store_img.png";
 import GooglePlayImg from "../assets/google_play_img.png";
-import iPhoneScreenReferral from "../assets/iphone_screen_referral.png";
-import RefferalDone from "../assets/refferal_done.png";
-import RefferalGroup from "../assets/refferal_group_image.png";
-import RefferalGroupHand from "../assets/referral_rules_hand.png";
-import ReferralIcon1 from "../assets/referral_icon_1.png";
-import ReferralIcon2 from "../assets/referral_icon_2.png";
-import ReferralIconStaking from "../assets/referral_staking_color.png";
+
+import iPhoneScreenReferral from "../assets/images/Referral/Rules/Step 1 – Active account.png";
+import RefferalDone from "../assets/images/Referral/Rules/Step 2 – Unique referral code.png"
+import RefferalGroup from "../assets/images/Referral/Rules/Step 3 – Activities.png";
+import RefferalGroupHand from "../assets/images/Referral/Rules/Step 4 – Counted as a referral/Step 4 – Counted as a referral.png";
+import ReferralIcon1 from "../assets/images/Referral/Rules/Step 4 – Counted as a referral/Trades.png";
+import ReferralIcon2 from "../assets/images/Referral/Rules/Step 4 – Counted as a referral/Deposits.png";
+import ReferralIconStaking from "../assets/images/Referral/Rules/Step 4 – Counted as a referral/Stakes.png";
 import ReferralIcon4 from "../assets/referral_icon_4.png";
 import ReferralMorflax from "../assets/morflax-studio-175.png";
 import ReferralRulesExplain from "../assets/referral_rules_explain.png";
