@@ -7,6 +7,15 @@ import ApplePlayImg from "../assets/apple_store_img.png"
 import GooglePlayImg from "../assets/google_play_img.png"
 // import SwirlLogoImg from "../assets/swirl_logo.png"
 import Component_1 from "../assets/component_1.png"
+
+import EasyDepositing from "../assets/Assets/Home/Block 1/Easy & Efficient Depositing.png"
+import GrowSnowball from "../assets/Assets/Home/Block 1/Grow with Snowball.png"
+import SecureAccess from "../assets/Assets/Home/Block 1/Security & Full Access.png"
+
+import EasyDepositingHover from "../assets/Assets/Home/Block 1/Hovers/Easy & Efficient Depositing - hover.png"
+import GrowSnowballHover from "../assets/Assets/Home/Block 1/Hovers/Grow with Snowball - hover.png"
+import SecureAccessHover from "../assets/Assets/Home/Block 1/Hovers/Security & Full Access - hover.png"
+
 import AirdropImg from "../assets/airdrop.png"
 import IphoneImg from "../assets/iphone_alt.png"
 import ShareEarnImg from "../assets/share_earn.png"
@@ -47,7 +56,9 @@ export default function Home(){
   const [instagram, setInstagram] = useState("");
   const [tiktok, setTiktok] = useState("");
   const [youtube, setYoutube] = useState("");
-  const [isHovered, setIsHovered] = useState(false);
+  const [isSecureHovered, setIsSecureHovered] = useState(false);
+  const [isGrowthHovered, setIsGrowthHovered] = useState(false);
+  const [isEasyDepositHovered, setIsEasyDepositHovered] = useState(false);
 
   var index;
   var slides;
@@ -103,14 +114,26 @@ export default function Home(){
     targetSection.scrollIntoView({ behavior: 'smooth' });
   }
 
-  const handleHover = () => {
-    setIsHovered(true);
-    console.log(isHovered);
+  const handleHover = (type) => {
+    if (type==="secure") {
+      setIsSecureHovered(true);
+    } else if (type==="growth") {
+      setIsGrowthHovered(true);
+    } else if (type==="easydeposit") {
+      setIsEasyDepositHovered(true);
+    }
+   
+    // console.log(isHovered);
   };
 
-  const handleHoverExit = () => {
-    setIsHovered(false);
-    console.log(isHovered);
+  const handleHoverExit = (type) => {
+    if (type==="secure") {
+      setIsSecureHovered(false);
+    } else if (type==="growth") {
+      setIsGrowthHovered(false);
+    } else if (type==="easydeposit") {
+      setIsEasyDepositHovered(false);
+    }
   };
 
   const submitAmbassardorshipForm = () => {
@@ -174,18 +197,18 @@ export default function Home(){
       </div>
       <div id="targetSection" className="container overflow-auto">
         <div className="flex flex-row lg:grid md:flex lg:grid-cols-3 md:flex-row md:space-x-8 mt-12 p-2">
-          <div className="banner-card flex flex-col space-y-2">
-            <img className="banner-card-icon" src={Component_1} alt=""/>
+          <div className="banner-card flex flex-col space-y-2" onMouseEnter={() => {handleHover("secure")}} onMouseLeave={() => {handleHoverExit("secure")}}>
+            <img className="banner-card-icon" src={isSecureHovered ? SecureAccessHover : SecureAccess} alt=""/>
             <h1 className="banner-card-heading">Security & Full Access</h1> 
             <h1 className="banner-card-heading-sub">Take control of your assets with full access at all times!</h1>  
           </div>
-          <div className="banner-card flex flex-col">
-            <img className="banner-card-icon" src={Component_1} alt=""/>
+          <div className="banner-card flex flex-col" onMouseEnter={() => {handleHover("easydeposit")}} onMouseLeave={() => {handleHoverExit("easydeposit")}}>
+            <img className="banner-card-icon" src={ isEasyDepositHovered ? EasyDepositingHover : EasyDepositing } alt=""/>
             <h1 className="banner-card-heading">Easy & Efficient Depositing</h1> 
             <h1 className="banner-card-heading-sub">Offering the highest yield dynamically. We do all the heavy-lifting</h1>   
           </div>
-          <div className="banner-card flex flex-col">
-            <img className="banner-card-icon" src={Component_1} alt=""/>
+          <div className="banner-card flex flex-col" onMouseEnter={() => {handleHover("growth")}} onMouseLeave={() => {handleHoverExit("growth")}}>
+            <img className="banner-card-icon" src={ isGrowthHovered ? GrowSnowballHover : GrowSnowball} alt=""/>
             <h1 className="banner-card-heading">Grow with Snowball</h1> 
             <h1 className="banner-card-heading-sub">Snowball provides easy access to interest generating via yield farming in DeFi</h1>   
           </div>
