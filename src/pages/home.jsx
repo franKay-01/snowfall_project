@@ -5,7 +5,7 @@ import BannerPhoneVideo from "../assets/Assets/Home/SnowballHero.mp4"
 // import BannerPhoneVideoAlt from "../assets/Assets/Home/SnowballHero.mov"
 import ApplePlayImg from "../assets/apple_store_img.png"
 import GooglePlayImg from "../assets/google_play_img.png"
-import SwirlLogoImg from "../assets/swirl_logo.png"
+// import SwirlLogoImg from "../assets/swirl_logo.png"
 import Component_1 from "../assets/component_1.png"
 import AirdropImg from "../assets/airdrop.png"
 import IphoneImg from "../assets/iphone_alt.png"
@@ -22,7 +22,7 @@ import Frame1Alt from "../assets/frame_1_alt.png"
 import DownloadSection from '../components/download_section';
 import CompleteApplication from "../assets/application.png";
 
-import BundleImgHover from "../assets/Assets/Home/BuyCrypto/Tag Icons – Hover/Bandles.png";
+// import BundleImgHover from "../assets/Assets/Home/BuyCrypto/Tag Icons – Hover/Bandles.png";
 
 import Slide1 from '../assets/Assets/Home/BuyCrypto/Slideshow/Slideshow1.png';
 import Slide2 from '../assets/Assets/Home/BuyCrypto/Slideshow/Slideshow2.png';
@@ -74,10 +74,28 @@ export default function Home(){
     
   }
 
+  const [shouldChangeClass, setShouldChangeClass] = useState(false);
+
+
   useEffect(()=> {
     index = 0;
     slides = document.querySelectorAll(".slides");
     changeSlide();
+
+    const handleScroll = () => {
+      if (window.scrollY > 900) {
+        console.log("AT 10" + shouldChangeClass)
+        setShouldChangeClass(true);
+      } else {
+        console.log("NOT AT 10" + shouldChangeClass)
+        setShouldChangeClass(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   },[])
   
   const scrollToSection = () => {
@@ -174,13 +192,10 @@ export default function Home(){
         </div>        
       </div>
       <div className="container grid lg:flex md:flex justify-center mt-4">
-        <span className="hidden lg:block md:flex p-0.5 text-left items-center from-black via-sky-700 to-teal-400 bg-gradient-to-r bg-clip-text text-transparent gradient-text-custom">
+        <span className={`hidden lg:block md:flex p-0.5 text-left items-center from-black ${shouldChangeClass? 'via-sky-700 to-teal-400':'to-white'} bg-gradient-to-r bg-clip-text text-transparent gradient-text-custom`}>
           The smartest multi-chain<br/>mobile wallet for you to start<br/>leveraging the full potential<br/>of Decentralized Finance
-        </span><br></br>
-        {/* <span className="hidden lg:block md:flex p-0.5 text-left items-center from-black via-sky-700 to-teal-400 bg-gradient-to-r bg-clip-text text-transparent gradient-text-custom">mobile wallet for you to start</span><br></br>
-        <span className="hidden lg:block md:flex p-0.5 text-left items-center from-black via-sky-700 to-teal-400 bg-gradient-to-r bg-clip-text text-transparent gradient-text-custom">leveraging the full potential</span><br></br>
-        <span className="hidden lg:block md:flex p-0.5 text-left items-center from-black via-sky-700 to-teal-400 bg-gradient-to-r bg-clip-text text-transparent gradient-text-custom">of Decentralized Finance</span> */}
-
+        </span>
+       
         <span className="block lg:hidden md:hidden gradient-text p-2 text-left font-normal inline-block from-black via-sky-700 to-teal-400 bg-gradient-to-r bg-clip-text text-transparent">The smartest <br/>multi-chain mobile wallet for you to <br/>start leveraging<br/>the full potential<br/>of Decentralized Finance</span>
         {/* <span className="block lg:hidden md:hidden gradient-text p-2 text-left font-normal inline-block from-black via-sky-700 to-teal-400 bg-gradient-to-r bg-clip-text text-transparent">multi-chain mobile</span>
         <span className="block lg:hidden md:hidden gradient-text p-2 text-left font-normal inline-block from-black via-sky-700 to-teal-400 bg-gradient-to-r bg-clip-text text-transparent">wallet for you to</span>
@@ -190,7 +205,7 @@ export default function Home(){
         <span className="block lg:hidden md:hidden gradient-text p-2 text-left font-normal inline-block from-black via-sky-700 to-teal-400 bg-gradient-to-r bg-clip-text text-transparent">Finance</span> */}
       </div>
       <div className="container grid lg:grid lg:justify-center lg:grid-row-2 md:justify-center md:items-center space-y-12 lg:space-y-4 md:space-y-4">
-        <div className="grid grid-cols-1 space-y-12 lg:grid-cols-1 md:flex md:justify-center md:items-center">
+        <div className="grid grid-cols-1 space-y-12 lg:grid-cols-1 md:flex md:justify-end md:items-center">
           <div className="d-bg"></div>
         </div>
         <div className="grid grid-cols-1 lg:grid lg:grid-cols-2 lg:gap-8 md:flex md:flex-col md:grid-cols-1 md:justify-center md:items-center">

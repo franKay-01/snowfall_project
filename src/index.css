@@ -377,7 +377,7 @@ div.nav-card {
   background-image: url('./assets/most_popular_network.png');
   background-size: contain;
   background-size: contain;
-  height: 480px;
+  height: 40rem;
   padding: 4rem;
   margin-top: 5rem ;
   width: 100%;
@@ -750,31 +750,109 @@ div.nav-card {
   background:#F5F8FA;
 }
 
+.bundles {
+  position: relative;
+}
+
 .bundles:hover {
+  background: none;
+}
+
+.bundles:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5.0035rem;
   background: url('./assets/Assets/Home/BuyCrypto/Tag Icons – Hover/Bandles.png');
   background-size: cover;
-  width: 10rem;
-  
+  z-index: 1;
+}
+
+.vaults {
+  position: relative;
 }
 
 .vaults:hover {
+  background: none;
+}
+
+.vaults:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5.0035rem;
   background: url('./assets/Assets/Home/BuyCrypto/Tag Icons – Hover/Vaults.png');
   background-size: cover;
+  z-index: 1;
+}
+
+.referrals {
+  position: relative;
 }
 
 .referrals:hover {
+  background: none;
+}
+
+.referrals:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5.0035rem;
   background: url('./assets/Assets/Home/BuyCrypto/Tag Icons – Hover/Referral.png');
   background-size: cover;
+  z-index: 1;
+}
+
+.tokens {
+  position: relative;
 }
 
 .tokens:hover {
+  background: none;
+}
+
+.tokens:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5.0035rem;
   background: url('./assets/Assets/Home/BuyCrypto/Tag Icons – Hover/Tokens.png');
   background-size: cover;
+  z-index: 1;
+}
+
+.airdrops {
+  position: relative;
 }
 
 .airdrops:hover {
+  background: none;
+}
+
+.airdrops:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5.0035rem;
   background: url('./assets/Assets/Home/BuyCrypto/Tag Icons – Hover/AirDrops.png');
   background-size: cover;
+  z-index: 1;
 }
 
 .buy-defi-button-text{
@@ -1788,7 +1866,7 @@ div.nav-card {
   }
 
   .share-section-button-alt{
-    width: auto;
+    width: 100%;
   }
 
   .share-section-alt-n{
@@ -2243,15 +2321,15 @@ div.nav-card {
   .post-tag-w{
     width: 40rem;
   }
-  
+
   .article-section-p {
     padding-left: 2rem;
     margin-bottom: 4rem;
   }
   
   .d-bg{
-    height: inherit;
-    padding: 8rem 15rem;
+    height: 20rem;
+    /* padding: 8rem 15rem; */
   }
 
   .gradient-text-custom{
