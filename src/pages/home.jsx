@@ -1,50 +1,47 @@
+import { useEffect, useState } from "react";
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
-// import BannerPhoneImg from "../assets/banner_phone.png"
-import BannerPhoneVideo from "../assets/Assets/Home/SnowballHero.mp4"
-// import BannerPhoneVideoAlt from "../assets/Assets/Home/SnowballHero.mov"
+import DownloadSection from '../components/download_section';
+import MediaSection from "../components/media_section";
+
+import BannerPhoneVideo from "../assets/images/Home/Snowball Hero.mp4"
+import LearnMore from "../assets/images/Home/SVG/Learn More.svg"
+import EasyDepositing from "../assets/images/Home/Block 1/Easy & Efficient Depositing.png"
+import GrowSnowball from "../assets/images/Home/Block 1/Grow with Snowball.png"
+import SecureAccess from "../assets/images/Home/Block 1/Security & Full Access.png"
+import EasyDepositingHover from "../assets/images/Home/Block 1/Hovers/Easy & Efficient Depositing - hover.png"
+import GrowSnowballHover from "../assets/images/Home/Block 1/Hovers/Grow with Snowball - hover.png"
+import SecureAccessHover from "../assets/images/Home/Block 1/Hovers/Security & Full Access - hover.png"
+
+import BundleImg from "../assets/images/Home/Buy Crypto/Tag Icons – Basic/Bandles.png"
+import VaultsImg from "../assets/images/Home/Buy Crypto/Tag Icons – Basic/Vaults.png"
+import ReferralImg from "../assets/images/Home/Buy Crypto/Tag Icons – Basic/Referral.png"
+import TokenImg from "../assets/images/Home/Buy Crypto/Tag Icons – Basic/Tokens.png"
+import AirdropsImg from "../assets/images/Home/Buy Crypto/Tag Icons – Basic/AirDrops.png"
+
+import AirdropImg from "../assets/images/Home/New AirDrop every month.png"
+import IphoneImg from "../assets/images/Home/Your wallet has never been so convenient.png"
+import ShareEarnImg from "../assets/images/Home/Share and Earn.png"
+
+import Slide1 from '../assets/images/Home/Buy Crypto/Slideshow/Slideshow 1.png';
+import Slide2 from '../assets/images/Home/Buy Crypto/Slideshow/Slideshow 2.png';
+import Slide3 from '../assets/images/Home/Buy Crypto/Slideshow/Slideshow 3.png';
+import Slide4 from '../assets/images/Home/Buy Crypto/Slideshow/Slideshow 4.png';
+import Slide5 from '../assets/images/Home/Buy Crypto/Slideshow/Slideshow 5.png';
+import Slide6 from '../assets/images/Home/Buy Crypto/Slideshow/Slideshow 6.png';
+import Slide7 from '../assets/images/Home/Buy Crypto/Slideshow/Slideshow 7.png';
+import Slide8 from '../assets/images/Home/Buy Crypto/Slideshow/Slideshow 8.png';
+import Slide9 from '../assets/images/Home/Buy Crypto/Slideshow/Slideshow 9.png';
+
+
 import ApplePlayImg from "../assets/apple_store_img.png"
 import GooglePlayImg from "../assets/google_play_img.png"
-// import SwirlLogoImg from "../assets/swirl_logo.png"
-import Component_1 from "../assets/component_1.png"
-
-import EasyDepositing from "../assets/Assets/Home/Block 1/Easy & Efficient Depositing.png"
-import GrowSnowball from "../assets/Assets/Home/Block 1/Grow with Snowball.png"
-import SecureAccess from "../assets/Assets/Home/Block 1/Security & Full Access.png"
-
-import EasyDepositingHover from "../assets/Assets/Home/Block 1/Hovers/Easy & Efficient Depositing - hover.png"
-import GrowSnowballHover from "../assets/Assets/Home/Block 1/Hovers/Grow with Snowball - hover.png"
-import SecureAccessHover from "../assets/Assets/Home/Block 1/Hovers/Security & Full Access - hover.png"
-
-import AirdropImg from "../assets/airdrop.png"
-import IphoneImg from "../assets/iphone_alt.png"
-import ShareEarnImg from "../assets/share_earn.png"
-// import BuyDefiImg from "../assets/buy_defi_screen.png"
-import BundleImg from "../assets/bundles.png"
-import VaultsImg from "../assets/vaults.png"
-import ReferralImg from "../assets/referrals.png"
-import TokenImg from "../assets/tokens.png"
-import AirdropsImg from "../assets/airdrop_icon.png"
 import Frame1 from "../assets/frame_1.png"
 import Frame2 from "../assets/frame_2.png"
 import Frame1Alt from "../assets/frame_1_alt.png"
-import DownloadSection from '../components/download_section';
 import CompleteApplication from "../assets/application.png";
 
-// import BundleImgHover from "../assets/Assets/Home/BuyCrypto/Tag Icons – Hover/Bandles.png";
 
-import Slide1 from '../assets/Assets/Home/BuyCrypto/Slideshow/Slideshow1.png';
-import Slide2 from '../assets/Assets/Home/BuyCrypto/Slideshow/Slideshow2.png';
-import Slide3 from '../assets/Assets/Home/BuyCrypto/Slideshow/Slideshow3.png';
-import Slide4 from '../assets/Assets/Home/BuyCrypto/Slideshow/Slideshow4.png';
-import Slide5 from '../assets/Assets/Home/BuyCrypto/Slideshow/Slideshow5.png';
-import Slide6 from '../assets/Assets/Home/BuyCrypto/Slideshow/Slideshow6.png';
-import Slide7 from '../assets/Assets/Home/BuyCrypto/Slideshow/Slideshow7.png';
-import Slide8 from '../assets/Assets/Home/BuyCrypto/Slideshow/Slideshow8.png';
-import Slide9 from '../assets/Assets/Home/BuyCrypto/Slideshow/Slideshow9.png';
-
-import { useEffect, useState } from "react";
-import MediaSection from "../components/media_section";
 
 export default function Home(){
   const [forCommunity, setForCommunity] = useState(false)
@@ -177,20 +174,7 @@ export default function Home(){
         </div>
         <div className="grid justify-center h-12 mb-8 home-order-learn z-id">
           <div className="flex flex-row cursor-pointer" onClick={scrollToSection}>
-            {/* <img src={SwirlLogoImg} alt=""/> */}
-            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
-              <g clip-path="url(#clip0_16681_258188)">
-              <path opacity="0.2" d="M47.75 24C47.75 37.1168 37.1168 47.75 24 47.75C10.8832 47.75 0.25 37.1168 0.25 24C0.25 10.8832 10.8832 0.25 24 0.25C37.1168 0.25 47.75 10.8832 47.75 24Z" stroke="#00B9C2" stroke-width="0.5"/>
-              <path opacity="0.3" d="M42.9479 23.993C42.9479 34.4588 34.4636 42.943 23.9979 42.943C13.5321 42.943 5.04785 34.4588 5.04785 23.993C5.04785 13.5272 13.5321 5.04297 23.9979 5.04297C34.4636 5.04297 42.9479 13.5272 42.9479 23.993Z" stroke="#00B9C2" stroke-width="0.5"/>
-              <path d="M38.1525 23.982C38.1525 31.7969 31.8174 38.132 24.0025 38.132C16.1877 38.132 9.85254 31.7969 9.85254 23.982C9.85254 16.1672 16.1877 9.83203 24.0025 9.83203C31.8174 9.83203 38.1525 16.1672 38.1525 23.982Z" stroke="#00B9C2" stroke-width="0.5"/>
-              <path d="M33.3514 23.975C33.3514 29.1389 29.1652 33.325 24.0014 33.325C18.8375 33.325 14.6514 29.1389 14.6514 23.975C14.6514 18.8111 18.8375 14.625 24.0014 14.625C29.1652 14.625 33.3514 18.8111 33.3514 23.975Z" stroke="#00B9C2" stroke-width="0.5"/>
-              </g>
-              <defs>
-              <clipPath id="clip0_16681_258188">
-              <rect width="48" height="48" fill="white"/>
-              </clipPath>
-              </defs>
-            </svg>
+            <img src={LearnMore} alt=""/>
             <h1 className="text-container items-center w-28 uppercase">Learn More</h1>
           </div>
         </div>
