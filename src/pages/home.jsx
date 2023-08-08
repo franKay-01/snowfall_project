@@ -222,6 +222,9 @@ export default function Home(){
             <h1 className="popular-card-text-sub lg:ml-12 mt-2">
             In the eighteenth century the German philosopher Immanuel Kant developed
             </h1>
+
+            {/* <div
+              className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-indigo-700 bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-50"></div> */}
           </div>
           
           <div className="most-popular-card grid grid-cols-2 relative mb-8">
