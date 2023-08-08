@@ -56,7 +56,7 @@ export default function Blog(){
         <h1 className="article-sub-header">Featured Posts</h1>
         <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 p-4 lg:p-0 md:p-4 gap-4 lg:gap-4 md:gap-4">
           <div className="blog-post-card flex flex-col">
-            <img src={BlogPostImg}/>
+            <img className="h-52 rounded-2xl" src={BlogPostImg}/>
             <h1 className="blog-post-card-header pr-4 pl-4 pt-4">
               The Synergy of Web3 and the AI-Internet: A Powerful Combination
             </h1>
@@ -73,7 +73,7 @@ export default function Blog(){
             </div>
           </div>
           <div className="blog-post-card flex flex-col">
-            <img src={BlogPostImg}/>
+            <img className="h-52 rounded-2xl" src={BlogPostImg}/>
             <h1 className="blog-post-card-header pr-4 pl-4 pt-4">
               The Synergy of Web3 and the AI-Internet: A Powerful Combination
             </h1>
@@ -90,7 +90,7 @@ export default function Blog(){
             </div>
           </div>
           <div className="blog-post-card flex flex-col">
-            <img src={BlogPostImg}/>
+            <img className="h-52 rounded-2xl" src={BlogPostImg}/>
             <h1 className="blog-post-card-header pr-4 pl-4 pt-4">
               The Synergy of Web3 and the AI-Internet: A Powerful Combination
             </h1>

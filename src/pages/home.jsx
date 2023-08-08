@@ -179,7 +179,7 @@ export default function Home(){
           </div>
         </div>
       </div>
-      <div id="targetSection" className="container overflow-auto">
+      <div id="targetSection" className="container overflow-auto site-width">
         <div className="flex flex-row lg:grid md:flex lg:grid-cols-3 md:flex-row md:space-x-8 mt-12 p-2">
           <div className="banner-card flex flex-col space-y-2" onMouseEnter={() => {handleHover("secure")}} onMouseLeave={() => {handleHoverExit("secure")}}>
             <img className="banner-card-icon" src={isSecureHovered ? SecureAccessHover : SecureAccess} alt=""/>
@@ -198,7 +198,7 @@ export default function Home(){
           </div>
         </div>        
       </div>
-      <div className="container grid lg:flex md:flex justify-center mt-4">
+      <div className="container grid lg:flex md:flex site-width mt-4">
         <span className={`hidden lg:block md:flex p-0.5 text-left items-center from-black ${shouldChangeClass? 'via-sky-700 to-teal-400':'to-white'} bg-gradient-to-r bg-clip-text text-transparent gradient-text-custom`}>
           The smartest multi-chain<br/>mobile wallet for you to start<br/>leveraging the full potential<br/>of Decentralized Finance
         </span>
@@ -220,12 +220,12 @@ export default function Home(){
         <div className="grid grid-cols-1 lg:grid lg:grid-cols-2 lg:gap-8 md:flex md:flex-col md:grid-cols-1 md:justify-center md:items-center">
           <div className="most-popular-card mb-8">
             <div className="flex flex-col items-center">
-              <img className="w-64" src={AirdropImg} alt=""/>
+              <img className="absolute" src={AirdropImg} alt=""/>
             </div>
-            <h1 className="popular-card-text pt-12 pl-12">
+            <h1 className="popular-card-text absolute bottom-24 pt-12 pl-12">
               New AirDrop every month
             </h1>
-            <h1 className="popular-card-text-sub lg:ml-12 mt-2">
+            <h1 className="popular-card-text-sub absolute bottom-8 lg:ml-12 mt-2">
               In the eighteenth century the German philosopher Immanuel Kant developed
             </h1>
             <div className="overlay"></div>
@@ -242,7 +242,7 @@ export default function Home(){
             </div>
             
             <div className="flex items-center">
-              <img className="most-popular-card-image" src={IphoneImg} alt=""/>
+              <img className="most-popular-card-image  absolute right-0" src={IphoneImg} alt=""/>
             </div>
             <div className="overlay"></div>
           </div>
@@ -269,7 +269,7 @@ export default function Home(){
               </div>
             </div>
           </div>
-          <div className="grid justify-items-center content-center home-order-2 mt-12">
+          <div className="grid justify-items-center content-center home-order-2 mt-0 lg:mt-0 md:mt-12">
             <img className="share-img-sm" src={ShareEarnImg} alt=""/>
           </div>          
         </div>
@@ -304,34 +304,34 @@ export default function Home(){
             <img src={Slide9} width="100%" alt="" />
           </div>             
         </div>
-        <div className="flex flex-col space-y-8">
+        <div className="flex flex-col space-y-4">
           <h1 className="buy-defi-heading">Buy crypto, invest in DeFi</h1>
           <h1 className="buy-defi-sub">
             In the eighteenth century the German philosopher Immanuel Kant developed a theory of knowledge in which knowledge about space can be both a priori and synthetic
           </h1>
           <div className="flex flex-row space-x-4">
-            <div  className="buy-defi-button bundles flex flex-row " >
-                <img src={ BundleImg } alt=""/>
-                <h1 className="buy-defi-button-text">Bundles</h1>
+            <div  className="buy-defi-button bundles flex flex-row" >
+              <img className="w-12 h-12" src={ BundleImg } alt=""/>
+              <h1 className="buy-defi-button-text">Bundles</h1>
             </div>
             <div className="buy-defi-button vaults flex flex-row">
-              <img src={VaultsImg} alt=""/>
+              <img className="w-12 h-12" src={VaultsImg} alt=""/>
               <h1 className="buy-defi-button-text">Vaults</h1>
             </div>
           </div>
           <div className="flex flex-row space-x-4">
             <div className="buy-defi-button referrals flex flex-row">
-              <img src={ReferralImg} alt=""/>
+              <img className="w-12 h-12" src={ReferralImg} alt=""/>
               <h1 className="buy-defi-button-text">Referrals</h1>
             </div>
             <div className="buy-defi-button tokens flex flex-row">
-              <img src={TokenImg} alt=""/>
+              <img className="w-12 h-12" src={TokenImg} alt=""/>
               <h1 className="buy-defi-button-text">Tokens</h1>
             </div>
           </div>
           <div className="flex flex-row space-x-4">
             <div className="buy-defi-button airdrops flex flex-row">
-              <img src={AirdropsImg} alt=""/>
+              <img className="w-12 h-12" src={AirdropsImg} alt=""/>
               <h1 className="buy-defi-button-text">AirDrops</h1>
             </div>
           </div>
@@ -469,8 +469,6 @@ export default function Home(){
               </div>
             </div>
           }
-          
-          
         </div>
         <div className="grid justify-center items-center">
           <div className="brand-card grid">

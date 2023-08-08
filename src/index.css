@@ -165,6 +165,10 @@ div.nav-card {
   width: 72%;
 }
 
+.site-width{
+  width: 75%;
+}
+
 .referral-banner-header {
   color: #FFF;
   text-align: center;
@@ -239,6 +243,7 @@ div.nav-card {
   flex-shrink: 0;
   border-radius: 24px;
   background: #F5F8FA;
+  height: 22.5rem;
 }
 
 .referral-rules-section-1-text {
@@ -533,7 +538,11 @@ div.nav-card {
 }
 
 .sh-p-12{
-  padding: 3rem 9rem;
+  padding: 3rem 5rem;
+}
+
+.sh-p-12-d{
+  padding: 3rem 12rem;
 }
 
 .sh-p-12-alt{
@@ -772,6 +781,7 @@ div.nav-card {
   padding: 0.75rem 6.8125rem 0.75rem 1.5rem;
   align-items: center;
   width: min-content;
+  height: 4.5rem;
   gap: 1rem;
   border-radius: 5.0035rem;
   border: 1px solid #E6EBF4;
@@ -2079,7 +2089,6 @@ div.nav-card {
   .most-popular-card-image{
     top: 0;
     right: 0;
-    width: 13rem;
   }
 
   .popular-card-text-sub{
@@ -2094,7 +2103,7 @@ div.nav-card {
   
   .popular-card-text{
     padding: 0 2rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
     margin-bottom: 1rem;
     width: 15rem;
     font-size: 1.5rem;
@@ -2235,8 +2244,8 @@ div.nav-card {
   }
 
   .share-img-sm{
-    width: 19rem;
-    height: 20rem;
+    width: auto;
+    height: auto;
   }
 
   .share-img-p-l{
@@ -2271,6 +2280,10 @@ div.nav-card {
 
   .sh-p-12{
     padding: 1rem 1rem
+  }
+
+  .sh-p-12-d{
+    padding: 1rem 1rem;
   }
 
   .golden-image{
@@ -2353,6 +2366,10 @@ div.nav-card {
 } */
 
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .referral-rules-section-1{
+    width: 15rem;
+  }
+  
   .post-tag-w{
     width: 40rem;
   }
@@ -2509,6 +2526,10 @@ div.nav-card {
 
   .sh-p-12{
     padding: 1rem 6rem
+  }
+
+  .sh-p-12-d{
+    padding: 1rem 6rem;
   }
 
   .home-order-1{

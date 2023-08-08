@@ -86,7 +86,7 @@ export default function Blog(){
             <div className="post-m grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 p-4 lg:p-0 md:p-0 gap-4 lg:gap-4 md:gap-4">
                {data.slice(0, visibleItems).map((item, index) => (
                   <a href="/article" className="blog-post-card flex flex-col">
-                    <img src={item.image}/>
+                    <img className="h-52 rounded-2xl" src={item.image}/>
                     <h1 className="blog-post-card-header pr-4 pl-4 pt-4">
                       {item.name}
                     </h1>
