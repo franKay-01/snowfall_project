@@ -95,8 +95,8 @@ export default function Referral() {
             Rules for a referral program
           </h3>
           <div className="flex flex-col lg:grid md:grid lg:grid-cols-4 md:grid-cols-3 space-x-0 lg:space-x-4 md:space-x-4 space-y-4 lg:space-y-0 md:space-y-0">
-            <div className="flex justify-center items-center flex-col referral-rules-section-1">
-              <div className="relative p-4">
+            <div className="flex relative justify-center items-center flex-col referral-rules-section-1">
+              <div className="absolute top-4 p-4">
                 <p className="referral-rules-section-1-text">
                   Users must have an{" "}
                   <span className="referral-program-sub-text-color">
@@ -106,15 +106,15 @@ export default function Referral() {
                 </p>
               </div>
 
-              <div className="relative mt-4 flex-grow-0">
-                <img className="mx-auto mt-auto" src={iPhoneScreenReferral} alt="Iphone Screen" />
+              <div className="absolute bottom-0 mt-4 flex-grow-0">
+                <img className="w-80 mx-auto mt-auto" src={iPhoneScreenReferral} alt="Iphone Screen" />
               </div>
             </div>
-            <div className="flex flex-col pt-4 referral-rules-section-1">
-              <div className="relative">
+            <div className="flex relative flex-col pt-4 referral-rules-section-1">
+              <div className="absolute top-8">
                 <img className="mx-auto mt-auto" src={RefferalDone} alt="Referral Done"/>
               </div>
-              <div className="relative mb-2 pl-4">
+              <div className="absolute bottom-12 mb-2 pl-4 pr-4">
                 <p className="referral-rules-section-1-text">
                   Each user will be given a{" "}
                   <span className="referral-program-sub-text-color">
@@ -122,18 +122,18 @@ export default function Referral() {
                   </span>
                 </p>
               </div>
-              <div className="relative mx-auto mt-auto flex-grow p-4">
+              <div className="absolute bottom-0 mx-auto mt-auto flex-grow p-4">
                 <p className="referral-rules-section-1-text-small">
                   that they can share with their friends, family, and
                   colleagues.
                 </p>
               </div>
             </div>
-            <div className="flex flex-col lg:col-span-2 md:col-span-1 referral-rules-section-1">
-              <div className="relative pb-8 pt-8 mt-8">
+            <div className="flex relative flex-col lg:col-span-2 md:col-span-1 referral-rules-section-1">
+              <div className="absolute top-0 pb-8 pt-8 mt-8">
                 <img className="mt-auto" src={RefferalGroup} alt="Referral Done"/>
               </div>
-              <div className="relative pl-6">
+              <div className="absolute bottom-20 pl-6">
                 <p className="referral-rules-section-1-text lg:mt-0 md:mt-4">
                   The reward will be based on the{" "}
                   <span className="referral-program-sub-text-color">
@@ -141,7 +141,7 @@ export default function Referral() {
                   </span>
                 </p>
               </div>
-              <div className="relative pl-6 mb-4">
+              <div className="absolute bottom-8 pl-6 mb-4">
                 <p className="referral-rules-section-1-text-small">
                   of the new user and may change over time.
                 </p>
@@ -172,7 +172,7 @@ export default function Referral() {
                 <div className="flex flex-row space-x-4 lg:space-x-12 md:space-x-12 mb-4 pb-4 pl-2 lg:ml-2 md:ml-2 ml-0">
                   <div className="flex flex-col">
                     <div>
-                      <img src={ReferralIcon1} alt="Referral Icon 1" />
+                      <img className="w-24 h-24" src={ReferralIcon1} alt="Referral Icon 1" />
                     </div>
                     <div>
                       <p className="text-sm font-light text-center lg:text-left md:text-left text-white leading-5 lg:w-28 md:w-28 w-20">
@@ -182,7 +182,7 @@ export default function Referral() {
                   </div>
                   <div className="flex flex-col">
                     <div>
-                      <img src={ReferralIcon2} alt="Referral Icon 2" />
+                      <img className="w-24 h-24" src={ReferralIcon2} alt="Referral Icon 2" />
                     </div>
                     <div>
                       <p className="text-sm font-light text-center lg:text-left md:text-left text-white leading-5 lg:w-28 md:w-28 w-20">
@@ -193,6 +193,7 @@ export default function Referral() {
                   <div className="flex flex-col">
                     <div>
                       <img
+                        className="w-24 h-24"
                         src={ReferralIconStaking}
                         alt="Referral Icon Staking"
                       />
