@@ -764,7 +764,7 @@ div.nav-card {
 .buy-defi-image{
   height: 42rem;
   width: 42rem;
-  border-radius: 3rem 3rem 0 0;
+  border-radius: 4rem;
 }
 
 .overlay-card{
@@ -1407,6 +1407,7 @@ div.nav-card {
   position: absolute;
   right: 0;
   top: 16rem;
+  width: 40rem;
 }
 
 .career-heading{
@@ -2115,6 +2116,13 @@ div.nav-card {
   .banner-card-heading{
     font-size: 1.5rem;
     line-height: 1.875rem;
+  }
+
+  .gradient-text-n{
+    font-size: 2.5rem !important;
+    font-style: normal;
+    line-height: 2rem !important;
+    letter-spacing: -0.03125rem;
   }
 
   .gradient-text{

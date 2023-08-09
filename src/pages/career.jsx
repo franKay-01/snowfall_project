@@ -47,16 +47,16 @@ export default function Career(){
         </div>
       </div>
       <div className="career-text-container justify-center">
-        <span className="gradient-text p-0.5 text-left font-normal inline-block from-black via-sky-700 to-teal-400 bg-gradient-to-r bg-clip-text text-transparent">
+        <span className="gradient-text gradient-text-n p-0.5 text-left font-normal inline-block from-black via-sky-700 to-teal-400 bg-gradient-to-r bg-clip-text text-transparent">
           Our global team works from
         </span><br></br>
-        <span className="gradient-text p-0.5 text-left font-normal inline-block from-black via-sky-700 to-teal-400 bg-gradient-to-r bg-clip-text text-transparent">
+        <span className="gradient-text gradient-text-n p-0.5 text-left font-normal inline-block from-black via-sky-700 to-teal-400 bg-gradient-to-r bg-clip-text text-transparent">
           the places they love — from
         </span><br></br>
-        <span className="gradient-text p-0.5 text-left font-normal inline-block from-black via-sky-700 to-teal-400 bg-gradient-to-r bg-clip-text text-transparent">
+        <span className="gradient-text gradient-text-n p-0.5 text-left font-normal inline-block from-black via-sky-700 to-teal-400 bg-gradient-to-r bg-clip-text text-transparent">
           San Francisco to Ukraine,
         </span><br></br>
-        <span className="gradient-text p-0.5 text-left font-normal inline-block from-black via-sky-700 to-teal-400 bg-gradient-to-r bg-clip-text text-transparent">
+        <span className="gradient-text gradient-text-n p-0.5 text-left font-normal inline-block from-black via-sky-700 to-teal-400 bg-gradient-to-r bg-clip-text text-transparent">
           Brazil to Croatia
         </span>
         <img className="career-world-img z-down" src={WorldImg} alt=""/>
@@ -155,10 +155,10 @@ export default function Career(){
             <h1 className="career-heading">Open Roles</h1>
             <h1 className="career-heading-sub mt-4">If you're innovative, creative, and thrive in a team-oriented environment, we'd love to hear from you!</h1>
           </div>
-          <div className="hidden lg:grid md:grid justify-center items-center	">
+          <div className="hidden lg:grid md:grid justify-end items-center">
             <button className="snowball-button">
               <h1 className="snowball-button-text">
-              Submit your resume
+              Make your offer
               </h1>
             </button>
           </div>
@@ -236,7 +236,7 @@ export default function Career(){
           <div className="flex lg:hidden md:hidden justify-center items-center	">
             <button className="snowball-button">
               <h1 className="snowball-button-text">
-              Submit your resume
+              Make your offer
               </h1>
             </button>
           </div>
@@ -250,7 +250,7 @@ export default function Career(){
         >
           <div className="fixed inset-0 bg-black/30" aria-hidden="true" />
 
-          <div className="fixed inset-0 flex justify-center p-8">
+          <div className="fixed inset-0 flex justify-center p-20">
             <Dialog.Panel className="m-auto rounded bg-white dialog-box-shadow dialog-box-shadow-alt dialog-box">
               <Dialog.Panel>
                 <Dialog.Title className='header-alt mt-8 text-left mb-4'>Director, People (HR) Business Partner</Dialog.Title>

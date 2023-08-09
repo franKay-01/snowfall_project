@@ -1,6 +1,5 @@
 import { Disclosure } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
-import Logo from "../assets/logo.png";
 
 import { Link, NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
@@ -390,7 +389,7 @@ export default function Navbar() {
                 </div>
                 <div className="hidden lg:block lg:w-auto mr-4">
                   <a
-                    href="#"
+                    href="/#"
                     target="_blank"
                     className="brown-button button-margin-left"
                     rel="noreferrer"
