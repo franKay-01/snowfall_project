@@ -358,6 +358,7 @@ div.nav-card {
   font-weight: 100;
   width: 290px;
   line-height: 20px;
+  padding-right: 1rem;
 }
 
 .gradient-text{
