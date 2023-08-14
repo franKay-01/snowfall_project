@@ -126,7 +126,7 @@ div.nav-card {
   position: absolute;
   top: 1rem;
   left: 20rem;
-  width: 75rem;
+  width: 74rem;
 }
 
 .z-id{
@@ -322,14 +322,14 @@ div.nav-card {
 
 .banner-card{
   /* width: 400px; */
-  height: 260px;
+  /* height: 260px; */
   background-color: #F9FBFC;
   border-radius: 15px;
   padding: 1.5rem;
 }
 
 .banner-card:hover{
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 8px 40px rgba(225, 230, 236, 0.40);
 }
 
 .banner-card-icon{
@@ -348,7 +348,7 @@ div.nav-card {
 .banner-card-heading{
   font-size: 32px;
   font-weight: 400;
-  width: 222px;
+  /* width: 222px; */
   line-height: 2.25rem;
 }
 
@@ -539,7 +539,7 @@ div.nav-card {
 }
 
 .sh-p-12{
-  padding: 3rem 5rem;
+  padding: 6rem 10rem;
 }
 
 .sh-p-12-d{
@@ -764,7 +764,7 @@ div.nav-card {
 .buy-defi-image{
   height: 42rem;
   width: 42rem;
-  border-radius: 4rem;
+  border-radius: 3rem;
 }
 
 .overlay-card{
@@ -2658,6 +2658,33 @@ div.nav-card {
   }
 }
 
+@media only screen 
+and (min-width : 1824px) {
+  .snowball-media-n-lg {
+    width: 40rem;
+    height: 21.125rem;
+    border-radius: 1.5rem;
+  }
+
+  .snowball-media-lg {
+    width: 45rem;
+    height: 45.25rem;
+    border-radius: 1.5rem;
+  }
+
+  .sh-p-12 {
+    padding: 10rem 20rem;
+  }
+  
+  .video-container {
+    position: absolute;
+    top: 1rem;
+    right: 0rem;
+    left: auto;
+    width: 75rem;
+  }
+}
+
 @keyframes fade{
   from{
     opacity:0.4;
@@ -2713,5 +2740,22 @@ div.nav-card {
   #slider{
     width:100%;
 
+  }
+}
+
+.scroll-gradient-text {
+  background: linear-gradient(to right, #00f, #f00);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradientScroll 5s linear infinite;
+}
+
+@keyframes gradientScroll {
+  0% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 0%;
   }
 }

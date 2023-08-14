@@ -1,7 +1,7 @@
 import { useState } from "react"
 
 export default function MediaSection({status}) {
-  const [isHovered, setIsHovered] = useState(false)
+  // const [isHovered, setIsHovered] = useState(false)
   const [visibleDivId, setVisibleDivId] = useState(null);
 
   // const handleMouseEnter = () => {
@@ -24,7 +24,7 @@ export default function MediaSection({status}) {
     <div className={`${status ? 'bg-slate-100' : 'bg-white'} flex flex-col pl-4 md:pt-8 md:justify-center md:items-center ${status ? 'lg:pb-32':'lg:pb-8'} md:pb-12 md:flex-col lg:flex-col lg:space-y-14 md:space-y-14 mt-24`}>
       <div className={`${status ? 'flex justify-between w-auto' : 'flex justify-between w-auto lg:w-9/12 md:w-auto'} faq-position grid-cols-1 lg:grid-cols-2 md:ml-0 lg:ml-0`}>
         <h1 className="snowball-heading">Snowball in the Media</h1>
-        <div className={`hidden ${status ? 'lg:grid' : 'lg:hidden'}`}>
+        <div className={`hidden ${status ? 'lg:grid' : 'lg:hidden'} flex items-center`}>
           <button className="snowball-button">
             <h1 className="snowball-button-text">
               show all

@@ -40,8 +40,7 @@ import Frame1 from "../assets/frame_1.png"
 import Frame2 from "../assets/frame_2.png"
 import Frame1Alt from "../assets/frame_1_alt.png"
 import CompleteApplication from "../assets/application.png";
-
-
+import Frame3 from "../assets/frame_3.png";
 
 export default function Home(){
   const [forCommunity, setForCommunity] = useState(false)
@@ -92,10 +91,8 @@ export default function Home(){
 
     const handleScroll = () => {
       if (window.scrollY > 900) {
-        console.log("AT 10" + shouldChangeClass)
         setShouldChangeClass(true);
       } else {
-        console.log("NOT AT 10" + shouldChangeClass)
         setShouldChangeClass(false);
       }
     };
@@ -181,7 +178,7 @@ export default function Home(){
       </div>
       <div id="targetSection" className="container overflow-auto site-width">
         <div className="flex flex-row lg:grid md:flex lg:grid-cols-3 md:flex-row md:space-x-8 mt-12 p-2">
-          <div className="banner-card flex flex-col space-y-2" onMouseEnter={() => {handleHover("secure")}} onMouseLeave={() => {handleHoverExit("secure")}}>
+          <div className="banner-card flex flex-col" onMouseEnter={() => {handleHover("secure")}} onMouseLeave={() => {handleHoverExit("secure")}}>
             <img className="banner-card-icon" src={isSecureHovered ? SecureAccessHover : SecureAccess} alt=""/>
             <h1 className="banner-card-heading">Security & Full Access</h1> 
             <h1 className="banner-card-heading-sub">Take control of your assets with full access at all times!</h1>  
@@ -200,16 +197,10 @@ export default function Home(){
       </div>
       <div className="container grid lg:flex md:flex site-width mt-4">
         <span className={`hidden lg:block md:flex p-0.5 text-left items-center from-black ${shouldChangeClass? 'via-sky-700 to-teal-400':'to-white'} bg-gradient-to-r bg-clip-text text-transparent gradient-text-custom`}>
-          The smartest multi-chain<br/>mobile wallet for you to start<br/>leveraging the full potential<br/>of Decentralized Finance
+          The smartest multi-chain mobile wallet for you to start leveraging the full potential of Decentralized Finance
         </span>
-       
+      
         <span className="block lg:hidden md:hidden gradient-text p-2 text-left font-normal inline-block from-black via-sky-700 to-teal-400 bg-gradient-to-r bg-clip-text text-transparent">The smartest <br/>multi-chain mobile wallet for you to <br/>start leveraging<br/>the full potential<br/>of Decentralized Finance</span>
-        {/* <span className="block lg:hidden md:hidden gradient-text p-2 text-left font-normal inline-block from-black via-sky-700 to-teal-400 bg-gradient-to-r bg-clip-text text-transparent">multi-chain mobile</span>
-        <span className="block lg:hidden md:hidden gradient-text p-2 text-left font-normal inline-block from-black via-sky-700 to-teal-400 bg-gradient-to-r bg-clip-text text-transparent">wallet for you to</span>
-        <span className="block lg:hidden md:hidden gradient-text p-2 text-left font-normal inline-block from-black via-sky-700 to-teal-400 bg-gradient-to-r bg-clip-text text-transparent">start leveraging</span>
-        <span className="block lg:hidden md:hidden gradient-text p-2 text-left font-normal inline-block from-black via-sky-700 to-teal-400 bg-gradient-to-r bg-clip-text text-transparent">the full potential</span>
-        <span className="block lg:hidden md:hidden gradient-text p-2 text-left font-normal inline-block from-black via-sky-700 to-teal-400 bg-gradient-to-r bg-clip-text text-transparent">of Decentralized</span>
-        <span className="block lg:hidden md:hidden gradient-text p-2 text-left font-normal inline-block from-black via-sky-700 to-teal-400 bg-gradient-to-r bg-clip-text text-transparent">Finance</span> */}
       </div>
       <div className="container grid lg:grid lg:justify-center lg:grid-row-2 md:justify-center md:items-center space-y-12 lg:space-y-4 md:space-y-4">
         <div className="grid grid-cols-1 space-y-12 lg:grid-cols-1 md:flex md:justify-end md:items-center">
@@ -217,7 +208,7 @@ export default function Home(){
             <div className="overlay"></div>
           </div>
         </div>
-        <div className="grid grid-cols-1 lg:grid lg:grid-cols-2 lg:gap-8 md:flex md:flex-col md:grid-cols-1 md:justify-center md:items-center">
+        <div className="grid grid-cols-1 lg:grid lg:grid-cols-2 lg:gap-4 md:flex md:flex-col md:grid-cols-1 md:justify-center md:items-center">
           <div className="most-popular-card mb-8">
             <div className="flex flex-col items-center">
               <img className="absolute" src={AirdropImg} alt=""/>
@@ -341,37 +332,37 @@ export default function Home(){
       <div className="bg-c-black relative">
         <div className="concave-border bg-slate-100"></div>
         {forCommunity ? 
-         <div className="bg-c-black flex flex-col mt-8 lg:mt-0 md:mt-0 pl-4 lg:pl-0 lg:justify-center lg:items-stretch md:justify-center md:items-center lg:pt-0 md:pt-8 lg:pb-0 md:pb-12 md:flex-col lg:flex-row lg:space-x-24 lg:space-y-2 space-y-4 md:space-y-14">
-          <div className="flex flex-col justify-center space-y-4 md:space-y-12 lg:space-y-12">
-            <div className="snowball-money-section grid grid-cols-2">
-              <h1 className="snowball-money-button-text cursor-pointer" onClick={()=>setForCommunity(false)}>Reviews</h1>
-              <div className="snowball-money-section-sub">
-                <h1 className="snowball-money-button-text snowball-money-button-text-alt">Community</h1>
+          <div className="bg-c-black flex flex-col mt-8 lg:mt-0 md:mt-0 pl-4 lg:pl-0 lg:justify-center lg:items-stretch md:justify-center md:items-center lg:pt-0 md:pt-8 lg:pb-0 md:pb-12 md:flex-col lg:flex-row lg:space-x-24 lg:space-y-2 space-y-4 md:space-y-14">
+            <div className="relative flex flex-col justify-center space-y-4 md:space-y-12 lg:space-y-12">
+              <div className="absolute top-52 snowball-money-section grid grid-cols-2">
+                <h1 className="snowball-money-button-text cursor-pointer" onClick={()=>setForCommunity(false)}>Reviews</h1>
+                <div className="snowball-money-section-sub">
+                  <h1 className="snowball-money-button-text snowball-money-button-text-alt">Community</h1>
+                </div>
               </div>
-            </div>
-            <div>
-              <h1 className="snowball-money-header">
-                Hear it from the Community
+              <div>
+                <h1 className="snowball-money-header">
+                  Hear it from the Community
+                </h1>
+                <h1 className="snowball-money-sub mt-4">
+                  Gain access to high-yield stablecoin vaults and generate interest in real-time via DeFi
+                </h1>
+              </div>
+              
+              <h1 className="snowball-money-hash">
+                #snowballmoney
               </h1>
-              <h1 className="snowball-money-sub mt-4">
-                Gain access to high-yield stablecoin vaults and generate interest in real-time via DeFi
-              </h1>
             </div>
-            
-            <h1 className="snowball-money-hash">
-              #snowballmoney
-            </h1>
+            <div className="w-96 flex flex-row space-x-4">
+              <img className="block lg:hidden md:hidden snowball-frame-h mb-8" src={Frame1Alt} alt=""/>
+              <img className="hidden lg:flex md:flex snowball-frame-h" src={Frame1} alt=""/>
+              <img className="hidden lg:flex md:flex snowball-frame-h" src={Frame2} alt=""/>
+            </div>
           </div>
-          <div className="flex flex-row space-x-4">
-            <img className="block lg:hidden md:hidden snowball-frame-h mb-8" src={Frame1Alt} alt=""/>
-            <img className="hidden lg:flex md:flex snowball-frame-h" src={Frame1} alt=""/>
-            <img className="hidden lg:flex md:flex snowball-frame-h" src={Frame2} alt=""/>
-          </div>
-        </div>
         :
         <div className="bg-c-black flex flex-col mt-8 lg:mt-0 md:mt-0 pl-4 lg:pl-0 lg:justify-center lg:items-stretch md:justify-center md:items-center lg:pt-0 md:pt-8 lg:pb-0 md:pb-12 md:flex-col lg:flex-row lg:space-x-24 lg:space-y-2 space-y-4 md:space-y-14">
-          <div className="flex flex-col justify-center space-y-4 md:space-y-12 lg:space-y-12">
-            <div className="snowball-money-section grid grid-cols-2">
+          <div className="relative flex flex-col justify-center space-y-4 md:space-y-12 lg:space-y-12">
+            <div className="absolute top-52 snowball-money-section grid grid-cols-2">
               <div className="snowball-money-section-sub">
                 <h1 className="snowball-money-button-text snowball-money-button-text-alt">Reviews</h1>
               </div>
@@ -392,10 +383,9 @@ export default function Home(){
               </h1>
             </button>
           </div>
-          <div className="flex flex-row space-x-4">
+          <div className="w-96 flex flex-row space-x-4">
             <img className="block lg:hidden md:hidden snowball-frame-h mb-8" src={Frame1Alt} alt=""/>
-            <img className="hidden lg:flex md:flex snowball-frame-h" src={Frame1} alt=""/>
-            <img className="hidden lg:flex md:flex snowball-frame-h" src={Frame2} alt=""/>
+            <img className="hidden lg:block md:block snowball-frame-h mb-8" src={Frame3} alt=""/>
           </div>
         </div>
         }
