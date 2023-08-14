@@ -422,7 +422,6 @@ div.nav-card {
   background-repeat: no-repeat;
 }
 
-
 .most-popular-card{
   position: relative;
   width: 580px;
@@ -444,7 +443,11 @@ div.nav-card {
   transition: opacity 0.3s; /* Transition for smooth effect */
 }
 
-.d-bg:hover .overlay {
+.d-bg:hover {
+  background-image: url('./assets/most_popular_network_alt.png');
+  background-size: contain;
+  width: 100%;
+  background-repeat: no-repeat;
   opacity: 1; /* Show overlay on hover */
 }
 
