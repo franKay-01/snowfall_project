@@ -17,6 +17,7 @@ import ReferralIcon4 from "../assets/referral_icon_4.png";
 import ReferralMorflax from "../assets/morflax-studio-175.png";
 import ReferralRulesExplain from "../assets/referral_rules_explain.png";
 import ArrowRight from "../assets/Right.png";
+import { useEffect } from "react";
 
 export default function Referral() {
   const [explain, setRuleExplain] = useState(false);
@@ -57,6 +58,10 @@ export default function Referral() {
     },
   ];
 
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  }, [])
+  
   return (
     <>
       <Navbar />

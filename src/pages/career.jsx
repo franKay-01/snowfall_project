@@ -9,6 +9,7 @@ import Frame1Alt from "../assets/frame_1_alt.png"
 import CompleteApplication from "../assets/application.png";
 
 import { Dialog } from '@headlessui/react'
+import { useEffect } from 'react';
 
 export default function Career(){
   const [isRoleOpen, setIsRoleOpen] = useState(false)
@@ -31,6 +32,9 @@ export default function Career(){
     setIsRoleOpen(true)
   }
 
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  }, [])
   return (
     <>
       <Navbar/>

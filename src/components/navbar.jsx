@@ -18,6 +18,7 @@ export default function Navbar() {
   const [refUrl, setRefUrl] = useState(false);
   const [teamUrl, setTeamUrl] = useState(false);
   const [blogUrl, setBlogUrl] = useState(false);
+  const [shouldChangeClass, setShouldChangeClass] = useState(false);
 
   useEffect(() => {
     const currentUrl = window.location.href;
@@ -74,7 +75,21 @@ export default function Navbar() {
         setBlogUrl(false);
         break;
     }
+
+    const handleScroll = () => {
+      if (window.scrollY > 600) {
+        setShouldChangeClass(true);
+      } else {
+        setShouldChangeClass(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
+
   return (
     <Disclosure
       as="nav"
@@ -297,9 +312,7 @@ export default function Navbar() {
                       Blog
                     </NavLink>
                     <div
-                      className={`${
-                        homeUrl ? "flex lg:flex" : "hidden"
-                      } mini-nav-card flex-row space-x-2 hidden`}
+                      className={`${homeUrl && shouldChangeClass ? "flex lg:flex" : "hidden"} mini-nav-card flex-row space-x-2 hidden`}
                     >
                       <a
                         href="https://click.google-analytics.com/redirect?tid=UA-119873557-1&url=https%3A%2F%2Fitunes.apple.com%2Fapp%2Fapple-store%2Fid1449662311&aid=money.snowball.app&idfa=%{idfa}&cs=snowball.money&cm=main%20download%20link&cn=email-campaign"

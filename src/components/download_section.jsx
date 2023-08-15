@@ -1,6 +1,8 @@
 import ApplePlayImg from "../assets/apple_store_img.png"
 import GooglePlayImg from "../assets/google_play_img.png"
 import DownloadPhoneImg from "../assets/images/Home/Time to Download /Phone.png"
+// import PhoneDownloadSection from "../assets/phone_download_section.png"
+import PhoneDownloadSection from "../assets/phone_download_section.svg"
 
 export default function DownloadSection() {
   return (
@@ -18,7 +20,9 @@ export default function DownloadSection() {
           </div>
         </div>
         <div className="grid justify-center items-center download-img-position">
-          <img className="share-section-image" src={DownloadPhoneImg} alt=""/>
+          <img className="hidden lg:flex md:flex share-section-image" src={DownloadPhoneImg} alt=""/>
+          <img className="flex lg:hidden md:hidden share-section-image" src={PhoneDownloadSection} alt=""/>
+
         </div>          
       </div>
     </div>

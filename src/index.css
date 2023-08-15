@@ -10,6 +10,7 @@ html{
 }
 
 body{
+  font-family: 'Satoshi-Medium';
   margin: -1rem 0px !important;
 }
 
@@ -75,6 +76,7 @@ div.nav-card {
   font-size: 25px;
   width: 29rem;
   font-weight: 100;
+  font-family: 'Satoshi-Light';
   color: #282D39;
 }
 
@@ -167,6 +169,7 @@ div.nav-card {
 
 .site-width{
   width: 75%;
+  margin-top: 5rem;
 }
 
 .referral-banner-header {
@@ -257,6 +260,7 @@ div.nav-card {
   color: #414A5B;
   font-size: 0.8rem;
   font-weight: 100;
+  font-family: 'Satoshi-Light';
   line-height: 1rem;
 }
 
@@ -356,6 +360,8 @@ div.nav-card {
   margin-top: 1rem;
   font-size: 16px;
   font-weight: 100;
+  color: #838B9D;
+  font-family: 'Satoshi-Light';
   width: 290px;
   line-height: 20px;
   padding-right: 1rem;
@@ -392,6 +398,7 @@ div.nav-card {
 
 .popular-network-text-sub{
   font-weight: 200;
+  font-family: 'Satoshi-Light';
   font-size: 18px;
   width: 455px;
   line-height: 1.5;
@@ -557,7 +564,7 @@ div.nav-card {
   color: #D9F9F8;
   font-size: 3.5rem;
   font-style: normal;
-  width: 30rem;
+  width: 31rem;
   font-weight: 400;
   line-height: 4rem;
 }
@@ -592,6 +599,7 @@ div.nav-card {
   font-size: 1rem;
   font-style: normal;
   font-weight: 200;
+  font-family: 'Satoshi-Light';
   line-height: 1.5rem;
 }
 
@@ -600,6 +608,7 @@ div.nav-card {
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 200;
+  font-family: 'Satoshi-Light';
   line-height: 2rem;
   width: 34.6875rem;
 }
@@ -761,6 +770,7 @@ div.nav-card {
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 200;
+  font-family: 'Satoshi-Light';
   line-height: 2rem;
 }
 
@@ -1003,7 +1013,7 @@ div.nav-card {
 }
 
 .snowball-frame-h{
-  height: 56rem;
+  height: 48rem;
 }
 
 .brand-header{
@@ -1377,6 +1387,7 @@ div.nav-card {
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 200;
+  font-family: 'Satoshi-Light';
   line-height: 2rem;
 }
 
@@ -1427,6 +1438,7 @@ div.nav-card {
   font-size: 1rem;
   font-style: normal;
   font-weight: 200;
+  font-family: 'Satoshi-Light';
   line-height: 1.375rem;
 }
 
@@ -1598,7 +1610,7 @@ div.nav-card {
 }
 
 .post-m{
-  margin-top: 2rem !important;
+  margin-top: 3rem !important;
 }
 
 .post-tag-text{
@@ -1658,6 +1670,7 @@ div.nav-card {
   font-size: 1rem;
   font-style: normal;
   font-weight: 200;
+  font-family: 'Satoshi-Light';
   line-height: 1.375rem;
 }
 
@@ -1702,6 +1715,11 @@ div.nav-card {
 }
 
 @media screen and (max-width: 768px) {
+
+  .site-width{
+    /* width: 75%; */
+    margin-top: 2rem;
+  }
 
   .post-tag-w{
     width: 20rem;
@@ -1867,6 +1885,7 @@ div.nav-card {
     font-size: 1rem;
     font-style: normal;
     font-weight: 200;
+    font-family: 'Satoshi-Light';
     line-height: 1.25rem;
   }
 
@@ -2173,6 +2192,7 @@ div.nav-card {
     font-size: 0.9375rem;
     font-style: normal;
     font-weight: 200;
+    font-family: 'Satoshi-Light';
     line-height: 1.25rem;
     width: 18rem;
   }
@@ -2295,7 +2315,7 @@ div.nav-card {
   }
 
   .sh-p-12-d{
-    padding: 1rem 1rem;
+    padding: 1rem 2rem;
   }
 
   .golden-image{
@@ -2306,7 +2326,7 @@ div.nav-card {
     color: #D9F9F8;
     font-size: 1.5rem;
     font-style: normal;
-    width: 10rem;
+    width: 12rem;
     font-weight: 400;
     line-height: 1.75rem;
   }
@@ -2317,9 +2337,9 @@ div.nav-card {
   }
 
   .share-section-image{
-    height: 24rem;
-    width: 10rem;
-    border-radius: 2rem;
+    height: 18rem;
+    width: 8rem;
+    border-radius: 0rem 0rem 2rem;
   }
 
   .footer-logo-d{
@@ -2568,6 +2588,7 @@ div.nav-card {
     font-size: 0.9375rem;
     font-style: normal;
     font-weight: 200;
+    font-family: 'Satoshi-Light';
     line-height: 1.25rem;
     width: 18rem;
   }
@@ -2604,7 +2625,7 @@ div.nav-card {
     color: #D9F9F8;
     font-size: 2.5rem;
     font-style: normal;
-    width: 21rem;
+    width: 22rem;
     font-weight: 400;
     line-height: 2.75rem;
   }
@@ -2614,6 +2635,7 @@ div.nav-card {
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 200;
+    font-family: 'Satoshi-Light';
     line-height: 2rem;
     /* width: auto; */
   }
@@ -2652,6 +2674,7 @@ div.nav-card {
     font-size: 1.2rem;
     font-style: normal;
     font-weight: 200;
+    font-family: 'Satoshi-Light';
     line-height: 2rem;
   }
 

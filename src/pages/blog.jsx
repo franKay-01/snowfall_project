@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
 import BlogPostImg from "../assets/images/Blog/Blog.png"
@@ -27,9 +27,9 @@ export default function Blog(){
     setVisibleItems(prevVisibleItems => prevVisibleItems + itemsPerPage);
   };
 
-  // useEffect(()=>{
-  //   console.log("LENGTH " + data.length)
-  // }, [])
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  }, [])
 
   const makeActive = (index) => {
     console.log("INDEX "+index)

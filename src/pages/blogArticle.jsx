@@ -3,8 +3,13 @@ import Navbar from "../components/navbar";
 import ArticleMainImg from "../assets/article_main.png"
 import BlogPostImg from "../assets/images/Blog/Blog.png"
 import DownloadSection from "../components/download_section";
+import { useEffect } from "react";
 
-export default function Blog(){
+export default function BlogArticle(){
+
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  }, [])
   return (
     <>
       <Navbar/>

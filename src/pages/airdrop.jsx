@@ -10,6 +10,7 @@ import AirDropIcon4Img from "../assets/images/Airdrop/Social Media Driver/4.png"
 import SmartPhoneImg from "../assets/images/Airdrop/Interested in starting your campaign/Phone 2.png"
 import CompleteApplication from "../assets/application.png";
 import { useState } from "react";
+import { useEffect } from "react";
 
 export default function AirDrop(){
   const [submit, setSubmit] = useState(false);
@@ -28,9 +29,11 @@ export default function AirDrop(){
     setSubmit(true);
 
     console.log(formData);
-
-    // TODO: implement logic to submit form data after team agree how to approach this.
   }
+
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  }, [])
 
   return (
     <>
